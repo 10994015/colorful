@@ -1,0 +1,51 @@
+header{
+  z-index: 999;
+  position: fixed;
+  background:var(--main-color);
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: .5s ease;
+}
+
+header.sticky{
+  background:var(--main-color);
+  color: #fff;
+  padding: 10px 200px;
+}
+
+header .sticky a:before{
+  position: absolute;
+  content: '';
+  height: 0;
+  width: 0;
+  border: 1px solid transparent;
+  bottom: 0;
+  left: 0;
+  box-sizing: border-box;
+}
+header.sticky a:hover:before{
+  height: 10px;
+  width: 100%;
+  border-bottom: 2px solid #fff;
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  transition: width .1s linear .1s;
+}
+
+@media screen and (max-width: 1024px){
+  header{
+    padding: 12px 20px;
+  }
+
+  header.sticky{
+    padding: 10px 20px;
+  }
+
+ 
+}
