@@ -1,0 +1,271 @@
+body{
+    font-family: sans-serif;
+}
+.register{
+	padding-top: 8em;
+	padding-bottom: 50px;
+}
+
+
+.register .container{
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap :7rem;
+    padding: 0 2rem;
+}
+.register .container .title{
+	font-size: 36px;
+	margin-bottom: 15px;
+}
+.register .img{
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.register .register-content{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.register .img img{
+	width: 500px;
+}
+
+.register form{
+	width: 360px;
+}
+
+.register .register-content img{
+    height: 100px;
+}
+.register .input-div{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 15px;
+
+}
+.register .input-div h5{
+	text-align: left;
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+.register .input-div p{
+	text-align: left;
+	color: #f00;
+}
+.register .input-div h5 b{
+	color: #f00;
+	margin-right: 3px;
+}
+.register .input-div input{
+	outline: none;
+	border: none;
+	border-bottom: 1px #aaa solid;
+	height: 45px;
+	font-size: 18px;
+}
+.register .input-div input.code{
+	outline: none;
+	border: none;
+	border: 1px #aaa solid;
+	height:30px;
+	font-size: 18px;
+	border-radius: 3px;
+	width: 100px;
+	margin-bottom: 5px;
+}
+.register .input-div input.agree{
+	width: 30px;
+	height: 30px;
+	border: 1px #000 solid;
+}
+.register .input-div .select{
+	display: flex;
+	justify-content: space-between;
+
+}
+.register .input-div select.birthday{
+	width: 110px;
+	height: 30px;
+	border-radius: 3px;
+	outline: none;
+	border: 1px #ccc solid;
+}
+.register .input-div select.gender{
+	width: 100%;
+	height: 35px;
+	border-radius: 3px;
+	outline: none;
+	border: 1px #ccc solid;
+}
+.register .input-div select:focus{
+	border: #BAD9FA 3px solid;
+	border-radius: 3px;
+	transition: .5s;
+}
+.register .input-div input:focus{
+	border-bottom: #BAD9FA 3px solid;
+	transition: .5s;
+}
+.register .input-div input.code:focus{
+	border: #BAD9FA 3px solid;
+	transition: .5s;
+	border-radius: 3px;
+}
+.register .input-div .vercode{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.register .input-div .vercode img{
+	width: 100px;
+	height: 45px;
+	margin-bottom: 5px;
+}
+.register .input-div .vercode button{
+	width: 100px;
+	height: 40px;
+	outline: none;
+	border: none;
+	background: #22A7F2;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 14px;
+	cursor: pointer;
+}
+.register .input-agree{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: center;
+}
+.register .input-agree label{
+	margin-bottom: 5px;
+}
+.register .btn{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #144CE1, #1484C4, #144CE1);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.register .btn:hover{
+	background-position: right;
+}
+.membershipModel{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, .5);
+	display: none;
+}
+.membership {
+	width: 600px;
+	height: 500px;
+	position: fixed;
+	top: calc(50% - 250px);
+	left: calc(50% - 300px);
+	background-color: #fff;
+	display: block;
+	border: 1px #ccc solid;
+	border-radius: 8px;
+	
+
+}
+.membership h1{
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	font-size: 18px;
+	width: 100%;
+	border-bottom: 1px #ccc solid;
+	color: #333;
+	padding: 0 30px;
+}
+.membership h1 i{
+	cursor: pointer;
+}
+.membership p{
+	overflow-y: scroll;
+	height: 400px;
+	padding: 15px;
+}
+.membership p::-webkit-scrollbar{
+	width: 10px;
+}
+.membership p::-webkit-scrollbar-track {  
+   box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); 
+
+}
+.membership p::-webkit-scrollbar-thumb{
+	background-color: #ccc;
+  	border: 1px solid slategrey;
+}
+.membership label{
+	position: absolute;
+	bottom: 0;
+	height: 50px;
+	border-top: 1px #ccc solid;
+	width: 100%;
+	padding: 10px 0 0 30px;
+}
+@media screen and (max-width: 1050px){
+	.register .container{
+		grid-gap: 5rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	.register form{
+		width: 290px;
+	}
+
+	.register .register-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.register .img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.register .container{
+		grid-template-columns: 1fr;
+	}
+
+	.register .img{
+		display: none;
+	}
+
+	.register .wave{
+		display: none;
+	}
+
+	.register .register-content{
+		justify-content: center;
+	}
+	.register .input-div .vercode{
+		flex-direction: column;
+	}
+}

@@ -1,0 +1,26 @@
+.scrollToTop-btn{
+  z-index: 999;
+  position: fixed;
+  background: var(--main-color);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.scrollToTop-btn:hover{
+  background:#BD1E2C;
+}
+.scrollToTop-btn.active{
+  right: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}

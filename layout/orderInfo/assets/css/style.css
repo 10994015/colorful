@@ -1,0 +1,136 @@
+.container{
+	display: flex;
+	flex-direction: column;
+}
+.member{
+	min-height: 100vh;
+	height: auto;
+	padding-top: 8em;
+}
+.member .member-title{
+	border-bottom: 1px #DDD solid;
+	height: 80px;
+	padding: 0 10px;
+}
+.member .member-title h1{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.member .member-title p{
+	font-size: 14px;
+}
+.member .member-nav{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.member .member-nav ul{
+	list-style: none;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+
+}
+.member .member-nav ul a{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	border-bottom: 1px #DDD solid;
+
+}
+.member .member-nav ul a img{
+	margin-right: 10px;
+}
+.member .member-nav ul a:hover{
+	color: #1484c4;
+}
+.member .member-nav ul a:nth-child(1){
+	height: 80px;
+	color: #666;
+	font-weight: 500;
+}
+.member .member-nav ul a:nth-last-child(1){
+	border-bottom: none;
+}
+.member .member-nav ul a img{
+	width: 50px;
+	height: 50px;
+}
+/*---------------------------*/
+@media screen and (max-width: 765px){
+	.member .member-nav{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+	.orderInfo p{
+	max-width: 200px;
+}
+}
+
+
+.orderInfo .orderInfoTitle,
+.orderInfo .orderInfoItem,
+.orderInfo .orderInfoTotal,
+.orderInfo .orderInfoTote,
+.orderInfo .orderInfoPay,
+.orderInfo .orderInfoAdd,
+.orderInfo .orderInfoToteAdd,
+.orderInfo .orderInfoName,
+.orderInfo .orderInfoEmail,
+.orderInfo .orderInfoPhone
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 80%;
+	height: 50px;
+	border-bottom: 1px #ddd solid;
+	padding: 0 10px;
+	font-size: 14px;
+	font-weight: 600;
+	color: #555;
+}
+.orderInfo{
+	display: flex;
+	flex-direction: column;
+	padding-left: 15px;
+
+}
+
+.orderInfo h2{
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 10px;
+	color: #555;
+}
+.orderInfo h1{
+	color: #555;
+	margin-bottom: 10px;
+}
+.orderInfoBill a{
+	width: 120px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	background: #444;
+	font-weight: 600;
+	text-decoration: none;
+	display: block;
+	margin: 30px 0;
+}
+.orderInfoBill a:hover{
+	background: #333;
+	transition: .5s;
+}

@@ -1,0 +1,152 @@
+.container{
+	display: flex;
+	flex-direction: column;
+}
+.member{
+	min-height: 100vh;
+	height: auto;
+	padding-top: 8em;
+}
+.member .member-title{
+	border-bottom: 1px #DDD solid;
+	height: 80px;
+	padding: 0 10px;
+}
+.member .member-title h1{
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.member .member-title p{
+	font-size: 14px;
+}
+.member .member-nav{
+	width: 100%;
+	height: 500px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+.member .member-nav ul{
+	list-style: none;
+	width: 80%;
+	display: flex;
+	flex-direction: column;
+
+}
+.member .member-nav ul a{
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	color: #333;
+	font-weight: 600;
+	border-bottom: 1px #DDD solid;
+
+}
+.member .member-nav ul a img{
+	margin-right: 10px;
+}
+.member .member-nav ul a:hover{
+	color: #1484c4;
+}
+.member .member-nav ul a:nth-child(1){
+	height: 80px;
+	color: #666;
+	font-weight: 500;
+}
+.member .member-nav ul a:nth-last-child(1){
+	border-bottom: none;
+}
+.member .member-nav ul a img{
+	width: 50px;
+	height: 50px;
+}
+/*---------------------------*/
+@media screen and (max-width: 765px){
+	.member .member-nav{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+	
+}
+
+
+.myproduct{
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 50px;
+	padding-left: 15px;
+}
+.myproduct-search{
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+}
+.myproduct-search i{
+	color: #666;
+	position: absolute; 
+	padding: 10px;
+	font-size: 14px;
+}
+.myproduct-search input{
+	width: 500px;
+	height: 40px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	border: 1px #BFBFBF solid;
+	padding-left: 30px;
+}
+.myproduct-search input:focus{
+	border: 1px #333 solid;
+}
+.myproduct-search input::placeholder{
+	color: #aaa;
+}
+.myproduct .myproduct-item{
+	width: 260px;
+	height: 300px;
+	background: #fff;
+	border-radius: 5px;
+	overflow: hidden;
+	border: 1px solid rgba(245, 245, 245, 1.0);
+	box-shadow: 5px 5px 10px rgba(1 1 1 / 15%);
+	margin: 15px 25px 15px 0;
+}
+.myproduct .myproduct-item img{
+	width: 100%;
+	object-fit: cover;
+}
+.myproduct .myproduct-item h1{
+	padding: 10px;
+	font-size: 18px;
+	color: #555;
+	width: 100%;
+	height: 70px;
+	font-weight: 500;
+}
+.myproduct .myproduct-item a{
+	width: 150px;
+	height: 40px;
+	text-decoration: none;
+	background: #1484c4;
+	display: block;
+	text-align: center;
+	line-height: 40px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 600;
+	margin: auto;
+	border-radius: 25px;
+}
+
+.myproduct .myproduct-item a:hover{
+	background: #1458C4;
+	transition: .5s;
+}

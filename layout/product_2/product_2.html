@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>冰芬文教</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/shopcart.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/scrollToTop.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
+  <link rel="stylesheet" href="assets/css/breadcrumb.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+<!-- -------一個區塊scrollToTop(assets/css/scrollToTop.css)------------ -->
+<div class="scrollToTop-btn">
+      <i class="fas fa-angle-up"></i>
+</div>
+<!-- ---------------scrollToTop--END--------------------- -->
+
+
+<!-- ------------一個header(assets/css/header.css)---------- -->
+    <header>
+      <div class="logo-search">
+          <a href="../index/index.html" class="brand" title="冰芬文教"><img src="assets/images/logo.png" title="冰芬文教" alt="冰芬文教" width="180px" height="50px"></a>
+          <div class="search">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <div class="search-input">
+              <input type="text" placeholder="搜尋...">
+              <button><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+      </div>
+    
+    <div class="menu-btn"></div>
+
+    	<div class="navigation">
+    	<a href="../index/index.html" title="">首頁</a>
+      <a href="../productList/productList.html" title="">購物中心</a>
+      <a href="javascript:;" title="">客服中心</a>
+      <a href="../login/login.html">登入/註冊</a>
+      <div href="javascript:;" title="" class="myAccount">
+        我的帳號<i class="fas fa-user"></i>
+        <ul class="myAccountUl">
+          <li><img src="assets/images/avatar.svg" alt="">李承諺</li>
+          <a href="../myproduct/myproduct.html">我的課程</a>
+          <a href="../collect/collect.html">收藏清單</a>
+          <a href="../orderRecord/orderRecord.html">訂單紀錄</a>
+          <a href="../member/member.html">帳戶設定</a>
+          <a href="javascript:;">會員登出</a>
+        </ul>
+      </div>
+    	</div>
+      <div class="navigation-shop">
+        <a href="javascript:;" class="shop-cart"><i class="fas fa-shopping-cart"></i></p></a>
+        <ul class="shopUl" onclick="shopUL()">
+          <li class="shopUl-1"><p>線上課程</p><p>(2)</p></li>
+          <li class="shopUl-2"><p>實體教材</p><p>(1)</p></li>
+          <li><a href="#">前往購物車</a></li>
+        </ul>
+    </div>
+</header>
+<!-- ---------------------header-END---------------------- -->
+
+
+<!-- --------------購物車(assets/css/shopcart.css)-------- -->
+
+    <section class="shopcart">
+      <div class="shopcart-back"></div>
+      <!-- 線上課程 -->
+      <div class="shopcart-main shopcart-main-online">
+        <h1>購物車</h1>
+        <div class="shop-prod">
+           <p>購物車內暫無任何商品</p>
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>美學藝術</h2>
+             <h3>$2,000</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>美學藝術</h2>
+             <h3>$2,000</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+
+           <b>小計:$4,000</b>
+           
+        </div>
+        <div class="accounts">
+           <button class="checkcar">查看購物車</button>
+           <button class="checkout">結帳</button>
+        </div>
+          
+        <i class="fas fa-times shop-close shop-close-online"></i>
+    </div>
+    <!-- 線上課程END -->
+
+    <!-- 實體教材 -->
+      <div class="shopcart-main shopcart-main-textbook">
+        <h1>購物車</h1>
+        <div class="shop-prod">
+           <p>購物車內暫無任何商品</p>
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>多益課本</h2>
+             <h3>$500</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>程式設計課本</h2>
+             <h3>$900</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>網頁設計課本</h2>
+             <h3>$700</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+
+           <b>小計:$2,100</b>
+           
+        </div>
+        <div class="accounts">
+           <button class="checkcar">查看購物車</button>
+           <button class="checkout">結帳</button>
+        </div>
+          
+        <i class="fas fa-times shop-close shop-close-textbook"></i>
+    </div>
+    <!-- 實體教材 -->
+      
+</section>
+<!-- -------------------------購物車END-------------------- -->
+
+
+<!-- ---------麵包屑(assets/css/breadcrumb.css)------- -->
+    <section class="breadcrumbs">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <ol class="breadcrumb">
+                <li><a href="">首頁</a></li>
+                <li><a href="">購物中心</a></li>
+                <li><a href="">課程</a></li>
+                <li><a href="">直播課程</a></li>
+                <li><a href="">美學藝術 直播課程</a></li>
+              </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+<!-- --------------麵包屑END------------------ -->
+
+
+
+<!-- ----------content(assets/css/style.css)------- -->
+	<main>
+    <section class="productList">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8 col-md-4 col-lg-4">
+            <div class="productListPhoto">
+              <img src="" alt="" id="productListBigImg">
+              <div class="productListSmallPhoto">
+                  <img src="assets/images/class.png" alt="" class="productListSmallImg">
+                  <img src="assets/images/a4.jpg" alt="" class="productListSmallImg">
+                  <img src="assets/images/05.jpg" alt=""  class="productListSmallImg">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-8 col-md-4 col-lg-4">
+           <div class="productListText">
+            <form action="" method="">
+             <h1>美學藝術 直播錄影課程</h1>
+             <h2 class="productListMoney"><span>$8,000</span>$6,000</h2>
+             <p>準備好了嗎? 一起透過為期兩周的真人直播線上夏令營 讓學生發展出關於後疫情時代之原創肢體表演藝術，快速學會影片剪輯</p>
+             
+             
+             <div class="productListTextNumber">
+              <input type="number" value="1" min="1">
+            </div>
+            <div class="productListTextTierPrice">
+               <h4>共1件</h4> <p>$6,000</p>
+             </div>
+             <div class="productListTextBtn">
+               <input type="submit" value="加入收藏">
+               <input type="submit" value="加入購物車">
+             </div>
+             <div class="productListBuy">
+              <a href="javascript:;">立即購課</a>
+            </div>
+             <div class="productListTextClass">
+               <h4>商品分類</h4> <p>課程</p>
+             </div>
+             <div class="productListTextNo">
+               <h4>貨號</h4> <p>#200</p>
+             </div>
+             <div class="productListTextTeacher">
+               <h4>授課講師</h4> <p>Adrian</p>
+             </div>
+             </form>
+           </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="productIllustrate">
+              <div class="productIllustrateBtn">
+                <a href="javascript:;" class="productIllustrateBtnA1">課程內容</a>
+                <a href="javascript:;" class="productIllustrateBtnA2">章節目錄</a>
+                <a href="javascript:;" class="productIllustrateBtnA3">課程公告</a>
+              </div>
+              
+              <div class="productIllustrateContent productIllustrateContent1">
+                <h1>課程資訊</h1>
+                <div class="classinfor">
+                  <h2><i class="far fa-clock"></i>課程時長<span>四周/一周8小時</span></h2>
+                  <h2><i class="fas fa-globe"></i>授課語言<span>中文</span></h2>
+                  <h2><i class="far fa-thumbs-up"></i>觀看次數<span>600</span></h2>
+                </div>
+                <h1>這堂課能學到什麼?</h1>
+                <div class="classwhy">
+                  <ul>
+                    <li>即興表演藝術</li>
+                    <li>讓學生發展出關於後疫情時代之原創肢體表演藝術</li>
+                    <li>過北歐神話討論人類發展與表演藝術創作的可能性</li>
+                    <li>對自我存在與肢體之平衡的認識</li>
+                    <li>美學藝術賞析「基礎西洋藝術史」</li>
+                    <li>培養學生對於基礎西洋美術史的了解</li>
+                    <li>培養學生對於當代藝術的認識</li>
+                    <li>短片製作「實用手機拍攝技巧」</li>
+                    <li>剪接影片技巧</li>
+                    <li>微型短片製作</li>
+                  </ul>
+                </div>
+                <h1>這堂課適合的對象</h1>
+                <div class="classfor">
+                  <ul>
+                    <li>零基礎的人</li>
+                    <li>有藝術美感的人</li>
+                    <li>想加強藝術美感的人</li>
+                    <li>將來想從事演藝事業者</li>
+                    <li>對攝影有興趣者</li>
+                    <li>將來想從事攝影工作者</li>
+                    <li>對影片製作有熱忱者</li>
+                  </ul>
+                </div>
+                <h1>課程簡介</h1>
+                <div class="classIntroduction">
+                  <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Saepe vel dignissimos fugit illo quae perferendis explicabo amet aspernatur cumque accusamus sequi nesciunt eligendi architecto quis magni eveniet ipsum voluptatibus, commodi.</p>
+                </div>
+                <h1>課前準備</h1>
+                <div class="classPrepare">
+                  <h2>上課日期<span>10-11月</span></h2>
+                  <h2>設備需求<span>一台有穩定網路的筆電</span></h2>
+                </div>
+                <h1>授課講師</h1>
+                <div class="classTeacher">
+                  <div class="classTeacherLeft col-sm-4">
+                    <h3>Adrian</h3>
+                  <p>Adrian老師有著豐富的美學教學經驗，也曾在澳大利亞悉尼大學擁有電影和數字圖像碩士學位，有著豐富的電影剪輯經驗更拿到許多證書包含TESOL、- Certified by the University of Cambridge, UK 、Certificate of Bartending Service – Certified by Langley Bartending、Academy、Front Office Operations、Guest Services Gold等等，跟著專業Adrian老師一起進入美學藝術的世界吧!</p>
+                  <ul>
+                    <li>台灣青年電影戲劇協會擔任協會理事</li>
+                    <li>KARL國際實驗教育機構擔任藝術總監</li>
+                    <li>KARL亞太國際教育集團有限公司擔任運營創意總監</li>
+                    <li>卡爾藝術教育諮詢有限公司</li>
+                    <li>Tim Hortons - 食品櫃檯服務員</li>
+                    <li>羅布森套房酒店 - 前台代表</li>
+                    <li>溫哥華國際台灣電影節 - 攝影師</li>
+                    <li>Pagosa Folk and Bluegrass音樂節擔任舞台工作人員</li>
+                    <li>Sydney International Street Art Festival擔任教育助理</li>
+                    <li>首屆國際青年大使</li>
+                    <li>CRAWL Society Organization (India) - Art Educator</li>
+                  </ul>
+                  </div>
+                  <div class="classTeacherRight col-sm-4">
+                    <img src="assets/images/05.jpg" alt="">
+                  </div>
+                </div>
+              </div> 
+              <div class="productIllustrateContent productIllustrateContent2">
+                <!-- --- -->
+                <div class="mb-3">
+                  <h4>即興表演藝術</h4>
+                    <div class="summercamp-class-title sct1" onclick="toggleicon(1)">
+                      <span>第一周 「夢與創意表演」</span><i id="summer-down1" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content1">
+                    課程目標:讓學生發展出關於後疫情時代之原創肢體表演藝術<br>
+                    課程內容:<br>
+                    一、疫情時代之作品參考<br>
+                    二、原創肢體表演藝術: 發想與排練<br>
+                    學習成果:在每次課程呈現的過程皆搭配即時錄影, 學生參與此課程結束後, 擁有課堂呈現的錄像藝術
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct2" onclick="toggleicon(2)"><span>第二周 童話．神話．與夢話</span><i id="summer-down2" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content2">
+                    課程目標:透過北歐神話討論人類發展與表演藝術創作的可能性<br>
+                    課程內容:<br>
+                    一、北歐神話<br>
+                    二、透過北歐神話轉化線上展演<br>
+                    學習成果:在每次課程呈現的過程皆搭配即時錄影, 
+                    學生參與此課程結束後, 擁有課堂呈現的錄像藝術
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct3" onclick="toggleicon(3)"><span>第三周 「戲劇肢體伸展」</span><i id="summer-down3" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content3">
+                    課程目標:對自我存在與肢體之平衡的認識<br>
+                    課程內容:<br>
+                    一、非宗教式靜心與戲劇<br>
+                    二、戲劇展演之專業技術基礎認識<br>
+                    學習成果:在每次課程呈現的過程皆搭配即時錄影, 
+                    學生參與此課程結束後, 擁有課堂呈現的錄像藝術
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct4" onclick="toggleicon(4)"><span>第四周 童話．神話．與夢話</span><i id="summer-down4" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content4">
+                    課程目標:實際操作: 劇場工作之專業工作流程<br>
+                    課程內容:<br>
+                    一、原創肢體表演藝術: 彩排與測試<br>
+                    二、線上微型戲劇展演<br>
+                    學習成果:學生參與此課程結束後, 邀請家長觀賞線上劇場藝術
+                    </div>
+                </div>
+                <h4>美學藝術賞析「基礎西洋藝術史」</h4>
+
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct5" onclick="toggleicon(5)"><span>第一周 西洋藝術史簡述1</span><i id="summer-down5" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content5">
+                    課程目標:培養學生對於基礎西洋美術史的了解<br>
+                    課程內容:<br>
+                    一、史前時代藝術<br>
+                    二、1.古埃及藝術2.希臘時代<br>
+                    學習成果:在每次課程進行過程皆安排學生參與討論.哲學批判,練習藝術辯論與思考
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct6" onclick="toggleicon(6)"><span>第二周 西洋藝術史簡述2</span><i id="summer-down6" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content6">
+                    課程目標:培養學生對於基礎西洋美術史的了解<br>
+                    課程內容:<br>
+                    一、中世紀藝術 羅曼式藝術 哥德式藝術<br>
+                    二、1.文藝復興2.印象派<br>
+                    學習成果:在每次課程進行過程皆安排學生參與討論.哲學批判,練習藝術辯論與思考
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct7" onclick="toggleicon(7)"><span>第三周 「近代藝術基礎概論」</span><i id="summer-down7" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content7">
+                    課程目標:培養學生對於當代藝術的認識<br>
+                    課程內容:<br>
+                    一、普普風格<br>
+                    二、反戰藝術<br>
+                    學習成果:在每次課程進行過程皆安排學生參與討論.哲學批判,
+                    練習藝術辯論與思考. 並完成文字報告
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct8" onclick="toggleicon(8)"><span>第四周 「當代藝術基礎概論」</span><i id="summer-down8" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content8">
+                    課程目標:實際操作: 線上藝術策展技術學習<br>
+                    課程內容:<br>
+                    一、後現代藝術<br>
+                    二、線上微型數位繪本報告<br>
+                    學習成果:學生參與此課程結束後, 邀請家長觀賞線上藝術報告
+                    </div>
+                </div>
+
+                <h4>短片製作「實用手機拍攝技巧」</h4>
+
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct9" onclick="toggleicon(9)"><span>第一周 「實用手機拍攝技巧」</span><i id="summer-down9" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content9">
+                    課程目標:學生於兩周內.學習簡易剪接影片技巧<br>
+                    課程內容:<br>
+                    一、電影史簡述<br>
+                    二、手機攝影基本技巧教學<br>
+                    學習成果:在每次課程讓學生頻繁練習剪接與孰悉影片製作流程
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct10" onclick="toggleicon(10)"><span>第二周 「實用手機拍攝技巧」2</span><i id="summer-down10" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content10">
+                    課程目標:延續第一周短片製作進度並完成微型短片製作<br>
+                    課程內容:<br>
+                    一、簡易剪接<br>
+                    二、微型影像作品呈現<br>
+                    學習成果:本次課程延續前一周影片製作進度, 學生參與此課程結束後, 呈現課堂所學之短片作品
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct11" onclick="toggleicon(11)"><span>第三周 「實用手機拍攝技巧」3</span><i id="summer-down11" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content11">
+                    課程目標:敬請期待<br>
+                    課程內容:<br>
+                    一、敬請期待<br>
+                    二、敬請期待<br>
+                    學習成果:敬請期待
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <div class="summercamp-class-title sct12" onclick="toggleicon(12)"><span>第四周 「實用手機拍攝技巧」3</span><i id="summer-down12" class="fas fa-angle-down"></i></div>
+                    <div class="summercamp-class-content summercamp-class-content12">
+                    課程目標:敬請期待<br>
+                    課程內容:<br>
+                    一、敬請期待<br>
+                    二、敬請期待<br>
+                    學習成果:敬請期待
+                    </div>
+                </div>
+                <!-- --- -->
+              </div>
+              <div class="productIllustrateContent productIllustrateContent3">
+                <!-- 一個公告 -->
+                <div class="classpost">
+                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
+                  <span>2021/09/09</span>
+                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
+                </div>
+                <!-- 一個公告END -->
+                <!-- 一個公告 -->
+                <div class="classpost">
+                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
+                  <span>2021/09/09</span>
+                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
+                </div>
+                <!-- 一個公告END -->
+                <!-- 一個公告 -->
+                <div class="classpost">
+                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
+                  <span>2021/09/09</span>
+                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
+                </div>
+                <!-- 一個公告END -->
+                <!-- 一個公告 -->
+                <div class="classpost">
+                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
+                  <span>2021/09/09</span>
+                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
+                </div>
+                <!-- 一個公告END -->
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <div class="productLoveTitle">
+              <h1>最近瀏覽商品</h1>
+            </div>
+          </div>
+          <!-- 一個商品STRAT -->
+          <div class="col-sm-8 col-md-4 col-lg-2">
+              <div class="productLove">
+                <a href="javascript:;">
+                <img src="assets/images/a4.jpg" alt="">
+                <div class="productLoveText">
+                  <p>線上課程</p>
+                  <h1>程式設計課程程式設計</h1>
+                  <h2><span>$2,000</span>1,500</h2>
+                </div>
+                </a>
+              </div>
+          </div>
+          <!-- 一個商品END -->
+          <!-- 一個商品STRAT -->
+          <div class="col-sm-8 col-md-4 col-lg-2">
+              <div class="productLove">
+                <a href="javascript:;">
+                <img src="assets/images/a4.jpg" alt="">
+                <div class="productLoveText">
+                  <p>線上課程</p>
+                  <h1>程式設計課程程式設計</h1>
+                  <h2><span>$2,000</span>1,500</h2>
+                </div>
+                </a>
+              </div>
+          </div>
+          <!-- 一個商品END -->
+          <!-- 一個商品STRAT -->
+          <div class="col-sm-8 col-md-4 col-lg-2">
+              <div class="productLove">
+                <a href="javascript:;">
+                <img src="assets/images/a4.jpg" alt="">
+                <div class="productLoveText">
+                  <p>線上課程</p>
+                  <h1>程式設計課程程式設</h1>
+                  <h2><span>$2,000</span>1,500</h2>
+                </div>
+                </a>
+              </div>
+          </div>
+          <!-- 一個商品END -->
+          <!-- 一個商品STRAT -->
+          <div class="col-sm-8 col-md-4 col-lg-2">
+              <div class="productLove">
+                <a href="javascript:;">
+                <img src="assets/images/a4.jpg" alt="">
+                <div class="productLoveText">
+                  <p>線上課程</p>
+                  <h1>程式設計課程程式設計</h1>
+                  <h2><span>$2,000</span>1,500</h2>
+                </div>
+                </a>
+              </div>
+          </div>
+          <!-- 一個商品END -->
+
+        </div>
+      </div>
+    </section>
+    <section class="slogan">
+         <div class="container">
+           <div class="row">
+             <div class="col-sm-8 col-md-4 col-lg-2">
+                <div class="slogan-text">
+                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
+                </div>
+             </div>
+             <div class="col-sm-8 col-md-4 col-lg-2">
+                <div class="slogan-text">
+                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
+                </div>
+             </div>
+             <div class="col-sm-8 col-md-4 col-lg-2">
+                <div class="slogan-text">
+                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
+                </div>
+             </div>
+             <div class="col-sm-8 col-md-4 col-lg-2">
+                <div class="slogan-text">
+                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
+                </div>
+             </div>
+           </div>
+         </div>
+       </section>
+</main>
+<!-- ---------------------content--END--------------------- -->
+
+
+<!-- -------------Footer(assets/css/footer.css)--------------- -->
+    <footer class="footer">
+    	<span class="footer-title">冰芬文教</span>
+    	<p>Copyright @2021 <a href="#" title="">冰芬</a>. All Rights Reserved.</p>
+    </footer>
+<!-- -------------Footer---END--------------- -->
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/myAccount.js"></script>
+  <script src="assets/js/shopcart.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script type="text/javascript" src="assets/js/productList.js"></script>
+  <script src="assets/js/classList.js"></script>
+  <script src="assets/js/jquery.nice-number.js"></script>
+  <script src="assets/js/number.js"></script> 
+
+</body>
+</html>
