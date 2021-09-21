@@ -2,9 +2,10 @@ body{
     font-family: sans-serif;
 }
 .cartPage{
-	padding-top: 10em;
-	padding-bottom: 50px;
-	min-height: 100vh;
+
+	height: auto;
+	padding:10em 30px 50px 30px ;
+
 }
 .cartPage .cartItem h1{
 	padding: 3px;
@@ -41,8 +42,7 @@ body{
 	border-radius: 5px;
 }
 .cartPage .cartSubtotal{
-	position: fixed;
-	width: 300px;
+	width: 100%;
 	padding:15px;
 	border-radius: 5px;
 	box-shadow: 10px 10px 10px rgba( 1 1 1 / 10%);
@@ -85,7 +85,7 @@ body{
 }
 .cartPage .cartSubtotal input[type="submit"]{
 	width:100%;
-	height: 40px;
+	height: 50px;
 	outline: none;
 	border:none;
 	background-color: #1484c4;
@@ -104,11 +104,11 @@ body{
 	font-weight: 600;
 }
 .cartPage .cartContent .cartContentTitle .td-2{
-	width: 20%;
+	width: 15%;
 	font-weight: 600;
 }
 .cartPage .cartContent .cartContentTitle .td-3{
-	width: 20%;
+	width: 25%;
 	font-weight: 600;
 }
 .cartPage .cartContent .cartContentTitle .td-4{
@@ -121,10 +121,10 @@ body{
 	align-items: center;
 }
 .cartPage .cartContent .cartContentList .td-2{
-	width: 20%;
+	width: 15%;
 }
 .cartPage .cartContent .cartContentList .td-3{
-	width: 20%;
+	width: 25%;
 }
 .cartPage .cartContent .cartContentList .td-4{
 	width: 20%;
@@ -178,12 +178,37 @@ body{
 .cartPage .cartContent .cartContentList p{
 	padding: 10px;
 }
-
+.cartPage .cartContent .cartContentList .td-3 input[type="number"]{
+	border: none;
+	outline: none;
+	padding: 5px;
+	margin: 0 5px !important;
+	box-shadow: 0 2px 5px;
+	min-width: 40px;
+	height: 20px;
+}
+.cartPage .cartContent .cartContentList .td-3 button{
+	background:#1484c4; 
+	color: #fff;
+	border: none;
+	outline: none;
+	padding: 0 5px;
+	border-radius: 3px;
+	font-weight: 700;
+	width: 25px;
+	cursor: pointer;
+}
+.cartPage .cartContent .cartContentList .td-3 button:hover,
+.cartPage .cartContent .cartContentList .td-3 button:focus{
+	background: #1456C4;
+}
 .cartIetmRight{
 	position: relative;
 }
 .productIllustrate{
-	margin: 30px 0;
+	margin: 30px 5px;
+	display: flex;
+	justify-content: center;
 }
 .productIllustrate .productIllustrateBox{
 	width:100%;
@@ -272,4 +297,156 @@ body{
 .convertModel i:hover{
 	color:#000;
 	transition: .3s;
+}
+.myCollect{
+	padding: 0 10px;
+}
+.myCollect h1{
+	color:#333;
+	font-weight: 500;
+	margin: 50px 0;
+}
+.myCollect .collectNull{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: 400px;
+}
+.myCollect .collectNull img{
+	width:350px;
+	height: auto;
+	margin-bottom: 30px;
+}
+.myCollect .collectNull p{
+	color:#999;
+	font-size: 18px;
+}
+.myCollect .collectContent{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.myCollect .collectContent .collectItem{
+	width: 250px;
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(1 1 1 / 15%);
+	overflow: hidden;
+	height: 420px;
+	margin: 15px;
+}
+.myCollect .collectContent .collectItem img{
+	width:100%;
+}
+.myCollect .collectContent .collectItem .collectText{
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.myCollect .collectContent .collectItem .collectText p{
+	font-size: 14px;
+	color: #aaa;
+	margin: 5px 0;
+}
+.myCollect .collectContent .collectItem .collectText h1{
+	font-size: 18px;
+	font-weight: 500;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+.myCollect .collectContent .collectItem a{
+	color: #333;
+	text-decoration: none;
+}
+.myCollect .collectContent .collectItem h2{
+	font-size: 18px;
+	margin: 5px 0;
+}
+.myCollect .collectContent .collectItem span{
+	text-decoration: line-through;
+	color: #aaa;
+	margin-right: 5px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.myCollect .collectContent .collectItem .collectBtn{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.myCollect .collectContent .collectItem .collectBtn input[type="submit"]:nth-child(1){
+	width: 120px;
+	height: 40px;
+	background: #1484c4;
+	color: #fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin: 0 5px;
+	border-radius: 5px;
+}
+.myCollect .collectContent .collectItem .collectBtn input[type="submit"]:nth-child(2){
+	width: 80px;
+	height: 40px;
+	background: #999;
+	color: #fff;
+	outline: none;
+	border: none;
+	cursor: pointer;
+	margin: 0 5px;
+	border-radius: 5px;
+}
+
+
+.slogan{
+	min-height: 100px;
+	margin: 30px 0;
+	height: auto;
+  }
+  .slogan .slogan-text{
+	text-align: center;
+	font-size: 18px;
+	height: 40px;
+  }
+  .slogan .slogan-text i{
+	margin: 0 5px;
+	color:#E6157D ;
+  }
+@media screen and (max-width:767px){
+	.cartPage .cartContent .cartContentTitle{
+		display: none;
+	}
+	.cartPage .cartContent .cartContentList li{
+		display: flex;
+		height: 150px;
+		align-items: center;
+		padding: 10px;
+		color:#333;
+		border-bottom: 1px #ccc solid;
+		flex-wrap: wrap;
+	}
+	.cartPage .cartContent .cartContentList .td-1{
+		width:100%;
+		display: flex;
+		align-items: center;
+	}
+	.cartPage .cartContent .cartContentList .td-2{
+		width: 20%;
+	}
+	.cartPage .cartContent .cartContentList .td-3{
+		width: 40%;
+	}
+	.cartPage .cartContent .cartContentList .td-4{
+		width: 40%;
+		color:#f00;
+		font-size: 24px;
+		font-weight: 600;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 10px;
+	}
 }

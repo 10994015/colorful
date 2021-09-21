@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/css/footer.css">
   <link rel="stylesheet" href="assets/css/scrollToTop.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
@@ -158,7 +159,7 @@
     <section class="cartPage"">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-8 col-md-8 col-lg-6">
             <div class="cartItem">
               <h1>購物車</h1>
               <div class="cartNone">
@@ -180,7 +181,7 @@
                   <li>
                     <div class="td-1"><img src="assets/images/pic01.jpg" alt=""><p>美學藝術直播錄影課程</p></div>
                     <div class="td-2">$2,000</div>
-                    <div class="td-3">數量</div>
+                    <div class="td-3"><input type="number" value="1" min="1"></div>
                     <div class="td-4">$2,000 <i class="fas fa-trash cardel"></i></div>
                   </li>
                   <!-- 一個商品END -->
@@ -188,7 +189,7 @@
                   <li>
                       <div class="td-1"><img src="assets/images/pic01.jpg" alt=""><p>美學藝術直播錄影課程</p></div>
                       <div class="td-2">$2,000</div>
-                      <div class="td-3">數量</div>
+                      <div class="td-3"><input type="number" value="1" min="1"></div>
                       <div class="td-4">$2,000 <i class="fas fa-trash cardel"></i></div>
                     </li>
                     <!-- 一個商品END -->
@@ -196,26 +197,28 @@
                   <li>
                       <div class="td-1"><img src="assets/images/pic01.jpg" alt=""><p>美學藝術直播錄影課程</p></div>
                       <div class="td-2">$2,000</div>
-                      <div class="td-3">數量</div>
+                      <div class="td-3"><input type="number" value="1" min="1"></div>
                       <div class="td-4">$2,000 <i class="fas fa-trash cardel"></i></div>
                     </li>
                     <!-- 一個商品END -->
+                    
                 </ul>
               </div>
             </div>
           </div>
-          <div class="col-sm-2">
+          <div class="col-sm-8 col-md-8 col-lg-2">
             <div class="cartItem cartIetmRight">
               
               <div class="cartSubtotal">
                   <h1>小計</h1>
               <h2>折扣碼</h2>
               <button class="enterCode">輸入折扣碼 <i class="fas fa-caret-right"></i></button>
+              <h4>您的折扣碼:RED566</h4>
               <div class="line"></div>
-              <h4>商品總金額:$2,000</h4>
+              <h4>商品總金額:$6,000</h4>
               <h4>折扣碼折抵:$50</h4>
               <h4>活動折抵:$300</h4>
-              <h3>總金額:<span>$1,650</span></h3>
+              <h3>總金額:<span>$5,650</span></h3>
               <input type="submit" value="前往結帳">
               </div> 
             </div>
@@ -226,7 +229,7 @@
     <section class="productIllustrate">
       <div class="container">
         <div class="row">
-          <div class="col-sm-6">
+          <div class="col-sm-8">
             <div class="productIllustrateBox">
               <h1>特殊商品訂購說明</h1>
               <p>
@@ -244,10 +247,109 @@
       </div>
     </section>
 
+    <section class="myCollect">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-8">
+            <h1>我的收藏</h1>
+            <div class="collectNull">
+              <img src="assets/images/collectNull.svg" alt="">
+              <p>收藏清單中目前沒有商品</p>
+            </div>
+            <div class="collectContent">
+              <!-- 一個收藏商品 -->
+              <div class="collectItem">
+                  <img src="assets/images/a4.jpg" alt="">
+                  <div class="collectText">
+                    <p>線上課程</p>
+                    <h1>程式設計課程程式設計</h1>
+                    <h2><span>$2,000</span>1,500</h2>
+                  </div>
+                  <div class="collectBtn">
+                    <input type="submit" value="加入購物車">
+                    <input type="submit" value="刪除">
+                  </div>
+                </div>
+                <!-- 一個收藏商品END -->
+                <!-- 一個收藏商品 -->
+              <div class="collectItem">
+                  <img src="assets/images/a4.jpg" alt="">
+                  <div class="collectText">
+                    <p>線上課程</p>
+                    <h1>程式設計課程程式設計</h1>
+                    <h2><span>$2,000</span>1,500</h2>
+                  </div>
+                  <div class="collectBtn">
+                    <input type="submit" value="加入購物車">
+                    <input type="submit" value="刪除">
+                  </div>
+                </div>
+                <!-- 一個收藏商品END -->
+                <!-- 一個收藏商品 -->
+              <div class="collectItem">
+                  <img src="assets/images/a4.jpg" alt="">
+                  <div class="collectText">
+                    <p>線上課程</p>
+                    <h1>程式設計課程程式設計</h1>
+                    <h2><span>$2,000</span>1,500</h2>
+                  </div>
+                  <div class="collectBtn">
+                    <input type="submit" value="加入購物車">
+                    <input type="submit" value="刪除">
+                  </div>
+                </div>
+                <!-- 一個收藏商品END -->
+                <!-- 一個收藏商品 -->
+              <div class="collectItem">
+                  <img src="assets/images/a4.jpg" alt="">
+                  <div class="collectText">
+                    <p>線上課程</p>
+                    <h1>程式設計課程程式設計</h1>
+                    <h2><span>$2,000</span>1,500</h2>
+                  </div>
+                  <div class="collectBtn">
+                    <input type="submit" value="加入購物車">
+                    <input type="submit" value="刪除">
+                  </div>
+                </div>
+                <!-- 一個收藏商品END -->
+                
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="slogan">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-4 col-lg-2">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-8 col-md-4 col-lg-2">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-8 col-md-4 col-lg-2">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-8 col-md-4 col-lg-2">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+          </div>
+        </div>
+      </section>
     <section class="convert">
       <div class="convertModel">
        <h1>請輸入折扣碼</h1>
-       <input type="text">
+       <input type="text" placeholder="輸入折扣碼">
        <button>套用</button>
        <i class="fas fa-times closeConvert"></i>
       </div>      
@@ -269,7 +371,8 @@
   <script src="assets/js/shopcart.js"></script>
   <script src="assets/js/search.js"></script>
   <script type="text/javascript" src="assets/js/login.js"></script>
-
+  <script src="assets/js/jquery.nice-number.js"></script>
+  <script src="assets/js/number.js"></script> 
   <script>
     var cardel = document.getElementsByClassName('cardel');
     var closeConvert = document.getElementsByClassName('closeConvert')[0];
@@ -291,10 +394,9 @@
       },100)
     })
     closeConvert.addEventListener("click",()=>{
+      convert.style.display="none";
       convert.style.opacity=0;
-      setTimeout(function(){
-        convert.style.display="none";
-      },100)
+      
     });
   </script>
 </body>
