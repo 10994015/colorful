@@ -204,3 +204,72 @@ body{
 	line-height: 1.8;
 	color:#333;
 }
+
+.convert{
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 999999;
+	opacity: 0;
+	transition: .5s;
+}
+.convertModel{
+	position: absolute;
+	top: calc(50% - 125px);
+	left:calc(50% - 200px);
+	width:400px;
+	height: 250px;
+	background-color: #fff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	
+	padding: 15px 0;
+}
+.convertModel h1{
+	width: 100%;
+	height: auto;
+	text-align: center;
+	line-height: 60px;
+	color:#555;
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.convertModel input[type="text"]{
+	width: 200px;
+	height: 35px;
+	outline: none;
+	border:none;
+	border:1px #999 solid;
+	border-radius: 5px;
+	padding: 0 10px;
+	margin-bottom: 60px;
+}
+.convertModel input[type="text"]:focus{
+	border:2px #000 solid;
+}
+.convertModel button{
+	width: 150px;
+	height: 35px;
+	outline: none;
+	border:none;
+	background-color: #1484c4;
+	color:#fff;
+	cursor: pointer;
+
+}
+.convertModel i{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+	color:#666;
+}
+.convertModel i:hover{
+	color:#000;
+	transition: .3s;
+}

@@ -302,7 +302,7 @@ header.sticky a:hover:before{
   }
   .menu-btn{
     position: absolute;
-    background: url('../../../img/menu.png')no-repeat;
+    background: url('../images/menu.png')no-repeat;
     background-size: 30px;
     background-position: center;
     width: 40px;
@@ -318,7 +318,7 @@ header.sticky a:hover:before{
   }
   .menu-btn.active{
     z-index: 999;
-    background:url('../../../img/close.png')no-repeat;
+    background:url('../images/close.png')no-repeat;
     background-size: 25px;
     background-position: center;
     transition: .3s ease;

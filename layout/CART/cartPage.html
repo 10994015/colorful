@@ -209,12 +209,13 @@
               
               <div class="cartSubtotal">
                   <h1>小計</h1>
-              <h2>使用折抵券</h2>
-              <button>選擇折抵券 <i class="fas fa-caret-right"></i></button>
+              <h2>折扣碼</h2>
+              <button class="enterCode">輸入折扣碼 <i class="fas fa-caret-right"></i></button>
               <div class="line"></div>
               <h4>商品總金額:$2,000</h4>
-              <h4>活動共折抵:$300</h4>
-              <h3>總金額:<span>$1,700</span></h3>
+              <h4>折扣碼折抵:$50</h4>
+              <h4>活動折抵:$300</h4>
+              <h3>總金額:<span>$1,650</span></h3>
               <input type="submit" value="前往結帳">
               </div> 
             </div>
@@ -242,6 +243,15 @@
         </div>
       </div>
     </section>
+
+    <section class="convert">
+      <div class="convertModel">
+       <h1>請輸入折扣碼</h1>
+       <input type="text">
+       <button>套用</button>
+       <i class="fas fa-times closeConvert"></i>
+      </div>      
+    </section>
 </main>
 <!-- ---------------------content--END--------------------- -->
 
@@ -262,7 +272,9 @@
 
   <script>
     var cardel = document.getElementsByClassName('cardel');
-
+    var closeConvert = document.getElementsByClassName('closeConvert')[0];
+    var enterCode = document.getElementsByClassName('enterCode')[0];
+    var convert = document.getElementsByClassName('convert')[0];
     for(var i=0;i<cardel.length;i++){
       cardel[i].addEventListener("click",delCart);
     }
@@ -270,7 +282,20 @@
     function delCart(){
       confirm("確定要刪除嗎???")
     }
+    convert.style.display="none";
 
+    enterCode.addEventListener("click",()=>{
+      convert.style.display="block";
+      setTimeout(function(){
+        convert.style.opacity=1;
+      },100)
+    })
+    closeConvert.addEventListener("click",()=>{
+      convert.style.opacity=0;
+      setTimeout(function(){
+        convert.style.display="none";
+      },100)
+    });
   </script>
 </body>
 </html>
