@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>冰芬文教</title>
+  <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link rel="stylesheet" href="assets/css/shared.css">
+  <link rel="stylesheet" href="assets/css/header.css">
+  <link rel="stylesheet" href="assets/css/shopcart.css">
+  <link rel="stylesheet" href="assets/css/grid.css">
+  <link rel="stylesheet" href="assets/css/footer.css">
+  <link rel="stylesheet" href="assets/css/scrollToTop.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+</head>
+<body>
+<!-- -------一個區塊scrollToTop(assets/css/scrollToTop.css)------------ -->
+<div class="scrollToTop-btn">
+      <i class="fas fa-angle-up"></i>
+    </div>
+<!-- ---------------scrollToTop--END--------------------- -->
+
+
+<!-- ------------一個header(assets/css/header.css)---------- -->
+    <header>
+      <div class="logo-search">
+          <a href="../index/index.html" class="brand" title="冰芬文教"><img src="assets/images/logo.png" title="冰芬文教" alt="冰芬文教" width="180px" height="50px"></a>
+          <div class="search">
+            <a href="#"><i class="fas fa-search"></i></a>
+            <div class="search-input">
+              <input type="text" placeholder="搜尋...">
+              <button><i class="fas fa-search"></i></button>
+            </div>
+          </div>
+      </div>
+    
+    <div class="menu-btn"></div>
+
+    	<div class="navigation">
+    	<a href="../index/index.html" title="">首頁</a>
+      <a href="../productList/productList.html" title="">購物中心</a>
+      <a href="javascript:;" title="">客服中心</a>
+      <a href="../login/login.html">登入/註冊</a>
+      <div href="javascript:;" title="" class="myAccount">
+        我的帳號<i class="fas fa-user"></i>
+        <ul class="myAccountUl">
+          <li><img src="assets/images/avatar.svg" alt="">李承諺</li>
+          <a href="../myproduct/myproduct.html">我的課程</a>
+          <a href="../collect/collect.html">收藏清單</a>
+          <a href="../orderRecord/orderRecord.html">訂單紀錄</a>
+          <a href="../member/member.html">帳戶設定</a>
+          <a href="javascript:;">會員登出</a>
+        </ul>
+      </div>
+    	</div>
+      <div class="navigation-shop">
+        <a href="#" class="shop-cart"><i class="fas fa-shopping-cart"></i></p></a>
+        <ul class="shopUl" onclick="shopUL()">
+          <li class="shopUl-1"><p>線上課程</p><p>(2)</p></li>
+          <li class="shopUl-2"><p>實體教材</p><p>(1)</p></li>
+          <li><a href="#">前往購物車</a></li>
+        </ul>
+    </div>
+
+
+    </header>
+<!-- ---------------------header-END---------------------- -->
+
+
+<!-- --------------購物車(assets/css/shopcart.css)-------- -->
+    <section class="shopcart">
+      <div class="shopcart-back"></div>
+      <!-- 線上課程 -->
+      <div class="shopcart-main shopcart-main-online">
+        <h1>購物車</h1>
+        <div class="shop-prod">
+           <p>購物車內暫無任何商品</p>
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>美學藝術</h2>
+             <h3>$2,000</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>美學藝術</h2>
+             <h3>$2,000</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+
+           <b>小計:$4,000</b>
+           
+        </div>
+        <div class="accounts">
+           <button class="checkcar">查看購物車</button>
+           <button class="checkout">結帳</button>
+        </div>
+          
+        <i class="fas fa-times shop-close shop-close-online"></i>
+    </div>
+    <!-- 線上課程END -->
+
+    <!-- 實體教材 -->
+      <div class="shopcart-main shopcart-main-textbook">
+        <h1>購物車</h1>
+        <div class="shop-prod">
+           <p>購物車內暫無任何商品</p>
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>多益課本</h2>
+             <h3>$500</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>程式設計課本</h2>
+             <h3>$900</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+           <!-- 一個商品 -->
+           <span>
+             <a href="#"><img src="assets/images/pic01.jpg" alt=""></a>
+             <h2>網頁設計課本</h2>
+             <h3>$700</h3>
+             <i class="fas fa-trash"></i>
+           </span>
+           <!-- ------- -->
+
+           <b>小計:$2,100</b>
+           
+        </div>
+        <div class="accounts">
+           <button class="checkcar">查看購物車</button>
+           <button class="checkout">結帳</button>
+        </div>
+          
+        <i class="fas fa-times shop-close shop-close-textbook"></i>
+    </div>
+    <!-- 實體教材 -->
+      
+    </section>
+<!-- -------------------------購物車END-------------------- -->
+
+
+<!-- ----------content(assets/css/style.css)------- -->
+<main>
+  <form action="">
+    <section class="checkoutPage">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4">
+            <div class="checkoutPayMethod">
+                <h1>付款方式</h1>
+                <select name="" id="paymentMethod">
+                    <option value="creditCard">信用卡</option>
+                    <option value="networkATM">網路ATM</option>
+                    <option value="cashOnDelivery">貨到付款</option>
+                  </select>
+                  <p>付款將透過藍新金流平台完成。請放心，本網站將不會儲存您的任何付款資料。</p>
+                  <div class="creditCard">
+                    <h2>信用卡號</h2>
+                    <div class="inputCard">
+                        <input type="text" class="autotab" oninput="value=value.replace(/[^\d]/g,'')" maxlength="4">
+                        <input type="text" class="autotab" oninput="value=value.replace(/[^\d]/g,'')" maxlength="4">
+                        <input type="text" class="autotab" oninput="value=value.replace(/[^\d]/g,'')" maxlength="4">
+                        <input type="text" class="autotab" oninput="value=value.replace(/[^\d]/g,'')" maxlength="4">
+                    </div>
+                    <span class="warningText">
+                        <i class="fas fa-exclamation-circle"></i>
+                        請輸入完整信用卡資訊
+                    </span>
+                    <h2>有效期限</h2>
+                    <div class="inputCard">
+                        <input type="text" class="autotab2" oninput="value=value.replace(/[^\d]/g,'')" placeholder="MM" maxlength="2"><b>/</b>
+                        <input type="text" class="autotab2" oninput="value=value.replace(/[^\d]/g,'')" placeholder="YY" maxlength="2">
+                        <input type="text" class="autotab2" oninput="value=value.replace(/[^\d]/g,'')" placeholder="安全碼" maxlength="3">
+                    </div>
+                    <span class="warningText">
+                        <i class="fas fa-exclamation-circle"></i>
+                        請輸入完整信用卡資訊
+                    </span>
+                  </div>
+                  <div class="networkATM">
+                    <p>提供一組虛擬帳號供付款使用，跨行轉帳需額外負擔手續費</p>
+                    <h2>僅限使用台灣地區的銀行戶頭</h2>
+                  </div>
+                  <div class="cashOnDelivery">
+                    <div class="" id="twzipcode">
+                        <div data-role="county" data-style="Style Name" data-value="110"></div>
+                        <span class="warningText">
+                            <i class="fas fa-exclamation-circle"></i>
+                            請選擇縣市
+                          </span>
+                        <div data-role="district" data-style="Style Name" data-value="臺北市"></div>
+                        <span class="warningText">
+                            <i class="fas fa-exclamation-circle"></i>
+                            請選擇鄉鎮
+                          </p>
+                        <div data-role="zipcode" data-style="Style Name" data-value="信義區"></div>
+                        <span class="warningText">
+                            <i class="fas fa-exclamation-circle"></i>
+                            請輸入郵遞區號
+                          </span>
+                      </div>
+                      <input type="text" placeholder="收件地址">
+                      <span class="warningText">
+                          <i class="fas fa-exclamation-circle"></i>
+                           請輸入收件地址
+                        </span>
+                      <p>請務必檢查收件地址，電話，收件人名是否與本人相符，如填錯收件資料買家需自行承擔運送損失。</p>
+                    </div>
+                   
+                      
+                      
+            </div>
+          </div>
+          <div class="col-sm-4">
+            <div class="buyerInfo">
+              <h1>購買人資訊</h1>
+              <h2>姓名</h2>
+              <input type="text" placeholder="請輸入購買人姓名">
+              <p class="warningText">
+                <i class="fas fa-exclamation-circle"></i>
+                姓名欄位只能輸入中文和英文。
+              </p>
+              <h2>手機號碼</h2>
+              <input type="text" placeholder="請輸入10碼的手機號碼">
+              <p class="warningText">
+                <i class="fas fa-exclamation-circle"></i>
+                請輸入10碼的手機號碼以接收簡訊提醒。
+              </p>
+              <h2>電子郵件</h2>
+              <input type="email" placeholder="請輸入您的電子郵件">
+              <p class="warningText">
+                <i class="fas fa-exclamation-circle"></i>
+                無法辨識此電子郵件。
+              </p>
+
+              <span>請確認資訊無誤以避免發票無法開立，此資料僅供開立發票使用。</span>
+            </div>
+          </div>
+           <div class="col-sm-8">
+             <div class="invoiceInfo">
+               <h1>發票資料</h1>
+               <select name="" id="invoiceInfoSelect">
+                  <option value="" disabled>-請選擇發票資料-</option>
+                  <option value="personalInvoice">個人電子發票</option>
+                  <option value="compileInvoices">統編發票</option>
+                  <option value="donationInvoice">捐贈發票</option>
+                </select>
+                <div class="personalInvoice">
+                  <div><label for="pi1"><input type="radio" id="pi1" name="pi" checked>無載具</label></div>
+                  <div>
+                      <label for="pi2"><input type="radio" id="pi2" name="pi">手機條碼載具</label>
+                      <input type="text" id="pi2Text" placeholder="請輸入手機條碼載具">
+                  </div>
+                  <div>
+                      <label for="pi3"><input type="radio" id="pi3" name="pi">自然人憑證載具</label>
+                      <input type="text" id="pi3Text" placeholder="請輸入自然人憑證載具">
+                  </div>
+                </div>
+
+                <div class="compileInvoices">
+                  <h2>公司抬頭</h2>
+                  <input type="text">
+                  <h2>公司統編</h2>
+                  <input type="text">
+                </div>
+                <div class="donationInvoice">
+                  <label for=""><input type="radio" checked>慈善機構</label>
+                  <h2>其他機構</h2>
+                  <input type="text" placeholder="請輸入捐贈機構單位代號">
+                </div>
+
+             </div>
+           </div>
+
+           <div class="col-sm-8">
+             <h1>確認結帳</h1>
+             <div class="confirmCheckout">
+                 <label for="confirmCheckoutInput">
+                   <input type="checkbox" id="confirmCheckoutInput">
+                   我已詳閱並同意貴網站之<a href="javascript:;" id="E-Terms">電子商務約定條款</a>
+                 </label>
+                 <input type="submit" value="確認結帳">
+             </div>
+           </div>
+          
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <div class="termsModel">
+      <div class="termsModelBox">
+        <h1>電子商務約定條款 <i class="fa fa-times closeTerms"></i></h1>
+        <p>Mitch覓去電子商務約定條款 歡迎您在Mitch覓去進行消費；請您先詳細閱讀以下約定條款： 本約定條款的目的，是為了保護「覓去股份有限公司」以下稱Mitch覓去以及您的利益，如果您點選「我同意」或類似語意的選項、或在Mitch覓去進行訂購、付款、消費或委託代購等相關行為，就表示您事先已經知悉、並同意本約定條款的所有約定。 除本約定條款外，商品銷售網頁及訂購流程中相關網頁上所呈現之相關資訊，包括相關交易條件、限制及說明等，亦為契約之一部分。 原則上，您在Mitch覓去電子商務所進行的消費，是由Mitch覓去提供訂購服務，但是，您在Mitch覓去電子商務所瀏覽的訊息、或所進行的消費，也可能是由第三人所提供的訂購服務或代購服務，在此等情況下，您是向各該第三人進行訂購、或委託各該第三人進行代購服務，並由各該第三人依照其所制定的交易條件負責履行，Mitch覓去僅提供行銷服務、連結、金流代收或電子商務平台資訊處理服務。 您一旦在Mitch覓去依照網頁所定方式、條件及流程完成訂購程序，就表示您提出要約、願意依照本約定條款及相關網頁上所載明的約定內容、交易條件或限制，訂購該商品或服務。您所留存的資料如地址、電話如有變更，應即時通知Mitch覓去協助進行相關處理，而且您不得以資料不符為理由，否認訂購行為或拒絕付款。 在您完成線上訂購程序以後，本系統會自動經由電子郵件或其他方式寄給您一封通知，但是該項通知只是通知您本系統已經收到您的訂購訊息，不代表交易已經完成或契約已經成立，Mitch覓去保留是否接受您的訂單的權利。如果Mitch覓去確認交易條件無誤、您所訂購之商品仍有存貨或所訂購之服務仍可提供、且無其他Mitch覓去無法接受訂單之情形，Mitch覓去會直接通知配合廠商出貨，不再另行通知您，但是您可以在Mitch覓去網站上查詢出貨狀況。若交易條件有誤、商品無存貨、服務無法提供、或有Mitch覓去無法接受訂單之情形，Mitch覓去得拒絕接受訂購。 若您選擇以信用卡支付價金，您在線上輸入信用卡相關資訊，目的是為了向發卡機構確認信用卡之有效性及取得交易授權，不表示您已經付款、也不代表交易已經完成或契約已經成立，Mitch覓去保留是否接受您的訂單的權利；在Mitch覓去接受您的訂購以前，您無需付款，Mitch覓去不會請領信用卡交易款項，該筆交易金額也不會出現在您的信用卡帳單中。若您選擇以信用卡支付價金、且以分期方式支付，則該等分期付款服務係由您的信用卡發卡機構提供，分期付款之債權債務關係是存在於您與信用卡發卡機構之間，除相關網頁上有特別標示者外，您所需支付之利息及其計算方式、是否另有信用保險或保證人之設定或涉入等，均依照您與信用卡發卡機構間之相關約定內容定之，請注意查閱您與信用卡發卡機構間之相關約定。 您瞭解並同意，雖然Mitch覓去會盡力維護相關資料的正確性，但Mitch覓去不以任何明示或默示的方式保證所有出現在網頁上、或相關訊息上的資料均為完整、正確、即時的資訊。關於相關商品或服務之訂購數量上限，依各該商品或服務銷售網頁及訂購流程中相關網頁之記載，超過可訂購數量者，Mitch覓去僅依該數量上限出貨。如果相關商品或服務的規格、圖片或說明有誤，仍以原廠、代理商、進口商、經銷商或服務提供者的資料為準。如果網頁上、或相關訊息所標示的價格有誤： 若標示價格比正確價格高，Mitch覓去只會向您收取較低的正確價格； 若標示價格比正確價格低，保留拒絕接受訂單的權利。 如果相關商品或服務的規格、圖片、說明、價格、或相關交易條件有誤，Mitch覓去得在您完成訂購程序後二日內，拒絕接受您的訂單。 所有標示為「建議售價」、「零售價」或類似語意的價格，都只是原廠、代理商、進口商、經銷商或服務提供者所建議的售價、一般性的標價、或一般性的評估價格，不代表任何特定區域、商家、或特定時間的實際成交價格。您所訂購的所有商品或服務，關於其品質及售後服務等，都是由各該商品或服務的原廠、代理商、進口商、經銷商或服務提供者，依照其所制定的條件，負責對您提供品質承諾及售後服務等，但Mitch覓去承諾協助您解決關於因為線上消費所產生的疑問或爭議。</p>
+      </div>
+    </div>
+  </form>
+</main>
+<!-- ---------------------content--END--------------------- -->
+
+
+<!-- -------------Footer(assets/css/footer.css)--------------- -->
+    <footer class="footer">
+    	<span class="footer-title">冰芬文教</span>
+    	<p>Copyright @2021 <a href="#" title="">冰芬</a>. All Rights Reserved.</p>
+    </footer>
+  <!-- ---------------------Footer--END----------------- -->
+
+	<script type="text/javascript" src="assets/js/script.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="assets/js/myAccount.js"></script>
+  <script src="assets/js/shopcart.js"></script>
+  <script src="assets/js/search.js"></script>
+  <script type="text/javascript" src="assets/js/login.js"></script>
+  <script src="assets/js/jquery.nice-number.js"></script>
+  <script src="assets/js/number.js"></script> 
+  <script src="assets/js/autotab.js"></script> 
+  <script src="assets/js/jquery.twzipcode.min.js"></script>
+  <script src="assets/js/twzip.js"></script>
+  <script src="assets/js/paymentMethod.js"></script>
+  <script src="assets/js/invoice.js"></script>
+  <script src="assets/js/confirmCheckout.js"></script>\
+</body>
+</html>

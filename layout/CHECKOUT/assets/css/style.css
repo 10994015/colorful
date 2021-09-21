@@ -1,0 +1,260 @@
+body{
+    font-family: sans-serif;
+}
+.warningText{
+	color:#f00;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+.checkoutPage{
+	height: auto;
+	padding:10em 30px 50px 30px ;
+	
+
+}
+.checkoutPage h1{
+	width: 100%;
+	color:#333;
+	font-weight: 500;
+	border-bottom: 1px #ccc solid;
+}
+.checkoutPage .checkoutPayMethod{
+	width:100%;
+	
+}
+.checkoutPage .checkoutPayMethod select,
+.checkoutPage .invoiceInfo select{
+	width:90%;
+	height: 40px;
+	margin: 30px 0;
+	border:1px #999 solid;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 10px;
+
+}
+.checkoutPage .checkoutPayMethod p{
+	color:#999;
+	width: 90%;
+}
+.checkoutPage .checkoutPayMethod .creditCard{
+	display: none;
+}
+.checkoutPage .checkoutPayMethod .networkATM{
+	display: none;
+}
+.checkoutPage .checkoutPayMethod .cashOnDelivery{
+	display: none;
+}
+.checkoutPage  h2{
+	color:#555;
+	font-weight: 500;
+	font-size:16px;
+	margin: 10px 0;
+}
+.checkoutPage .checkoutPayMethod .creditCard .inputCard {
+	display: flex;
+	align-items: center;
+}
+.checkoutPage .checkoutPayMethod .creditCard .inputCard b{
+	margin-right: 10px;
+	color:#999;
+}
+.checkoutPage .checkoutPayMethod .creditCard .inputCard input[type="text"]{
+	width: 70px;
+	height: 40px;
+	font-size: .875rem;
+	padding: 5px;
+	border:1px #aaa solid;
+	border-radius: 5px;
+	margin-right: 10px;
+}
+.checkoutPage .buyerInfo{
+	display: flex;
+	flex-direction: column;
+}
+.checkoutPage .buyerInfo input[type="text"],
+.checkoutPage .buyerInfo input[type="email"]{
+	width:90%;
+	height: 40px;
+	border:1px #999 solid;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 10px;
+}
+
+.checkoutPage .buyerInfo span{
+	color:#666;
+}
+.invoiceInfo{
+	margin: 30px 0;
+}
+.checkoutPage .checkoutPayMethod .cashOnDelivery{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.checkoutPage .checkoutPayMethod .cashOnDelivery  select{
+	width:90%;
+	height: 40px;
+	margin: 0;
+	margin-top: 8px;
+	border:1px #999 solid;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 10px;
+}
+.checkoutPage .checkoutPayMethod .cashOnDelivery  select:nth-child(1){
+	margin-right: 10px;
+}
+.cashOnDeliverySelect{
+	margin: 0;
+}
+.checkoutPage .checkoutPayMethod .cashOnDelivery input[type="text"]{
+	width:90%;
+	height: 40px;
+	border:1px #999 solid;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 10px;
+	margin: 0;
+	margin-top: 8px;
+}
+
+.invoiceInfo .personalInvoice{
+	display: flex;
+	flex-direction: column;
+	display: none;
+}
+.invoiceInfo .personalInvoice>div{
+	margin: 10px 0;
+	display: flex;
+	align-items: center;
+}
+.invoiceInfo .personalInvoice label{
+	cursor: pointer;
+	font-size: 16px;
+	color:#666;
+}
+.invoiceInfo .personalInvoice label input[type="radio"]{
+	margin-right: 5px;
+}
+.invoiceInfo .personalInvoice  input[type="text"]{
+	border:none;
+	outline: none;
+	border:1px #aaa solid;
+	width:180px;
+	height: 30px;
+	padding: 0 3px;
+	display: none;
+	margin-left: 5px;
+}
+.invoiceInfo .personalInvoice  input[type="text"]:focus{
+	border:1px #333 solid;
+	transition: .3s;
+}
+
+.invoiceInfo .compileInvoices{
+	display: none;
+}
+.invoiceInfo .compileInvoices input{
+	width:90%;
+	height: 40px;
+	border:1px #999 solid;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 10px;
+}
+.invoiceInfo .donationInvoice{
+	display: none;
+}
+.invoiceInfo .donationInvoice label{
+	cursor: pointer;
+	font-size: 16px;
+	color:#666;
+	margin: 10px 0;
+}
+.invoiceInfo .donationInvoice label input[type="radio"]{
+	margin-right: 5px;
+}
+.invoiceInfo .donationInvoice input[type="text"]{
+	width:90%;
+	height: 40px;
+	border:1px #999 solid;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 10px;
+}
+
+
+.confirmCheckout{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+.confirmCheckout label{
+	margin: 15px 0;
+	cursor: pointer;
+}
+.confirmCheckout label > a{
+	color:#f00;
+	font-size: 16px;
+	margin-left: 5px;
+}
+.confirmCheckout input[type="submit"]{
+	width: 250px;
+	height: 50px;
+	cursor: pointer;
+	outline: none;
+	border:none;
+	background-color: #1484c4;
+	color:#fff;
+	font-size: 18px;
+	font-weight: 600;
+}
+
+.termsModel{
+	width:100%;
+	height: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, .5);
+	z-index: 999999;
+	display: none;
+	opacity: 0;
+	transition: .3s;
+}
+.termsModel .termsModelBox{
+	position: absolute;
+	top:calc(50% - 250px);
+	left:calc(50% - 300px);
+	background-color: #fff;
+	width: 600px;
+	height: 500px;
+	border-radius: 5px;
+}
+.termsModel .termsModelBox h1{
+	width:100%;
+	height: 50px;
+	padding: 0 15px;
+	background-color: #1484c4;
+	color:#fff;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 50px;
+	position: relative;
+}
+.termsModel .termsModelBox h1 > i{
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	cursor: pointer;
+}
+.termsModel .termsModelBox p{
+	overflow-y: scroll;
+	height: 450px;
+	padding: 10px;
+	color:#333;
+
+}
