@@ -467,15 +467,15 @@ body{
   cursor: pointer;
   font-size: 14px;
   width: 15px;
-  height: 12px;
+  height: 0px;
   position: relative;
 
 }
 .cartCheckbox:after{
-	position: absolute;
+position: absolute;
   width: 12px;
-  height: 15px;
-  top: 0;
+  height: 16px;
+  top: -8px;
   content: " ";
   color: #fff;
   display: inline-block;
