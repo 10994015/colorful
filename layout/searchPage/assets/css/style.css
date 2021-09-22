@@ -282,6 +282,18 @@
 .store .page li:hover{
 	background-color: #ddd;
 }
+.store .searchBox{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.store .searchBox input[type="text"]{
+	width: 80%;
+	height: 35px;
+	border:1px #999 solid;
+	border-radius: 5px;
+}
 
 
 @media screen and (max-width:850px){
