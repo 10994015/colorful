@@ -319,7 +319,11 @@
 		padding-top: 3em;
 	}
 	.store .prod{
-	height: 450px;
+	height: 480px;
+	}
+	.store .prod .prod-text{
+	
+		font-size: 1rem;
 	}
 	.store .prod .prod-text h1{
 		font-size: 24px;
