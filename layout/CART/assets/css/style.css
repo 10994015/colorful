@@ -15,10 +15,11 @@ body{
 	margin-bottom: 20px;
 }
 .cartPage .cartItem .cartNone{
-	display: none;
+	display: flex;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	
 }
 .cartPage .cartItem .cartNone img{
 	width: 300px;
