@@ -21,6 +21,8 @@ body{
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
+	display: none;
+
 	
 }
 .cartPage .cartItem .cartNone img{
@@ -129,6 +131,7 @@ body{
 }
 .cartPage .cartContent .cartContentList .td-3{
 	width: 25%;
+	color:#f00;
 }
 .cartPage .cartContent .cartContentList .td-4{
 	width: 20%;
