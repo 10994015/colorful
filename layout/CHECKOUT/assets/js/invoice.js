@@ -42,7 +42,6 @@ function clearDIV2Invoice(){
     personalInvoice.style.display="none";
     compileInvoices.style.display="none";
     donationInvoice.style.display="none";
-    
 }
 
 
