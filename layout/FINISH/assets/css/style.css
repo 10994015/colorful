@@ -1,0 +1,93 @@
+body{
+    font-family: sans-serif;
+}
+.finishPage{
+	height: auto;
+	padding:10em  0 50px 0 ;
+
+}
+.finishPage .orderDetails{
+	width: 95%;
+	margin: auto;
+}
+.finishPage .orderDetails h2{
+	color:#1484c4;
+	margin: 10px 0;
+}
+.finishPage .orderDetails .orderDetailsTitle{
+	list-style: none;
+	padding: 0 15px;
+	width: 100%;
+	height: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color:#666;
+	font-weight: 600;
+	border-bottom: 2px #ccc solid;
+}
+.finishPage .orderDetails .orderDetailsTitle .td-1{
+	width: 80%;
+	text-align: left;
+}
+.finishPage .orderDetails .orderDetailsTitle .td-2{
+	width: 20%;
+	text-align: right;
+}
+.finishPage .orderDetails .orderDetailsItem{
+	list-style: none;
+	padding: 0 15px;
+	width: 100%;
+	min-height: 40px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color:#666;
+	border-bottom: 1px #ddd solid;
+}
+.finishPage .orderDetails .orderDetailsTotal,
+.finishPage .orderDetails .orderDetailsAdd{
+	list-style: none;
+	padding: 0 15px;
+	width: 100%;
+	min-height: 30px;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color:#333;
+	font-weight: 600;
+	border-bottom: 1px #ddd solid;
+}
+.finishPage .orderDetails .orderDetailsTotal .td-2{
+	color:#f00;
+}
+
+.finishPage .orderInfo{
+	width: 95%;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 15px;
+	background-color: rgba(245, 245, 245, 1);
+	margin-bottom: 50px;
+}
+.finishPage .orderInfo h3{
+	font-size: 24px;
+	color:#333;
+	margin-bottom: 30px;
+}
+.finishPage .orderInfo h3 > i{
+	color:forestgreen;
+	font-size: 24px;
+}
+.finishPage .orderInfo ul{
+	color:#666;
+	font-size: 16px;
+	font-weight: 500;
+}
+.finishPage .orderInfo ul li{
+	height: 35px;
+}
