@@ -161,12 +161,13 @@
         <div class="row">
           <div class="col-sm-8 col-md-8 col-lg-6">
             <div class="cartItem">
-              <h1>購物車</h1>
+              
               <div class="cartNone">
                 <img src="assets/images/empty_cart.svg" alt="">
                 <p>您的購物車為空，趕快去逛逛吧!</p>
                 <a href="javascript:;">來去逛逛</a>
               </div>
+              <h1>購物車(線上課程)</h1>
               <div class="cartContent">
                 <ul class="cartContentTitle">
                   <li >
@@ -204,6 +205,56 @@
                     
                 </ul>
               </div>
+
+
+              <!-- 實體教材購物車 -->
+              <h1>購物車(實體教材)</h1>
+              <div class="cartContent">
+                <ul class="cartContentTitle">
+                  <li >
+                    <div class="td-1">商品資訊</div>
+                    <div class="td-2">售價</div>
+                    <div class="td-3">數量</div>
+                    <div class="td-4">小計</div>
+                  </li>
+                </ul>
+                <ul class="cartContentList">
+                  <!-- 一個商品 -->
+                  <li>
+                    <div class="td-1"><img src="assets/images/pic01.jpg" alt=""><p>多益課本</p></div>
+                    <div class="td-2">$200</div>
+                    <div class="td-3"><input type="number" value="1" min="1"></div>
+                    <div class="td-4">$200 <i class="fas fa-trash cardel"></i></div>
+                  </li>
+                  <!-- 一個商品END -->
+                  
+                    
+                </ul>
+                
+              </div>
+              <div class="shippingMethod">
+                <h2>選擇收件地與運送方式</h2>
+                <select name="" id="">
+                  <option value="" disabled>請選擇運收件地</option>
+                  <option value="">台灣</option>
+                  <option value="">離島</option>
+                </select>
+                <select name="" id="shippingMethodSelect">
+                  <option value="" disabled>請選擇運送方式</option>
+                  <option value="宅配">宅配$60</option>
+                  <option value="7-11">7-11超商取貨$60</option>
+                </select>
+                <div class="superBusiness">
+                  <a href="javascript:;">選擇超商門市</a>
+                  <p>超商門市:箱根門市</p>
+                </div>
+                
+              </div>
+              <!-- 實體教材購物車END -->
+
+
+
+
             </div>
           </div>
           <div class="col-sm-8 col-md-8 col-lg-2">
@@ -216,10 +267,10 @@
               <h4>您的折扣碼:RED566</h4>
               <div class="line"></div>
               <h4>商品總金額:$6,000</h4>
-              <h4>折扣碼折抵:$50</h4>
-              <h4>活動折抵:$300</h4>
-              <h4>運費總計:$0</h4>
-              <h3>總金額:<span>$5,650</span></h3>
+              <h4>折扣碼折抵:-$50</h4>
+              <h4>活動折抵:-$300</h4>
+              <h4>運費總計:$60</h4>
+              <h3>總金額:<span>$6,310</span></h3>
               <input type="submit" value="前往結帳">
               </div> 
             </div>

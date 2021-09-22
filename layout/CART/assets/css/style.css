@@ -98,6 +98,7 @@ body{
 	border-radius: 5px;
 	box-shadow: 10px 10px 15px rgba(1 1 1 / 10%);
 	overflow: hidden;
+	margin-bottom: 50px;
 }
 .cartPage .cartContent .cartContentTitle .td-1{
 	width:40%;
@@ -400,6 +401,44 @@ body{
 	border-radius: 5px;
 }
 
+.shippingMethod{
+	display: flex;
+	flex-direction: column;
+}
+.shippingMethod h2{
+	color:#555;
+	font-size: 18px;
+	font-weight: 500;
+	margin-bottom: 15px;
+}
+.shippingMethod select{
+	width:90%;
+	height: 40px;
+	margin: 10px 0;
+	border:1px #999 solid;
+	border-radius: 5px;
+	font-size: 16px;
+	padding: 0 10px;
+}
+.shippingMethod span{
+	color:#666;
+	margin-bottom: 5px;
+}
+.shippingMethod a{
+	display: block;
+	width: 120px;
+	height: 50px;
+	color:#fff;
+	text-decoration: none;
+	text-align: center;
+	line-height: 50px;
+	font-weight: 600;
+	background: #444554;
+	margin-bottom: 5px;
+}
+.shippingMethod p{
+	color:#999;
+}
 
 .slogan{
 	min-height: 100px;
