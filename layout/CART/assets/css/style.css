@@ -473,14 +473,15 @@ body{
 }
 .cartCheckbox:after{
 position: absolute;
-  width: 12px;
-  height: 16px;
-  top: -8px;
+  width: 15px;
+  height: 20px;
+  top: -10px;
+  left: -4px;
   content: " ";
   color: #fff;
   display: inline-block;
   visibility: visible;
-  padding: 0px 2px;
+  padding-left: 4px;
   border-radius: 3px;
   background:#FFFFFF;
   border:1px solid #DDDDDD;
