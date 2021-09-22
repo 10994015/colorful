@@ -66,6 +66,7 @@
 .store .prod .prod-text{
 	padding: 15px;
 	color: #1484c4;
+	font-size: .8rem;
 }
 .store .prod .prod-text h1{
 	font-size: 18px;
