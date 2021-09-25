@@ -1,0 +1,10 @@
+.thousands{
+    position: relative;
+    margin-left: 10px;
+
+}
+.thousands::before{
+    content:'$';
+    position: absolute;
+    left: -10px;
+}

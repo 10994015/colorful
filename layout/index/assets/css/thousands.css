@@ -1,0 +1,3 @@
+.thousands::before{
+    content:'$';
+}
