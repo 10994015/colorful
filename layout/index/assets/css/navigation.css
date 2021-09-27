@@ -37,3 +37,9 @@ nav.nav .navList{
         width: 0;
     }
 }
+@media screen and (max-width:768px){
+    nav.nav .navList{
+        justify-content: flex-start;
+        
+    }
+}
