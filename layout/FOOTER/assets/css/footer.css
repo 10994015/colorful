@@ -47,7 +47,8 @@
 
 }
 .orderlink .order-item p{
-  width: 80%;
+  width: 100%;
+  text-align: left;
   line-height: 1.6;
 }
 .orderlink .order-item h1{

@@ -1,5 +1,21 @@
+/* ---共用---- */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+
+  --main-color:#1484C4;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: '微軟正黑體',sans-serif;
+  scroll-behavior: smooth;
+}
+/* ---共用END---- */
 
 
+
+/*----------------- HEADER----------------------- */
 header{
   z-index: 999;
   position: fixed;
@@ -384,3 +400,274 @@ header.sticky a:hover:before{
     color: #000;
   }
 }
+
+
+
+/*---------------------- headerEND----------------------- */
+/* ------------------------千分位 ------------------------*/
+.thousands::before{
+    content:'$';
+}
+/* ------------------------千分位END ------------------------*/
+/* -------------------scrollTop -------------------*/
+.scrollToTop-btn{
+  z-index: 999;
+  position: fixed;
+  background: var(--main-color);
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  right: 0;
+  bottom: 10px;
+  font-size: 22px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.scrollToTop-btn:hover{
+  background:#BD1E2C;
+}
+.scrollToTop-btn.active{
+  right: 20px;
+  opacity: 1;
+  pointer-events: auto;
+}
+/* -------------------scrollTopEND -------------------*/
+/*------------------------- 網格系統---------------------- */
+@media screen and (min-width: 415px) {
+  .container {
+    width: 415px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .col-sm-1 {
+    width: 12.5%;
+    padding: 8px;
+  }
+
+  .col-sm-2 {
+    width: 25%;
+    padding: 8px;
+  }
+
+  .col-sm-3 {
+    width: 37.5%;
+    padding: 8px;
+  }
+
+  .col-sm-4 {
+    width: 50%;
+    padding: 8px;
+  }
+
+  .col-sm-5 {
+    width: 62.5%;
+    padding: 8px;
+  }
+
+  .col-sm-6 {
+    width: 75%;
+    padding: 8px;
+  }
+
+  .col-sm-7 {
+    width: 87.5%;
+    padding: 8px;
+  }
+
+  .col-sm-8 {
+    width: 100%;
+    padding: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .col-md-1 {
+    width: 12.5%;
+    padding: 8px;
+  }
+
+  .col-md-2 {
+    width: 25%;
+    padding: 8px;
+  }
+
+  .col-md-3 {
+    width: 37.5%;
+    padding: 8px;
+  }
+
+  .col-md-4 {
+    width: 50%;
+    padding: 8px;
+  }
+
+  .col-md-5 {
+    width: 62.5%;
+    padding: 8px;
+  }
+
+  .col-md-6 {
+    width: 75%;
+    padding: 8px;
+  }
+
+  .col-md-7 {
+    width: 87.5%;
+    padding: 8px;
+  }
+
+  .col-md-8 {
+    width: 100%;
+    padding: 8px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1024px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .col-lg-1 {
+    width: 12.5%;
+    padding: 15px;
+  }
+
+  .col-lg-2 {
+    width: 25%;
+    padding: 15px;
+  }
+
+  .col-lg-3 {
+    width: 37.5%;
+    padding: 15px;
+  }
+
+  .col-lg-4 {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .col-lg-5 {
+    width: 62.5%;
+    padding: 15px;
+  }
+
+  .col-lg-6 {
+    width: 75%;
+    padding: 15px;
+  }
+
+  .col-lg-7 {
+    width: 87.5%;
+    padding: 15px;
+  }
+
+  .col-lg-8 {
+    width: 100%;
+    padding: 15px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .col-xl-1 {
+    width: 12.5%;
+    padding: 15px;
+  }
+
+  .col-xl-2 {
+    width: 25%;
+    padding: 15px;
+  }
+
+  .col-xl-3 {
+    width: 37.5%;
+    padding: 15px;
+  }
+
+  .col-xl-4 {
+    width: 50%;
+    padding: 15px;
+  }
+
+  .col-xl-5 {
+    width: 62.5%;
+    padding: 15px;
+  }
+
+  .col-xl-6 {
+    width: 75%;
+    padding: 15px;
+  }
+
+  .col-xl-7 {
+    width: 87.5%;
+    padding: 15px;
+  }
+
+  .col-xl-8 {
+    width: 100%;
+    padding: 15px;
+  }
+}
+/* -------------------------網格系統END--------------------- */
