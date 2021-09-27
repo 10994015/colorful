@@ -1,0 +1,39 @@
+nav.nav{
+    padding-top: 87.2px;
+    background-color: #48BCED;
+    
+}
+nav.nav .navList{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    overflow-y:scroll;
+}
+.navList a{
+    text-decoration: none;
+    color:#000;
+    height: 100%;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    font-size: 16px;
+    color:#fff;
+    font-weight:600;
+    
+}
+.navList a li{
+    width:100px;
+}
+.navList a:hover{
+    border-bottom: 10px #1484c4 solid;
+    background: #00B1ED;
+}
+
+@media screen and (min-width:768px){
+    nav.nav .navList::-webkit-scrollbar {
+        width: 0;
+    }
+}
