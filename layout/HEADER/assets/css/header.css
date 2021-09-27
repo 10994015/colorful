@@ -23,7 +23,7 @@ header{
   top: 0;
   left: 0;
   width: 100%;
-  padding: 15px 200px;
+  padding: 15px 120px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -37,7 +37,7 @@ header .logo-search{
 header.sticky{
   background:var(--main-color);
   color: #fff;
-  padding: 10px 200px;
+  padding: 10px 150px;
 }
 header .brand{
   color: #fff;
@@ -180,9 +180,7 @@ header .navigation .myAccount ul li img{
 
 }
 header .navigation-shop .shop-cart{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
 }
 header .navigation a:before,header .navigation-shop a:before{
   position: absolute;
