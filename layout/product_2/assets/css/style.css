@@ -74,6 +74,10 @@
 	height: 3px;
 	background: #ccc;
 }
+.productListText h6{
+	color:#888;
+	font-size: 14px;
+}
 .productListMoney{
 	display: flex;
 	color: #333;
@@ -88,10 +92,33 @@
 	font-size: 18px;
 	margin-right: 5px;
 }
+.productListMoney b{
+	color:#D0011B;
+}
 .productListText p{
 	width: 80%;
-	min-height: 100px;
+	min-height: 50px;
 	height: auto;
+}
+.productpromotions{
+	display: flex;
+	align-items: center;
+	margin: 5px 0;
+	border-top:1px #ccc solid;
+	border-bottom: 1px #ccc solid;
+	height: 50px;
+}
+.productpromotions h2{
+	color:#FF0101;
+	width:100px;
+	font-size: 18px;
+}
+.productpromotions a{
+	text-decoration: none;	
+	margin-left: 10px;
+	font-size: 14px;
+	color:#666;
+	cursor: pointer;
 }
 .productListBuy{
 	display: flex;
@@ -181,22 +208,10 @@
 	color: #566;
 
 }
-.productListTextTierPrice{
-	display: flex;
-	height: 40px;
-	font-size: 14px;
-	padding-top: 5px;
-	font-weight: 500;
-	color: #566;
-}
-.productListTextTierPrice>p{
-	color: #1484c4;
-	margin-left: 10px;
-	font-weight: 600;
-}
+
 .productListTextClass h4,
 .productListTextNo h4,
-.productListTextTeacher h4,
+.productListTextTeacher h4
 {
 	width: 100px;
 }
@@ -369,9 +384,100 @@ margin: 15px 0;
 .productIllustrateContent .classTeacher ul{
 	margin-left: 40px;
 }
+.productDelivery{
+	height: 60px;
+}
+.productDelivery input[type="radio"]{
+	display: none;
+}
+.productDelivery label{
+	position: relative;
+	color:#4BB9AE;
+	font-family: 'Poppins',sans-serif;
+	font-size: 16px;
+	border:2px solid #4BB9AE;
+	padding: 5px 25px;
+	cursor: pointer;
+	font-weight: 600;
+}
 
-
-
+.productDelivery input[type="radio"]:checked + label{
+	background-color: #4BB9AE;
+	color:#fff;
+}
+.productGiveaway{
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 20px;
+}
+.productGiveaway .giveaway{
+	display: flex;
+	margin: 5px 0;
+	position: relative;
+}
+.productGiveaway .giveaway h5{
+	background: #F07305;
+	color:#fff;
+	width: 35px;
+	height: 20px;
+	text-align: center;
+	line-height: 20px;
+	font-weight: 500;
+}
+.productGiveaway .giveaway a{
+	color:#666;
+	font-size: 14px;
+	text-decoration: none;
+	margin-left: 10px;
+}
+.promotionsBox{
+	display: none;
+	transition: 1s;
+	z-index: 999;
+}
+.promotionsBox .promotionsBoxBack{
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.5);
+	z-index: 9999;
+}
+.promotionsBox .promotionsBoxContent{
+	position: fixed;
+	width: 600px;
+	height: 400px;
+	z-index: 99999;
+	background: #fff;
+	left:calc(50% - 300px);
+	border-radius: 3px;
+}
+.promotionsBox .promotionsBoxContent h1{
+	height: 50px;
+	font-size: 18px;
+	width:100%;
+	background-color: #1484c4;
+	line-height: 50px;
+	padding-left: 10px;
+	color:#fff;
+	position: relative;
+}
+.promotionsBox .promotionsBoxContent h1 > i{
+	position: absolute;
+	top: 15px;
+	right:20px;
+	cursor: pointer;
+	color:#fff;
+}
+.promotionsBox .promotionsBoxContent p{
+	width:100%;
+	height: 350px;
+	padding: 15px;
+	overflow-y:scroll;
+}
+.promotionsBox .promotionsBoxContent p::-webkit-scrollbar {
+	width: 1em;
+  }
 
 .summercamp-class-title{
 	width: 100%;
