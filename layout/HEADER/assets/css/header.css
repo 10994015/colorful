@@ -281,10 +281,25 @@ header.sticky a:hover:before{
 
 
 @media screen and (max-width: 1024px) {
- 
+  header{
+    width: 100%;
+    max-width: 1024px;
+  }
 }
 
 
+@media screen and (max-width: 768px) {
+  header{
+    width: 100%;
+    max-width: 768px;
+  }
+}
+@media screen and (max-width: 560px) {
+  header{
+    width: 100%;
+    max-width: 560px;
+  }
+}
 /*----*/
 @media screen and (max-width: 1024px){
   header{
@@ -496,7 +511,7 @@ header.sticky a:hover:before{
 }
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    width: 758px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -554,7 +569,7 @@ header.sticky a:hover:before{
 }
 @media screen and (min-width: 1024px) {
   .container {
-    width: 1024px;
+    width: 1014px;
     margin: auto;
     display: -webkit-box;
     display: -ms-flexbox;
