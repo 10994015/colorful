@@ -65,8 +65,8 @@ header .navigation-shop{
 header .navigation-shop .shopUl{
   position: absolute;
   top: 30px;
-  left: 0;
-  width: 150px;
+  left: -30px;
+  width: 180px;
   height: auto;
   border: 1px #ccc solid;
   background: #fff;
@@ -84,18 +84,24 @@ header .navigation-shop .shopUl li{
   font-weight:600;
   color: #333;
 }
-header .navigation-shop .shopUl li:hover>p{
-  color: #1484c4;
+header .navigation-shop .shopUl li:hover{
+  background: #AEDDF5;
 }
 
 header .navigation-shop .shopUl li a{
-  display: block;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   height: 40px;
-  background: #22A7F2;
+  background: transparent;
   text-align: center;
   line-height: 40px;
   margin: 0;
+  color:#333;
+}
+
+header .navigation-shop .shopUl li i{
+  color:#1484c4;
 }
 
 header .navigation .myAccount{
