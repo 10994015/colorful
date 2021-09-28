@@ -618,3 +618,11 @@ margin: 15px auto;
 	margin: 0 5px;
 	color:#E6157D ;
 }
+
+@media screen and (max-width:600px){
+	.promotionsBox .promotionsBoxContent{
+		width: 300px;
+		height: 400px;
+		left:calc(50% - 150px);
+	}
+}
