@@ -109,6 +109,20 @@
 .myproduct-search input::placeholder{
 	color: #aaa;
 }
+.myproduct-search button{
+	outline: none;
+	border:none;
+	background: #1484c4;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	margin-left: 2px;
+}
+.myproduct-search button>i{
+	color:#fff;
+	padding: 0;
+	position: static;
+}
 .myproduct .myproduct-item{
 	width: 260px;
 	height: 300px;
@@ -149,4 +163,7 @@
 .myproduct .myproduct-item a:hover{
 	background: #1458C4;
 	transition: .5s;
+}
+.thousands::before{
+    content:'$';
 }

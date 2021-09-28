@@ -1,6 +1,10 @@
 body{
     font-family: sans-serif;
 }
+.thousands::before{
+    content:'$';
+
+}
 .register{
 	padding-top: 8em;
 	padding-bottom: 50px;

@@ -91,3 +91,6 @@ body{
 .finishPage .orderInfo ul li{
 	height: 35px;
 }
+.thousands::before{
+    content:'$';
+}

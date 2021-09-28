@@ -182,3 +182,7 @@
 }
 	
 }
+
+.thousands::before{
+    content:'$';
+}

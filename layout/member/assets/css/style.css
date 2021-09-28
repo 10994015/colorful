@@ -125,3 +125,6 @@
 	background: #1458C4;
 	transition: .5s;
 }
+.thousands::before{
+    content:'$';
+}

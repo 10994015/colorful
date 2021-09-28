@@ -1,1 +1,0 @@
-$('#twzipcode').twzipcode();

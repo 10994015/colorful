@@ -1,6 +1,9 @@
 body{
     font-family: sans-serif;
 }
+.thousands::before{
+    content:'$';
+}
 .login{
 	padding-top: 2em;
 }

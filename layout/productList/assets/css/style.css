@@ -1,6 +1,11 @@
 *{
 	font-family: '微軟正黑體';
 }
+
+.thousands::before{
+    content:'$';
+}
+
 .row-3{
 	width: 25%;
 }

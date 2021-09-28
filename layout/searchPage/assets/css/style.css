@@ -295,7 +295,18 @@
 	border-radius: 5px;
 	padding: 0 5px;
 }
-
+.store .searchBox button{
+	width: 35px;
+	height: 35px;
+	background: #1484c4;
+	outline: none;
+	border:none;
+	cursor: pointer;
+	margin-left: 5px;
+}
+.store .searchBox button i{
+	color:#FFF;
+}
 
 @media screen and (max-width:850px){
 	.store .left-sidebar .left-sidebar-close{
