@@ -185,9 +185,7 @@ header .navigation .myAccount ul li img{
   margin-right: 10px;
 
 }
-header .navigation-shop .shop-cart{
 
-}
 header .navigation a:before,header .navigation-shop a:before{
   position: absolute;
   content: '';
@@ -383,10 +381,12 @@ header.sticky a:hover:before{
   header .navigation i,
   header .navigation .myAccount ul::after,
   header .navigation .myAccount ul::before,
-  header .navigation .myAccount ul li,
-  header .navigation .myAccount ul a:nth-last-child(1)
+  header .navigation .myAccount ul li
   {
     display: none;
+  }
+  header .navigation .myAccount ul a:nth-last-child(1){
+    color:#fff;
   }
   header .navigation .myAccount{
     margin-left: 0px;
