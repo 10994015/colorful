@@ -470,7 +470,8 @@ body{
 	}
 	.cartPage .cartContent .cartContentList li{
 		display: flex;
-		height: 150px;
+		min-height: 180px;
+		height: auto;
 		align-items: center;
 		padding: 10px;
 		color:#333;
@@ -486,7 +487,7 @@ body{
 		width: 20%;
 	}
 	.cartPage .cartContent .cartContentList .td-3{
-		width: 40%;
+		width: 60%;
 	}
 	.cartPage .cartContent .cartContentList .td-4{
 		width: 40%;
@@ -501,6 +502,7 @@ body{
 	.textnone{
 		display: block;
 	}
+	
 }
 
 
