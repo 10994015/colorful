@@ -173,7 +173,7 @@
 .order-item-footer{
   display: flex;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 767px){
   .order-item-footer{
     display: flex;
     flex-direction: column;
