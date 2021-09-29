@@ -31,7 +31,6 @@ for(var i=0;i<picClass.length;i++){
 	html += '<a class="imgBtn imgBtn'+i+'"></a>'
 }
 imgBtnBox.innerHTML=html;
-console.log(html);
 imgBtn[0].style.backgroundColor ="#EEC71C";
 
 timer = setInterval(()=>{
