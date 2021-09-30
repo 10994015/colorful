@@ -1,17 +1,17 @@
 
-.store .left-sidebar{
-	width: 100%;
+.left-sidebar{
+	width: 300px;
 	height: 1000px;
 	background: #fff;
 	padding: 10px;
 }
-.store .left-sidebar h1{
+.left-sidebar h1{
 	font-size: 18px;
 	color: #666;
 	position: relative;
 	margin-top: 20px;
 }
-.store .left-sidebar h1:before{
+.left-sidebar h1:before{
 	content: '';
 	position: absolute;
 	bottom: -10px;
@@ -20,11 +20,11 @@
 	height: 3px;
 	background: #ddd;
 }
-.store .left-search{
+.left-search{
 	display: flex;
 	margin-top: 20px;
 }
-.store .left-search input[type="text"]{
+.left-search input[type="text"]{
 	outline: none;
 	border: none;
 	border:  1px #ccc solid;
@@ -33,7 +33,7 @@
 	padding-left: 10px;
 	box-shadow:3px 3px 5px #ccc;
 }
-.store .left-search button{
+.left-search button{
 	width: 35px;
 	height: 35px;
 	background: #1484C4;
@@ -43,12 +43,12 @@
 	color: #fff;
 }
 
-.store .main-prod-class{
+.main-prod-class{
 	margin-top: 20px;
 	display: flex;
 	flex-direction: column;
 }
-.store .main-prod-class .prod-class{
+.main-prod-class .prod-class{
 	width: 100%;
 	height: 50px;
 	background: #fff;
@@ -60,12 +60,12 @@
 	cursor: pointer;
 
 }
-.store .main-prod-class .prod-class-list{
+.main-prod-class .prod-class-list{
 	list-style: none;
 	padding: 0 20px;
 	display: none;
 }
-.store .main-prod-class .prod-class-list a{
+.main-prod-class .prod-class-list a{
 	display: flex;
 	justify-content: space-between;
 	text-decoration: none;
@@ -73,22 +73,22 @@
 	height: 35px;
 	line-height: 35px;
 }
-.store .main-prod-class .prod-class-list small{
+.main-prod-class .prod-class-list small{
 	font-size: 12px;
 	color: #999;
 }
 
 
-.store .main-prod-class .prod-class p{
+.main-prod-class .prod-class p{
 	color: #000;
 	font-weight: 600;
 	font-size: 18px;
 }
-.store .main-prod-class .prod-class small{
+.main-prod-class .prod-class small{
 	color: #aaa;
 	font-size: 12px;
 }
-.store .left-sidebar .prod-hot{
+.left-sidebar .prod-hot{
 	display: flex;
 	width: 100%;
 	height: 80px;
@@ -97,19 +97,19 @@
 	margin-top: 10px;
 
 }
-.store .left-sidebar .prod-hot img{
+.left-sidebar .prod-hot img{
 	height:60px;
 	width: 60px;
 	margin-right: 10px;
 }
-.store .left-sidebar .prod-hot h2{
+.left-sidebar .prod-hot h2{
 	font-size: 16px;
 	color: #333;
 }
-.store .left-sidebar .prod-hot span{
+.left-sidebar .prod-hot span{
 	display: flex;
 }
-.store .left-sidebar .prod-hot span p{
+.left-sidebar .prod-hot span p{
 	text-decoration: line-through;
 	margin-right: 10px;
 	color: #999;
@@ -118,12 +118,12 @@
 .filter{
 	display: none;
 }
-.store .left-sidebar .left-sidebar-close{
+.left-sidebar .left-sidebar-close{
 	display: none;
 }
 
 @media screen and (max-width:850px){
-    .store .left-sidebar .left-sidebar-close{
+    .left-sidebar .left-sidebar-close{
 		position: absolute;
 		top: 15px;
 		right: 15px;
@@ -131,10 +131,10 @@
 		color: #333;
 
 	}
-	.store .left-sidebar .left-sidebar-close:hover{
+	.left-sidebar .left-sidebar-close:hover{
 		color: #999;
 	}
-	.store .left-sidebar{
+	.left-sidebar{
 		position: fixed;
 		top: 0;
 		left: -300px;
@@ -154,7 +154,7 @@
 		font-weight: 600;
 		margin-bottom: 10px;
 	}
-	.store .left-sidebar .left-sidebar-close{
+	.left-sidebar .left-sidebar-close{
 		display: block;
 	}
 }
