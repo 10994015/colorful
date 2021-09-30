@@ -11,6 +11,11 @@
 .container{
 	flex-direction: column;
 }
+
+.thousands::before{
+    content:'$';
+}
+
 .store{
 	min-height: 100vh;
 	height: auto;
