@@ -106,11 +106,18 @@
 }
 .productpromotions{
 	display: flex;
-	align-items: center;
 	margin: 5px 0;
 	border-top:1px #ccc solid;
 	border-bottom: 1px #ccc solid;
-	height: 50px;
+	min-height: 50px;
+	height: auto;
+}
+.productpromotions > div{
+	display: flex;
+	flex-direction: column;
+}
+.productpromotions b{
+	color:#ff0101;
 }
 .productpromotions h2{
 	color:#FF0101;
