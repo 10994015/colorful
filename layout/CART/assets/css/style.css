@@ -4,7 +4,7 @@ body{
 .cartPage{
 
 	height: auto;
-	padding:10em 30px 50px 30px ;
+	padding:8em 30px 50px 30px ;
 
 }
 /* .cartPage .cartItem h1{
@@ -16,6 +16,7 @@ body{
 	display: flex;
 	align-items: center;
 } */
+
 .cartPage .cartItem .cartList{
 	display: flex;
 	width: 100%;
@@ -39,6 +40,13 @@ body{
 	text-decoration: none;
 	display: block;
 	
+}
+.cartPage .caetmessage{
+	border-bottom: 1px #ddd solid;
+	padding: 10px;
+}
+.cartPage .caetmessage ul{
+	list-style-type: circle;
 }
 .cartPage .cartItem .cartList a:nth-child(1){
 	background: #fff;
@@ -161,8 +169,28 @@ body{
 }
 .cartPage .cartContent .cartContentList .td-3{
 	width: 25%;
+}
+.cartPage .cartContent .cartContentList .td-3 .conformTo{
+	display: flex;
+	align-items: center;
+	
+}
+.cartPage .cartContent .cartContentList .td-3 .conformTo span{
+	width: 60px;
+	height: 25px;
+	background: #1484c4;
+	color:#fff;
+	text-align: center;
+	line-height: 25px;
+	border-radius: 10px;
+}
+.cartPage .cartContent .cartContentList .td-3 .conformTo p{
 	color:#f00;
 }
+.cartPage .cartContent .cartContentList .td-3 .conformTo .notMeet{
+	background: #DD4F43;
+}
+
 .cartPage .cartContent .cartContentList .td-4{
 	width: 20%;
 	color:#f00;
@@ -490,6 +518,77 @@ body{
 }
 
 
+.giveawayArea h1{
+	width: 200px;
+	height: 45px;
+	text-align: center;
+	line-height: 45px;
+	font-weight: 500;
+	background: #1484c4;
+	color:#fff;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	font-size: 18px;
+}
+.giveawayArea .giveawayAreaContent{
+	width: 100%;
+	min-height: 100px;
+	height: auto;
+	box-shadow: 5px 5px 5px rgba( 1 1 1 / 10%);
+	border-radius: 5px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+}
+.giveawayArea .giveawayAreaContent .giveawayAreaItem{
+	width: 30%;
+	height: 100px;
+	border:1px #ccc solid;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	padding: 5px;
+	margin: 5px 10px;
+	padding: 0 5px;
+}
+.giveawayArea .giveawayAreaContent .giveawayAreaItem i{
+	font-size: 28px;
+	color:#1484c4;
+	cursor: pointer;
+}
+.giveawayArea .giveawayAreaContent .giveawayAreaItem h2{
+	font-size: 18px;
+	font-weight: 600;
+	color:#555;
+	width: 100%;
+	text-align: center;
+	margin: 5px 0;
+}
+.giveawayArea .giveawayAreaContent .giveawayAreaItem img{
+	width:30%;
+	height: 100%;
+	object-fit: cover;
+}
+.giveawayArea .giveawayAreaContent .giveawayAreaItem .selectANDadd{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: auto;
+
+}
+.giveawayArea .giveawayAreaContent .giveawayAreaItem .selectANDadd select{
+	width: 100%;
+	height: 25px;
+	border: none;
+	outline: none;
+	border:1px #ccc solid;
+	border-radius: 5px;
+}
+.giveawayArea .giveawayAreaContent .giveawayAreaItem .selectANDadd select:focus{
+	border:2px #1484c4 solid;
+	transition: .1s;
+}
 .AddPurchase h1{
 	width: 200px;
 	height: 45px;
@@ -544,7 +643,7 @@ body{
 	font-size: 18px;
 }
 .AddPurchase .AddPurchaseContent .AddPurchaseItem .selectANDadd select{
-	width: 120px;
+	width: 100px;
 	border:none;
 	outline: none;
 	border-radius: 3px;
@@ -709,13 +808,15 @@ body{
 	margin-bottom: 20px;
 }
 .checkoutPage .buyerInfo input[type="text"],
-.checkoutPage .buyerInfo input[type="email"]{
+.checkoutPage .buyerInfo input[type="email"],
+.checkoutPage .buyerInfo select{
 	width:90%;
 	height: 40px;
 	border:1px #999 solid;
 	border-radius: 5px;
 	font-size: 16px;
 	padding: 0 10px;
+	margin: 5px 0;
 }
 
 .checkoutPage .buyerInfo span{
@@ -755,7 +856,49 @@ body{
 	margin: 0;
 	margin-top: 8px;
 }
+.checkoutSuperBusinessCol{
+	display: flex;
+	flex-direction: column;
+}
+.checkoutSuperBusiness{
+	display: flex;
+}
+.checkoutSuperBusiness > div{
+	display: flex;
+}
+.checkoutSuperBusinessCol > div input[type="text"]{
+	border:none;
+	outline: none;
+	border:1px #aaa solid;
+	border-radius: 5px;
+	width: 250px;
+	height: 30px;
+}
+.checkoutSuperBusinessCol > div button{
+	cursor: pointer;
+	width: 100px;
+	height: 30px;
+	background: #1484c4;
+	border:none;
+	outline: none;
+	color:#fff;
+	border-radius: 5px;
+}
+.checkoutSuperBusiness label{
+	display: flex;
+	flex-direction: column;
+	margin: 10px 20px;
+	align-items: center;
 
+}
+.checkoutSuperBusiness label input[type="radio"]{
+	margin: 5px 0;
+}
+.checkoutSuperBusiness img{
+	width:150px;
+	height: 150px;
+	object-fit: cover;
+}
 .invoiceInfo .personalInvoice{
 	display: flex;
 	flex-direction: column;
