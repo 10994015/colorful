@@ -4,7 +4,8 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>冰芬文教</title>
+  <title>冰芬文教</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="../BEEADCRUMB/assets/css/breadcrumb.css">
@@ -12,8 +13,7 @@
   <link rel="stylesheet" href="../NAVIGATION/assets/css/navigation.css">
   <link rel="stylesheet" href="../FOOTER/assets/css/footer.css">
   <link rel="stylesheet" href="../IMGSLIDES/assets/css/imgslides.css">
-  <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
 <!-- -------一個區塊scrollToTop(assets/css/scrollToTop.css)------------ -->
@@ -147,16 +147,20 @@
               </select>
              </div>
              <div class="productListTextNumber">
-               <input type="number" value="1" min="1">
+               <h3>請選擇數量</h3>
+               <select name="" id="">
+                 <option value="1">1</option>
+               </select>
              </div>
              
-             <div class="productListTextBtn">
-               <input type="submit" value="加入收藏">
-               <input type="submit" value="加入購物車">
-             </div>
+             
              <div class="productDelivery">
                 <input type="radio" id="Delivery1" name="Delivery" checked><label for="Delivery1">宅配</label>
                 <input type="radio" id="Delivery2" name="Delivery"><label for="Delivery2">超商取貨</label>
+             </div>
+             <div class="payMethod">
+               <b>付款方式</b>
+               <p>信用卡 / 貨到付款 / 網路ATM</p>
              </div>
              <div class="productGiveaway">
                 <!-- 一件贈品 -->
@@ -183,12 +187,17 @@
              <div class="productListTextNo">
               <h4>品牌</h4> <p>康軒</p>
             </div>
+
+            <div class="productListTextBtnList">
+                <input type="submit" class="productListTextBtn" value="加入收藏">
+                <input type="submit" class="productListTextBtn" value="加入購物車">
+              </div>
              </form>
            </div>
           </div>
         </div>
       </div>
-      <div class="container">
+      <!-- <div class="container">
         <div class="row">
           <div class="col-sm-8">
             <div class="productIllustrate">
@@ -211,6 +220,65 @@
             </div>
           </div>
         </div>
+      </div> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+              <div class="product-detail-item03">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li class="nav-item productIllustrateBtn" role="presentation">
+                    <a class="nav-link active" id="product-detail01-tab" data-toggle="tab" href="#product-detail01" role="tab" aria-controls="product-detail01" aria-selected="true">商品特色</a>
+                    </li>
+                    <li class="nav-item productIllustrateBtn" role="presentation">
+                    <a class="nav-link" id="product-detail02-tab" data-toggle="tab" href="#product-detail02" role="tab" aria-controls="product-detail02" aria-selected="false">商品規格</a>
+                    </li>
+                    <li class="nav-item productIllustrateBtn" role="presentation">
+                    <a class="nav-link" id="product-detail03-tab" data-toggle="tab" href="#product-detail03" role="tab" aria-controls="product-detail03" aria-selected="false">退換貨須知</a>
+                    </li>
+                  </ul>
+                  <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active p-3 productIllustrate" id="product-detail01" role="tabpanel" aria-labelledby="product-detail01-tab">
+                    商品特色內容...
+                    </div>
+                    <div class="tab-pane fade p-3 productIllustrate" id="product-detail02" role="tabpanel" aria-labelledby="product-detail02-tab">
+                    <table class="table">
+                      <thead>
+                      <tr>
+                        <th scope="col"></th>
+                        <th scope="col">First</th>
+                        <th scope="col">Last</th>
+                        <th scope="col">Handle</th>
+                      </tr>
+                      </thead>
+                      <tbody>
+                      <tr>
+                        <th scope="row">1</th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td>@mdo</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">2</th>
+                        <td>Jacob</td>
+                        <td>Thornton</td>
+                        <td>@fat</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">3</th>
+                        <td>Larry</td>
+                        <td>the Bird</td>
+                        <td>@twitter</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                    </div>
+                    <div class="tab-pane fade p-3 productIllustrate" id="product-detail03" role="tabpanel" aria-labelledby="product-detail03-tab">
+                    退換貨須知內容...
+                    </div>
+                  </div>
+                  </div>
+          </div>
+        </div>
       </div>
 
       <div class="container">
@@ -229,6 +297,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設計</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -243,6 +312,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設計</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -257,6 +327,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -271,6 +342,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設計</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -375,10 +447,8 @@
 
 </footer>
 <!-- -------------Footer---END--------------- -->
-
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="assets/js/jquery.nice-number.js"></script>
-  <script src="assets/js/number.js"></script> 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   <script src="assets/js/productList.js"></script>
   <script src="assets/js/promotions.js"></script>
   <script src="../IMGSLIDES/assets/js/imgslides.js"></script>

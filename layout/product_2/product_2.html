@@ -6,13 +6,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>冰芬文教</title>
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="../BEEADCRUMB/assets/css/breadcrumb.css">
   <link rel="stylesheet" href="../HEADER/assets/css/header.css">
   <link rel="stylesheet" href="../NAVIGATION/assets/css/navigation.css">
   <link rel="stylesheet" href="../FOOTER/assets/css/footer.css">
   <link rel="stylesheet" href="../IMGSLIDES/assets/css/imgslides.css">
-  <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
@@ -137,18 +137,22 @@
                   </div> 
                 </div>
              
-             <div class="productListTextNumber">
-              <input type="number" value="1" min="1">
-            </div>
+                <div class="productListTextNumber">
+                    <h3>請選擇數量</h3>
+                    <select name="" id="">
+                      <option value="1">1</option>
+                    </select>
+                  </div>
             
-             <div class="productListTextBtn">
-               <input type="submit" value="加入收藏">
-               <input type="submit" value="加入購物車">
-             </div>
+             
              <div class="productDelivery">
                 <input type="radio" id="Delivery1" name="Delivery" checked><label for="Delivery1">宅配</label>
                 <input type="radio" id="Delivery2" name="Delivery"><label for="Delivery2">超商取貨</label>
              </div>
+             <div class="payMethod">
+                <b>付款方式</b>
+                <p>信用卡 / 貨到付款 / 網路ATM</p>
+              </div>
              <div class="productGiveaway">
                <!-- 一件贈品 -->
                <div class="giveaway">
@@ -174,258 +178,76 @@
              <div class="productListTextTeacher">
                <h4>授課講師</h4> <p>Adrian</p>
              </div>
+             <div class="productListTextBtnList">
+                <input type="submit" class="productListTextBtn" value="加入收藏">
+                <input type="submit" class="productListTextBtn" value="加入購物車">
+              </div>
              </form>
            </div>
           </div>
         </div>
       </div>
+
+
       <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <div class="productIllustrate">
-              <div class="productIllustrateBtn">
-                <a href="javascript:;" class="productIllustrateBtnA1">課程內容</a>
-                <a href="javascript:;" class="productIllustrateBtnA2">章節目錄</a>
-                <a href="javascript:;" class="productIllustrateBtnA3">課程公告</a>
-              </div>
-              
-              <div class="productIllustrateContent productIllustrateContent1">
-                <h1>課程資訊</h1>
-                <div class="classinfor">
-                  <h2><i class="far fa-clock"></i>課程時長<span>四周/一周8小時</span></h2>
-                  <h2><i class="fas fa-globe"></i>授課語言<span>中文</span></h2>
-                  <h2><i class="far fa-thumbs-up"></i>觀看次數<span>600</span></h2>
-                </div>
-                <h1>這堂課能學到什麼?</h1>
-                <div class="classwhy">
-                  <ul>
-                    <li>即興表演藝術</li>
-                    <li>讓學生發展出關於後疫情時代之原創肢體表演藝術</li>
-                    <li>過北歐神話討論人類發展與表演藝術創作的可能性</li>
-                    <li>對自我存在與肢體之平衡的認識</li>
-                    <li>美學藝術賞析「基礎西洋藝術史」</li>
-                    <li>培養學生對於基礎西洋美術史的了解</li>
-                    <li>培養學生對於當代藝術的認識</li>
-                    <li>短片製作「實用手機拍攝技巧」</li>
-                    <li>剪接影片技巧</li>
-                    <li>微型短片製作</li>
-                  </ul>
-                </div>
-                <h1>這堂課適合的對象</h1>
-                <div class="classfor">
-                  <ul>
-                    <li>零基礎的人</li>
-                    <li>有藝術美感的人</li>
-                    <li>想加強藝術美感的人</li>
-                    <li>將來想從事演藝事業者</li>
-                    <li>對攝影有興趣者</li>
-                    <li>將來想從事攝影工作者</li>
-                    <li>對影片製作有熱忱者</li>
-                  </ul>
-                </div>
-                <h1>課程簡介</h1>
-                <div class="classIntroduction">
-                  <p>Lorem ipsum dolor sit, amet, consectetur adipisicing elit. Saepe vel dignissimos fugit illo quae perferendis explicabo amet aspernatur cumque accusamus sequi nesciunt eligendi architecto quis magni eveniet ipsum voluptatibus, commodi.</p>
-                </div>
-                <h1>課前準備</h1>
-                <div class="classPrepare">
-                  <h2>上課日期<span>10-11月</span></h2>
-                  <h2>設備需求<span>一台有穩定網路的筆電</span></h2>
-                </div>
-                <h1>授課講師</h1>
-                <div class="classTeacher">
-                  <div class="classTeacherLeft col-sm-4">
-                    <h3>Adrian</h3>
-                  <p>Adrian老師有著豐富的美學教學經驗，也曾在澳大利亞悉尼大學擁有電影和數字圖像碩士學位，有著豐富的電影剪輯經驗更拿到許多證書包含TESOL、- Certified by the University of Cambridge, UK 、Certificate of Bartending Service – Certified by Langley Bartending、Academy、Front Office Operations、Guest Services Gold等等，跟著專業Adrian老師一起進入美學藝術的世界吧!</p>
-                  <ul>
-                    <li>台灣青年電影戲劇協會擔任協會理事</li>
-                    <li>KARL國際實驗教育機構擔任藝術總監</li>
-                    <li>KARL亞太國際教育集團有限公司擔任運營創意總監</li>
-                    <li>卡爾藝術教育諮詢有限公司</li>
-                    <li>Tim Hortons - 食品櫃檯服務員</li>
-                    <li>羅布森套房酒店 - 前台代表</li>
-                    <li>溫哥華國際台灣電影節 - 攝影師</li>
-                    <li>Pagosa Folk and Bluegrass音樂節擔任舞台工作人員</li>
-                    <li>Sydney International Street Art Festival擔任教育助理</li>
-                    <li>首屆國際青年大使</li>
-                    <li>CRAWL Society Organization (India) - Art Educator</li>
-                  </ul>
-                  </div>
-                  <div class="classTeacherRight col-sm-4">
-                    <img src="assets/images/05.jpg" alt="">
-                  </div>
-                </div>
-              </div> 
-              <div class="productIllustrateContent productIllustrateContent2">
-                <!-- --- -->
-                <div class="mb-3">
-                  <h4>即興表演藝術</h4>
-                    <div class="summercamp-class-title sct1" onclick="toggleicon(1)">
-                      <span>第一周 「夢與創意表演」</span><i id="summer-down1" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content1">
-                    課程目標:讓學生發展出關於後疫情時代之原創肢體表演藝術<br>
-                    課程內容:<br>
-                    一、疫情時代之作品參考<br>
-                    二、原創肢體表演藝術: 發想與排練<br>
-                    學習成果:在每次課程呈現的過程皆搭配即時錄影, 學生參與此課程結束後, 擁有課堂呈現的錄像藝術
+          <div class="row">
+            <div class="col-sm-12">
+                <div class="product-detail-item03">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li class="nav-item productIllustrateBtn" role="presentation">
+                      <a class="nav-link active" id="product-detail01-tab" data-toggle="tab" href="#product-detail01" role="tab" aria-controls="product-detail01" aria-selected="true">課程內容</a>
+                      </li>
+                      <li class="nav-item productIllustrateBtn" role="presentation">
+                      <a class="nav-link" id="product-detail02-tab" data-toggle="tab" href="#product-detail02" role="tab" aria-controls="product-detail02" aria-selected="false">章節目錄</a>
+                      </li>
+                      <li class="nav-item productIllustrateBtn" role="presentation">
+                      <a class="nav-link" id="product-detail03-tab" data-toggle="tab" href="#product-detail03" role="tab" aria-controls="product-detail03" aria-selected="false">課程公告</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade show active p-3 productIllustrate" id="product-detail01" role="tabpanel" aria-labelledby="product-detail01-tab">
+                      商品特色內容...
+                      </div>
+                      <div class="tab-pane fade p-3 productIllustrate" id="product-detail02" role="tabpanel" aria-labelledby="product-detail02-tab">
+                      <table class="table">
+                        <thead>
+                        <tr>
+                          <th scope="col"></th>
+                          <th scope="col">First</th>
+                          <th scope="col">Last</th>
+                          <th scope="col">Handle</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td>Larry</td>
+                          <td>the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                        </tbody>
+                      </table>
+                      </div>
+                      <div class="tab-pane fade p-3 productIllustrate" id="product-detail03" role="tabpanel" aria-labelledby="product-detail03-tab">
+                      退換貨須知內容...
+                      </div>
                     </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct2" onclick="toggleicon(2)"><span>第二周 童話．神話．與夢話</span><i id="summer-down2" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content2">
-                    課程目標:透過北歐神話討論人類發展與表演藝術創作的可能性<br>
-                    課程內容:<br>
-                    一、北歐神話<br>
-                    二、透過北歐神話轉化線上展演<br>
-                    學習成果:在每次課程呈現的過程皆搭配即時錄影, 
-                    學生參與此課程結束後, 擁有課堂呈現的錄像藝術
                     </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct3" onclick="toggleicon(3)"><span>第三周 「戲劇肢體伸展」</span><i id="summer-down3" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content3">
-                    課程目標:對自我存在與肢體之平衡的認識<br>
-                    課程內容:<br>
-                    一、非宗教式靜心與戲劇<br>
-                    二、戲劇展演之專業技術基礎認識<br>
-                    學習成果:在每次課程呈現的過程皆搭配即時錄影, 
-                    學生參與此課程結束後, 擁有課堂呈現的錄像藝術
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct4" onclick="toggleicon(4)"><span>第四周 童話．神話．與夢話</span><i id="summer-down4" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content4">
-                    課程目標:實際操作: 劇場工作之專業工作流程<br>
-                    課程內容:<br>
-                    一、原創肢體表演藝術: 彩排與測試<br>
-                    二、線上微型戲劇展演<br>
-                    學習成果:學生參與此課程結束後, 邀請家長觀賞線上劇場藝術
-                    </div>
-                </div>
-                <h4>美學藝術賞析「基礎西洋藝術史」</h4>
-
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct5" onclick="toggleicon(5)"><span>第一周 西洋藝術史簡述1</span><i id="summer-down5" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content5">
-                    課程目標:培養學生對於基礎西洋美術史的了解<br>
-                    課程內容:<br>
-                    一、史前時代藝術<br>
-                    二、1.古埃及藝術2.希臘時代<br>
-                    學習成果:在每次課程進行過程皆安排學生參與討論.哲學批判,練習藝術辯論與思考
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct6" onclick="toggleicon(6)"><span>第二周 西洋藝術史簡述2</span><i id="summer-down6" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content6">
-                    課程目標:培養學生對於基礎西洋美術史的了解<br>
-                    課程內容:<br>
-                    一、中世紀藝術 羅曼式藝術 哥德式藝術<br>
-                    二、1.文藝復興2.印象派<br>
-                    學習成果:在每次課程進行過程皆安排學生參與討論.哲學批判,練習藝術辯論與思考
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct7" onclick="toggleicon(7)"><span>第三周 「近代藝術基礎概論」</span><i id="summer-down7" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content7">
-                    課程目標:培養學生對於當代藝術的認識<br>
-                    課程內容:<br>
-                    一、普普風格<br>
-                    二、反戰藝術<br>
-                    學習成果:在每次課程進行過程皆安排學生參與討論.哲學批判,
-                    練習藝術辯論與思考. 並完成文字報告
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct8" onclick="toggleicon(8)"><span>第四周 「當代藝術基礎概論」</span><i id="summer-down8" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content8">
-                    課程目標:實際操作: 線上藝術策展技術學習<br>
-                    課程內容:<br>
-                    一、後現代藝術<br>
-                    二、線上微型數位繪本報告<br>
-                    學習成果:學生參與此課程結束後, 邀請家長觀賞線上藝術報告
-                    </div>
-                </div>
-
-                <h4>短片製作「實用手機拍攝技巧」</h4>
-
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct9" onclick="toggleicon(9)"><span>第一周 「實用手機拍攝技巧」</span><i id="summer-down9" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content9">
-                    課程目標:學生於兩周內.學習簡易剪接影片技巧<br>
-                    課程內容:<br>
-                    一、電影史簡述<br>
-                    二、手機攝影基本技巧教學<br>
-                    學習成果:在每次課程讓學生頻繁練習剪接與孰悉影片製作流程
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct10" onclick="toggleicon(10)"><span>第二周 「實用手機拍攝技巧」2</span><i id="summer-down10" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content10">
-                    課程目標:延續第一周短片製作進度並完成微型短片製作<br>
-                    課程內容:<br>
-                    一、簡易剪接<br>
-                    二、微型影像作品呈現<br>
-                    學習成果:本次課程延續前一周影片製作進度, 學生參與此課程結束後, 呈現課堂所學之短片作品
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct11" onclick="toggleicon(11)"><span>第三周 「實用手機拍攝技巧」3</span><i id="summer-down11" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content11">
-                    課程目標:敬請期待<br>
-                    課程內容:<br>
-                    一、敬請期待<br>
-                    二、敬請期待<br>
-                    學習成果:敬請期待
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <div class="summercamp-class-title sct12" onclick="toggleicon(12)"><span>第四周 「實用手機拍攝技巧」3</span><i id="summer-down12" class="fas fa-angle-down"></i></div>
-                    <div class="summercamp-class-content summercamp-class-content12">
-                    課程目標:敬請期待<br>
-                    課程內容:<br>
-                    一、敬請期待<br>
-                    二、敬請期待<br>
-                    學習成果:敬請期待
-                    </div>
-                </div>
-                <!-- --- -->
-              </div>
-              <div class="productIllustrateContent productIllustrateContent3">
-                <!-- 一個公告 -->
-                <div class="classpost">
-                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
-                  <span>2021/09/09</span>
-                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
-                </div>
-                <!-- 一個公告END -->
-                <!-- 一個公告 -->
-                <div class="classpost">
-                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
-                  <span>2021/09/09</span>
-                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
-                </div>
-                <!-- 一個公告END -->
-                <!-- 一個公告 -->
-                <div class="classpost">
-                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
-                  <span>2021/09/09</span>
-                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
-                </div>
-                <!-- 一個公告END -->
-                <!-- 一個公告 -->
-                <div class="classpost">
-                  <h1><i class="fas fa-bullhorn"></i>課程開始販售!!!</h1>
-                  <span>2021/09/09</span>
-                  <p>課程開始販售摟於10/10上課Lorem ipsum dolor sit amet consectetur adipisicing elit. At possimus officiis atque vel odio. Voluptates molestias esse voluptas quia id vitae tenetur nisi? Rerum saepe deserunt possimus illum modi placeat!</p>
-                </div>
-                <!-- 一個公告END -->
-              </div>
-
             </div>
           </div>
         </div>
-      </div>
-
       <div class="container">
         <div class="row">
           <div class="col-sm-8">
@@ -442,6 +264,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設計</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -456,6 +279,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設計</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -470,6 +294,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -484,6 +309,7 @@
                   <p>線上課程</p>
                   <h1>程式設計課程程式設計</h1>
                   <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                  <a href="###" class="productLoveView">檢視商品</a>
                 </div>
                 </a>
               </div>
@@ -588,11 +414,10 @@
 </footer>
 <!-- -------------Footer---END--------------- -->
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
   <script src="assets/js/productList.js"></script>
   <script src="assets/js/classList.js"></script>
-  <script src="assets/js/jquery.nice-number.js"></script>
-  <script src="assets/js/number.js"></script> 
   <script src="assets/js/promotions.js"></script>
   <script src="../IMGSLIDES/assets/js/imgslides.js"></script>
   <script src="../HEADER/assets/js/myAccount.js"></script>

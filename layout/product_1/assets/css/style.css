@@ -1,4 +1,13 @@
-
+ol, ul{
+	padding-left:0;
+}
+p{
+	margin-bottom: 0;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0;
+	font-weight: 600;
+}
 .thousands::before{
     content:'$';
 }
@@ -81,6 +90,7 @@
 .productListText h6{
 	color:#888;
 	font-size: 14px;
+	font-weight: 600;
 }
 .productListMoney{
 	display: flex;
@@ -123,6 +133,7 @@
 	color:#FF0101;
 	width:100px;
 	font-size: 18px;
+	font-weight: 600;
 }
 .productpromotions a{
 	text-decoration: none;	
@@ -151,7 +162,8 @@
 	border: 1px #aaa solid;
 	padding: 0 10px;
 }
-.productListText .productListTextSize select:focus{
+.productListText .productListTextSize select:focus,
+.productListText .productListTextNumber select:focus{
 	border: 2px #BAD9FA solid;
 
 }
@@ -160,42 +172,25 @@
 	display: flex;	
 	align-items: center;
 }
-.productListText .productListTextBtn{
+.productListText .productListTextNumber select{
+	width:150px;
+	height: 30px;
+	border-radius: 5px;
+	outline: none;
+	border: none;
+	border: 1px #aaa solid;
+	padding: 0 10px;
+}
+.productListText .productListTextNumber h3{
+	width: 100px;
+	color:#333;
+	font-size: 16px;
+}
+	
+.productListText .productListTextBtnList{
 	margin-bottom: 30px;
 	display: flex;	
 	align-items: center;
-}
-.productListText .productListTextNumber{
-	margin: 30px 0;
-	display: flex;	
-	align-items: center;
-}
-.productListText .productListTextNumber input[type="number"]{
-	border: none;
-	outline: none;
-	padding: 5px;
-	margin: 0 5px !important;
-	box-shadow: 0 2px 5px;
-	min-width: 100px;
-	height: 30px;
-
-}
-
-.productListText .productListTextNumber button{
-	background:#1484c4; 
-	color: #fff;
-	border: none;
-	outline: none;
-	padding: 0 10px;
-	border-radius: 3px;
-	font-weight: 700;
-	width: 35px;
-	cursor: pointer;
-}
-
-.productListText .productListTextNumber button:hover,
-.productListText .productListTextNumber button:focus{
-	background: #1456C4;
 }
 .productDelivery{
 	height: 60px;
@@ -236,6 +231,7 @@
 	text-align: center;
 	line-height: 20px;
 	font-weight: 500;
+	font-size: 12px;
 }
 .productGiveaway .giveaway a{
 	color:#666;
@@ -292,7 +288,7 @@
 	width: 1em;
   }
 
-.productListText .productListTextBtn input[type="submit"]{
+.productListText .productListTextBtnList .productListTextBtn{
 	width: 150px;
 	height: 40px;
 	background:#7695B1;
@@ -305,7 +301,7 @@
 	margin-right: 20px;
 
 }
-.productListText .productListTextBtn input[type="submit"]:hover{
+.productListText .productListTextBtnList .productListTextBtn:hover{
 	background: #222;
 	transition: .5s;
 
@@ -323,52 +319,33 @@
 
 .productListTextClass h4,.productListTextNo h4{
 	width: 100px;
+	font-size: 14px;
 }
 .productIllustrate{
-	display: flex;
-	flex-direction: column;
-	padding:0 30px;
-	margin: 30px 0;
+	border:1px #ccc solid;
+	border-radius: 5px;
+	min-height: 300px;
+	height: auto;
+
 }
-.productIllustrate .productIllustrateBtn{
-	display: flex;
-}
-.productIllustrate .productIllustrateBtn > a{
-	display: block;
-	text-decoration: none;
-	width: 120px;
-	height: 45px;
-	text-align: center;
-	background:#fff;
-	border: 1px #ccc solid;
-	border-bottom: none;
-	line-height: 45px;
-	margin: 0 5px;
-	color: #333;
+.productIllustrateBtn > .nav-link{
+	color:#aaa;
+	border:1px #ccc solid;
 	font-weight: 600;
-	transition: .5s;
-	border-top: 3px #1484c4 solid;
-
-}
-.productIllustrate .productIllustrateContent{
-	border: 1px #ccc solid;
-	width: 100%;
-	height: 400px;
-
-}
-.productIllustrate .productIllustrateContent > p{
-	padding: 15px;
-}
-.productIllustrate .productIllustrateContent2,
-.productIllustrate .productIllustrateContent3{
-	display: none;
-}
-.productIllustrate .productIllustrateBtn .productIllustrateBtnA2,
-.productIllustrate .productIllustrateBtn .productIllustrateBtnA3{
+	margin: 0 3px;
+	height: 40px;
+	text-align: center;
 	background: #F1F1F1;
-	color: #999;
-	border-top: 1px #ccc solid;
 }
+.productIllustrateBtn > .nav-link.active{
+	color:#333;
+	background: #fff;
+	border-top:3px #1484c4 solid;
+	box-sizing: border-box;
+	
+}
+
+
 .productLoveTitle h1{
 	font-size: 20px;
 	margin-top: 20px;
@@ -418,7 +395,38 @@ margin: 15px 0;
 	font-size: 16px;
 	font-weight: 500;
 }
+.productLove .productLoveText > .productLoveView{
+	display: block;
+	text-decoration: none;
+	text-align: center;
+	line-height: 40px;
+	width:120px;
+	height: 40px;
+	outline: none;
+	border:none;
+	background: #1484c4;
+	color:#fff;
+	margin-top: 10px;
+	font-weight: 600;
+	border-radius: 3px;
+}
 
+.payMethod{
+	display: flex;
+	align-items: center;
+}
+.payMethod b{
+	width:80px;
+	font-size: 16px;
+	height: 50px;
+	color:#333;
+	line-height: 50px;
+}
+.payMethod p{
+	height: 50px;
+	line-height: 50px;
+	margin-bottom:0;
+}
 @media screen and (max-width: 1200px){
 	.productListPhoto{
 	width: 450px;
