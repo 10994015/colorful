@@ -505,6 +505,109 @@ margin: 15px 0;
 	line-height: 50px;
 	margin-bottom:0;
 }
+
+
+.addpayTitle h1{
+	font-size: 24px;
+	color:#E6801E;
+	position: relative;
+}
+.addpayTitle h1::before{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	width: 200px;
+	height: 3px;
+	background: #E6801E;
+	opacity: .5;
+
+}
+.addpayItem{
+	width: 100%;
+	border: 1px #ddd solid;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(1 1 1 / 15%);
+	overflow: hidden;
+	min-height: 400px;
+	height: auto;
+	margin:0;
+	padding-bottom: 10px;
+	position: relative;
+	cursor: pointer;
+}
+#addpay1,#addpay2,#addpay3,#addpay4{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width:25px;
+	height:25px;
+	user-select: none;
+}
+
+.addpayItem img{
+	width:100%;
+}
+.addpayItem .addpayText{
+	padding: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+.addpayItem .addpayText h1{
+	font-size: 18px;
+	font-weight: 600;
+	margin: 5px 0;
+	padding: 0 5px;
+}
+.addpayItem .addpayText p{
+	font-size: 14px;
+	color: #aaa;
+	margin: 5px 0;
+}
+.addpayItem .addpayText h2{
+	font-size: 18px;
+	margin: 5px 0;
+}
+.addpayItem .addpayText h2 span{
+	text-decoration: line-through;
+	color: #aaa;
+	margin-right: 5px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.addpayItem .addpayText h2 > b{
+	color:#f00;
+}
+.addpayItem .addpayText button{
+	border:none;
+	outline: none;
+	background:#7695B1;
+	color:#fff;
+	font-weight: 600;
+	width: 120px;
+	height: 40px;
+	margin-top: 10px;
+}
+.addpayItem .addpayText > div{
+	display: flex;
+	margin: 3px 0;
+}
+.addpayItem .addpayText > div select{
+	width: 130px;
+	border:none;
+	outline: none;
+	border:1px #aaa solid;
+	border-radius: 3px;
+}
+.addpayItem .addpayText > div select:focus{
+	border-color: #55b5ee;
+}
+.addpayItem .addpayText > div h3{
+	color:#666;
+	font-size: 16px;
+	width: 80px;
+}
 @media screen and (max-width: 1200px){
 	.productListPhoto{
 	width: 450px;
