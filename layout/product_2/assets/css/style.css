@@ -598,6 +598,8 @@ margin: 15px 0;
 
 .addpayItem img{
 	width:100%;
+	height: 250px;
+	object-fit: cover;
 }
 .addpayItem .addpayText{
 	padding: 5px;
@@ -717,6 +719,8 @@ margin: 15px 0;
 }
 .groupProdItem img{
 	width: 100%;
+	height: 200px;
+	object-fit: cover;
 }
 .groupProdMoney{
 	display: flex;
