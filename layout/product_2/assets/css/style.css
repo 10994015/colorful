@@ -162,7 +162,7 @@ p{
 	transition: .5s;
 }
 .productListText .productListTextBtnList{
-	margin-bottom: 30px;
+	margin-top: 30px;
 	display: flex;	
 	align-items: center;
 }
@@ -180,7 +180,7 @@ p{
 	margin-right: 20px;
 
 }
-.productListText .productListTextBtn .productListTextBtn:hover{
+.productListText .productListTextBtnList .productListTextBtn:hover{
 	background: #222;
 	transition: .5s;
 

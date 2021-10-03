@@ -12,6 +12,14 @@ p{
     content:'$';
 }
 
+.openBox::before{
+	content: '(';
+
+}
+.openBox::after{
+	content: ')';
+	
+}
 .productList{
 	min-height: 100vh;
 	margin-top: 30px;
@@ -136,7 +144,6 @@ p{
 	font-weight: 600;
 }
 .productpromotions a{
-	text-decoration: none;	
 	margin-left: 10px;
 	font-size: 14px;
 	color:#666;
@@ -149,12 +156,17 @@ p{
 	align-items: center;
 
 }
+.productListText .productListTextSize a{
+	margin-left: 10px;
+	font-size: 14px;
+	color:#666;
+}
 .productListText .productListTextSize h3{
-	width: 50px;
+	width: 100px;
 	font-size: 16px;
 }
 .productListText .productListTextSize select{
-	width: 80%;
+	width: 50%;
 	height: 35px;
 	border-radius: 5px;
 	outline: none;
@@ -188,7 +200,7 @@ p{
 }
 	
 .productListText .productListTextBtnList{
-	margin-bottom: 30px;
+	margin-top: 30px;
 	display: flex;	
 	align-items: center;
 }
@@ -212,6 +224,11 @@ p{
 .productDelivery input[type="radio"]:checked + label{
 	background-color: #4BB9AE;
 	color:#fff;
+}
+.productDelivery > a{
+	font-size: 14px;
+	color:#666;
+	margin-left: 10px;
 }
 .productGiveaway{
 	display: flex;
@@ -239,12 +256,16 @@ p{
 	text-decoration: none;
 	margin-left: 10px;
 }
-.promotionsBox{
+.promotionsBox,
+.sizeBox,
+.deliveryBox{
 	display: none;
 	transition: 1s;
 	z-index: 999;
 }
-.promotionsBox .promotionsBoxBack{
+.promotionsBox .promotionsBoxBack,
+.sizeBox .sizeBoxBack,
+.deliveryBox .deliveryBoxBack{
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -252,7 +273,9 @@ p{
 	background-color: rgba(0,0,0,.5);
 	z-index: 9999;
 }
-.promotionsBox .promotionsBoxContent{
+.promotionsBox .promotionsBoxContent,
+.sizeBox .sizeBoxContent,
+.deliveryBox .deliveryBoxContent{
 	position: fixed;
 	width: 600px;
 	height: 400px;
@@ -261,7 +284,9 @@ p{
 	left:calc(50% - 300px);
 	border-radius: 3px;
 }
-.promotionsBox .promotionsBoxContent h1{
+.promotionsBox .promotionsBoxContent h1,
+.sizeBox .sizeBoxContent h1,
+.deliveryBox .deliveryBoxContent h1{
 	height: 50px;
 	font-size: 18px;
 	width:100%;
@@ -271,20 +296,26 @@ p{
 	color:#fff;
 	position: relative;
 }
-.promotionsBox .promotionsBoxContent h1 > i{
+.promotionsBox .promotionsBoxContent h1 > i,
+.sizeBox .sizeBoxContent h1 > i,
+.deliveryBox .deliveryBoxContent h1 > i{
 	position: absolute;
 	top: 15px;
 	right:20px;
 	cursor: pointer;
 	color:#fff;
 }
-.promotionsBox .promotionsBoxContent p{
+.promotionsBox .promotionsBoxContent p,
+.sizeBox .sizeBoxContent p,
+.deliveryBox .deliveryBoxContent p{
 	width:100%;
 	height: 350px;
 	padding: 15px;
 	overflow-y:scroll;
 }
-.promotionsBox .promotionsBoxContent p::-webkit-scrollbar {
+.promotionsBox .promotionsBoxContent p::-webkit-scrollbar,
+.sizeBox .sizeBoxContent p::-webkit-scrollbar ,
+.deliveryBox .deliveryBoxContent p::-webkit-scrollbar{
 	width: 1em;
   }
 

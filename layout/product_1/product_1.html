@@ -90,7 +90,7 @@
     </section>
 <!-- --------------麵包屑END------------------ -->
 
-<!-- 查看優惠活動BOX -->
+<!-- openBOX -->
 <div class="promotionsBox">
   <div class="promotionsBoxBack"></div>
   <div class="promotionsBoxContent">
@@ -99,7 +99,25 @@
       </p>
   </div>
 </div>
-<!-- 查看優惠活動BOX--END -->
+
+<div class="sizeBox">
+  <div class="sizeBoxBack"></div>
+  <div class="sizeBoxContent">
+    <h1>商品規格說明<i class="fa fa-times sizeClose"></i></h1>
+    <p>說明說明說明
+    </p>
+  </div>
+</div>
+
+<div class="deliveryBox">
+  <div class="deliveryBoxBack"></div>
+  <div class="deliveryBoxContent">
+    <h1>配送說明<i class="fa fa-times deliveryClose"></i></h1>
+    <p>配送說明配送說明配送說明
+    </p>
+  </div>
+</div>
+<!-- openBOX--END -->
 
 
 <!-- ----------content(assets/css/style.css)------- -->
@@ -135,16 +153,17 @@
              <div class="productpromotions">
                 <h2>優惠活動</h2>
                 <div>
-                  <span>買就送100紅利點數<a class="openPromotionsBox">(查看說明)</a></span>
-                  <span>買就送100紅利點數<a class="openPromotionsBox">(查看說明)</a></span>
-                  <span>買就送100紅利點數<a class="openPromotionsBox">(查看說明)</a></span>
+                  <span>買就送100紅利點數<a class="openPromotionsBox openBox" href="javascript:;">查看說明</a></span>
+                  <span>買就送100紅利點數<a class="openPromotionsBox openBox" href="javascript:;">查看說明</a></span>
+                  <span>買就送100紅利點數<a class="openPromotionsBox openBox" href="javascript:;">查看說明</a></span>
                 </div> 
               </div>
              <div class="productListTextSize">
-              <h3>尺寸</h3>
+              <h3>商品規格</h3>
               <select name="" id="">
                 <option value="">F</option>
               </select>
+              <a href="javascript:;" class="openSizeBox openBox">規格說明</a>
              </div>
              <div class="productListTextNumber">
                <h3>請選擇數量</h3>
@@ -157,6 +176,7 @@
              <div class="productDelivery">
                 <input type="radio" id="Delivery1" name="Delivery" checked><label for="Delivery1">宅配</label>
                 <input type="radio" id="Delivery2" name="Delivery"><label for="Delivery2">超商取貨</label>
+                <a href="javascript:;" class="openDeliveryBox openBox">配送說明</a>
              </div>
              <div class="payMethod">
                <b>付款方式</b>
@@ -164,6 +184,9 @@
              </div>
              <div class="productGiveaway">
                 <!-- 一件贈品 -->
+                <div class="giveaway">
+                  <small>贈品說明(ex:好禮多選一或多選二)</small>
+                </div>
                 <div class="giveaway">
                   <h5>贈品</h5><small>【下單送】多益課本</small>
                   
@@ -198,6 +221,17 @@
         </div>
       </div>
 
+      <div class="container">
+        <form action="">
+          <div class="row">
+            <div class="col-smn-8">
+              <div class="groupProdTitle">
+                <h1>組合商品</h1>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
 
       <div class="container mb-5 mt-5">
           <form action="">
