@@ -87,7 +87,7 @@
 <!-- --------------麵包屑END------------------ -->
 
 
-<!-- 查看優惠活動BOX -->
+<!-- BOX -->
 <div class="promotionsBox">
     <div class="promotionsBoxBack"></div>
     <div class="promotionsBoxContent">
@@ -96,7 +96,33 @@
         </p>
     </div>
   </div>
-<!-- 查看優惠活動BOX--END -->
+  
+  <div class="sizeBox">
+    <div class="sizeBoxBack"></div>
+    <div class="sizeBoxContent">
+      <h1>商品規格說明<i class="fa fa-times sizeClose"></i></h1>
+      <p>說明說明說明
+      </p>
+    </div>
+  </div>
+  
+  <div class="deliveryBox">
+    <div class="deliveryBoxBack"></div>
+    <div class="deliveryBoxContent">
+      <h1>配送說明<i class="fa fa-times deliveryClose"></i></h1>
+      <p>配送說明配送說明配送說明
+      </p>
+    </div>
+  </div>
+  <div class="addpayBox">
+      <div class="addpayBoxBack"></div>
+      <div class="addpayBoxContent">
+        <h1>加購說明<i class="fa fa-times addpayBoxClose"></i></h1>
+        <p>加購說明加購說明加購說明加購說明
+        </p>
+      </div>
+    </div>
+<!-- ---BOX--END -->
 
 
 <!-- ----------content(assets/css/style.css)------- -->
@@ -148,12 +174,16 @@
              <div class="productDelivery">
                 <input type="radio" id="Delivery1" name="Delivery" checked><label for="Delivery1">宅配</label>
                 <input type="radio" id="Delivery2" name="Delivery"><label for="Delivery2">超商取貨</label>
+                <a href="javascript:;" class="openDeliveryBox openBox">配送說明</a>
              </div>
              <div class="payMethod">
                 <b>付款方式</b>
                 <p>信用卡 / 貨到付款 / 網路ATM</p>
               </div>
              <div class="productGiveaway">
+                <div class="giveaway">
+                    <small>贈品說明(ex:好禮多選一或多選二)</small>
+                  </div>
                <!-- 一件贈品 -->
                <div class="giveaway">
                  <h5>贈品</h5><small>【下單送】多益課本</small>
@@ -188,6 +218,48 @@
         </div>
       </div>
 
+      <div class="container mb-5 mt-5">
+          <form action="">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="groupProdTitle">
+                  <h1>組合商品</h1>
+                  <p>組合商品內容：組合商品無法單一退換貨，詳細說明請參考退換貨需知</p>
+                </div>
+              </div>
+            </div>
+            <div class="row groupProdContent">
+              <h2>多益950分組合包</h2>
+              <div class="col-sm-8 col-md-2 col-lg-2 d-flex align-items-center">
+                <div class="groupProdItem">
+                    <img src="assets/images/class.png" alt=""> 
+                    <h3>多益課程</h3>
+                    <p>多益課程多益課程多益課程多益課程多益課程</p>
+                </div>
+              </div>
+              <div class="col-sm-8 col-md-1 col-lg-1 d-flex align-items-center justify-content-center">
+                <i class="fas fa-plus my-5"></i>
+              </div>
+              <div class="col-sm-8 col-md-2 col-lg-2 d-flex align-items-center">
+                  <div class="groupProdItem">
+                      <img src="assets/images/a4.jpg" alt=""> 
+                      <h3>多益課本</h3>
+                      <p>多益課本多益課本多益課本多益課本</p>
+                  </div>
+                </div>
+            
+            
+            <div class="col-sm-8 col-md-2 col-lg-2 my-5  d-flex align-items-center justify-content-center">
+              <div class="groupProdMoney">
+                <h4>組合價</h4>
+                <p>組合商品內容文字組合商品內容文字組合商品內容文字組合商品內容文字組合商品內容文字</p>
+                <span><p class="thousands">5000</p><b class="thousands">3000</b></span>
+                <button>加入購物車</button>
+            </div>
+           </div>
+          </div>
+          </form>
+        </div>
 
       <div class="container mb-5 mt-5">
           <form action="">
@@ -195,6 +267,7 @@
           <div class="col-sm-8">
               <div class="addpayTitle">
                   <h1>優惠加購</h1>
+                  <a href="javascript:;" class="openAddpayBox openBox">加購說明</a>
               </div>
           </div>
          
@@ -355,76 +428,94 @@
             </div>
           </div>
         </div>
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-8">
-            <div class="productLoveTitle">
-              <h1>最近瀏覽商品</h1>
+        <div class="container">
+            <div class="row">
+              <div class="col-sm-8">
+                <div class="productLoveTitle">
+                  <h1>最近瀏覽商品</h1>
+                </div>
+              </div>
+              <div class="rvp d-flex">
+                <i class="fas fa-chevron-circle-left rvpLeft"></i>
+                <i class="fas fa-chevron-circle-right rvpRight"></i>
+              <!-- 一個商品STRAT -->
+              <div class="col-sm-8 col-md-4 col-lg-2 rvpItem">
+                  <div class="productLove">
+                    <a href="javascript:;">
+                    <img src="assets/images/a4.jpg" alt="">
+                    <div class="productLoveText">
+                      <p>線上課程</p>
+                      <h1>程式設計課程程式設計</h1>
+                      <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                      <a href="###" class="productLoveView">檢視商品</a>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品STRAT -->
+              <div class="col-sm-8 col-md-4 col-lg-2 rvpItem">
+                  <div class="productLove">
+                    <a href="javascript:;">
+                    <img src="assets/images/a4.jpg" alt="">
+                    <div class="productLoveText">
+                      <p>線上課程</p>
+                      <h1>程式設計課程程式設計</h1>
+                      <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                      <a href="###" class="productLoveView">檢視商品</a>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品STRAT -->
+              <div class="col-sm-8 col-md-4 col-lg-2 rvpItem">
+                  <div class="productLove">
+                    <a href="javascript:;">
+                    <img src="assets/images/a4.jpg" alt="">
+                    <div class="productLoveText">
+                      <p>線上課程</p>
+                      <h1>程式設計課程程式設</h1>
+                      <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                      <a href="###" class="productLoveView">檢視商品</a>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品STRAT -->
+              <div class="col-sm-8 col-md-4 col-lg-2 rvpItem">
+                  <div class="productLove">
+                    <a href="javascript:;">
+                    <img src="assets/images/a4.jpg" alt="">
+                    <div class="productLoveText">
+                      <p>線上課程</p>
+                      <h1>程式設計課程程式設計</h1>
+                      <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                      <a href="###" class="productLoveView">檢視商品</a>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品STRAT -->
+              <div class="col-sm-8 col-md-4 col-lg-2 rvpItem">
+                  <div class="productLove">
+                    <a href="javascript:;">
+                    <img src="assets/images/05.jpg" alt="">
+                    <div class="productLoveText">
+                      <p>線上課程</p>
+                      <h1>程式設計課程程式設計</h1>
+                      <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+                      <a href="###" class="productLoveView">檢視商品</a>
+                    </div>
+                    </a>
+                  </div>
+              </div>
+              <!-- 一個商品END -->
+              </div>
             </div>
           </div>
-          <!-- 一個商品STRAT -->
-          <div class="col-sm-8 col-md-4 col-lg-2">
-              <div class="productLove">
-                <a href="javascript:;">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="productLoveText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                  <a href="###" class="productLoveView">檢視商品</a>
-                </div>
-                </a>
-              </div>
-          </div>
-          <!-- 一個商品END -->
-          <!-- 一個商品STRAT -->
-          <div class="col-sm-8 col-md-4 col-lg-2">
-              <div class="productLove">
-                <a href="javascript:;">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="productLoveText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                  <a href="###" class="productLoveView">檢視商品</a>
-                </div>
-                </a>
-              </div>
-          </div>
-          <!-- 一個商品END -->
-          <!-- 一個商品STRAT -->
-          <div class="col-sm-8 col-md-4 col-lg-2">
-              <div class="productLove">
-                <a href="javascript:;">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="productLoveText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                  <a href="###" class="productLoveView">檢視商品</a>
-                </div>
-                </a>
-              </div>
-          </div>
-          <!-- 一個商品END -->
-          <!-- 一個商品STRAT -->
-          <div class="col-sm-8 col-md-4 col-lg-2">
-              <div class="productLove">
-                <a href="javascript:;">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="productLoveText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                  <a href="###" class="productLoveView">檢視商品</a>
-                </div>
-                </a>
-              </div>
-          </div>
-          <!-- 一個商品END -->
-
-        </div>
-      </div>
     </section>
     <section class="slogan">
          <div class="container">
@@ -484,13 +575,13 @@
   <section class="orderlink">
       <div class="container">
         <div class=" order-item-footer">
-           <div class="col-sm-8 col-md-4 col-lg-2 order-item">
+           <div class="col-sm-8 col-md-2 col-lg-2 order-item">
              <h1>冰芬文教</h1>
              <p>色彩一直是療育人心的良藥<br>
               繽紛=冰芬 意旨戒掉呆板數學及爛英文的學習方式<br>
               利用國外的學習模式 "更高的自由度、更強的互動性和更深的參與感" 讓學習更加放鬆、快樂。</p>
            </div>
-           <div class="col-sm-8 col-md-4 col-lg-2 order-item">
+           <div class="col-sm-8 col-md-2 col-lg-2 order-item">
              <h1>關於冰芬</h1>
              <a href="javascript:;">關於我們</a>
              <a href="javascript:;">聯絡我們</a>
@@ -499,12 +590,12 @@
              <a href="javascript:;">加入會員</a>
              <a id="subnewopen">訂閱電子報</a>
            </div>
-           <div class="col-sm-8 col-md-4 col-lg-2 order-item">
+           <div class="col-sm-8 col-md-2 col-lg-2 order-item">
              <h1>追蹤我們</h1>
              <a href="https://www.ice-finland.club/">冰芬官網</a>
              <a href="https://www.facebook.com/icefinland/">FB專頁</a>
            </div>
-           <div class="col-sm-8 col-md-4 col-lg-2 order-item">
+           <div class="col-sm-8 col-md-2 col-lg-2 order-item">
              <h1>友善連結</h1>
              <a href="javascript:;">憶旺智慧</a>
              <a href="javascript:;">大慶</a>

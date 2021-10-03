@@ -11,7 +11,19 @@ p{
 .thousands::before{
     content:'$';
 }
+.openBox{
+	font-size: 14px;
+	color:#666;
+	margin-left: 10px;
+}
+.openBox::before{
+	content: '(';
 
+}
+.openBox::after{
+	content: ')';
+	
+}
 .productList{
 	min-height: 100vh;
 	margin-top: 30px;
@@ -260,8 +272,19 @@ p{
 
 
 .productLoveTitle h1{
-	font-size: 20px;
+	font-size: 24px;
 	margin-top: 20px;
+	color:#E6801E;
+	position: relative;
+}
+.productLoveTitle h1::before{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	width: 200px;
+	height: 3px;
+	background: #E6801E;
+	opacity: .5;
 }
 .productLove{
 width: 100%;
@@ -274,6 +297,8 @@ margin: 15px 0;
 }
 .productLove img{
 	width: 100%;
+	height: 250px;
+	object-fit: cover;
 }
 .productLove .productLoveText{
 	padding: 5px;
@@ -346,6 +371,11 @@ margin: 15px 0;
 	background-color: #4BB9AE;
 	color:#fff;
 }
+.productDelivery > a{
+	font-size: 14px;
+	color:#666;
+	margin-left: 10px;
+}
 .productGiveaway{
 	display: flex;
 	flex-direction: column;
@@ -372,12 +402,18 @@ margin: 15px 0;
 	text-decoration: none;
 	margin-left: 10px;
 }
-.promotionsBox{
+.promotionsBox,
+.sizeBox,
+.deliveryBox,
+.addpayBox{
 	display: none;
 	transition: 1s;
 	z-index: 999;
 }
-.promotionsBox .promotionsBoxBack{
+.promotionsBox .promotionsBoxBack,
+.sizeBox .sizeBoxBack,
+.deliveryBox .deliveryBoxBack,
+.addpayBox .addpayBoxBack{
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -385,7 +421,10 @@ margin: 15px 0;
 	background-color: rgba(0,0,0,.5);
 	z-index: 9999;
 }
-.promotionsBox .promotionsBoxContent{
+.promotionsBox .promotionsBoxContent,
+.sizeBox .sizeBoxContent,
+.deliveryBox .deliveryBoxContent,
+.addpayBox .addpayBoxContent{
 	position: fixed;
 	width: 600px;
 	height: 400px;
@@ -394,7 +433,10 @@ margin: 15px 0;
 	left:calc(50% - 300px);
 	border-radius: 3px;
 }
-.promotionsBox .promotionsBoxContent h1{
+.promotionsBox .promotionsBoxContent h1,
+.sizeBox .sizeBoxContent h1,
+.deliveryBox .deliveryBoxContent h1,
+.addpayBox .addpayBoxContent h1{
 	height: 50px;
 	font-size: 18px;
 	width:100%;
@@ -404,20 +446,29 @@ margin: 15px 0;
 	color:#fff;
 	position: relative;
 }
-.promotionsBox .promotionsBoxContent h1 > i{
+.promotionsBox .promotionsBoxContent h1 > i,
+.sizeBox .sizeBoxContent h1 > i,
+.deliveryBox .deliveryBoxContent h1 > i,
+.addpayBox .addpayBoxContent h1 > i{
 	position: absolute;
 	top: 15px;
 	right:20px;
 	cursor: pointer;
 	color:#fff;
 }
-.promotionsBox .promotionsBoxContent p{
+.promotionsBox .promotionsBoxContent p,
+.sizeBox .sizeBoxContent p,
+.deliveryBox .deliveryBoxContent p,
+.addpayBox .addpayBoxContent p{
 	width:100%;
 	height: 350px;
 	padding: 15px;
 	overflow-y:scroll;
 }
-.promotionsBox .promotionsBoxContent p::-webkit-scrollbar {
+.promotionsBox .promotionsBoxContent p::-webkit-scrollbar,
+.sizeBox .sizeBoxContent p::-webkit-scrollbar ,
+.deliveryBox .deliveryBoxContent p::-webkit-scrollbar,
+.addpayBox .addpayBox p::-webkit-scrollbar{
 	width: 1em;
   }
 
@@ -511,6 +562,7 @@ margin: 15px 0;
 	font-size: 24px;
 	color:#E6801E;
 	position: relative;
+	margin-bottom: 20px;
 }
 .addpayTitle h1::before{
 	content: '';
@@ -608,6 +660,130 @@ margin: 15px 0;
 	font-size: 16px;
 	width: 80px;
 }
+
+
+.groupProdTitle h1{
+	font-size: 24px;
+	color:#E6801E;
+	position: relative;
+	width: 120px;
+	margin-bottom: 20px;
+}
+.groupProdTitle h1::before{
+	content: '';
+	position: absolute;
+	bottom: -10px;
+	width: 200px;
+	height: 3px;
+	background: #E6801E;
+	opacity: .5;
+
+}
+.groupProdContent{
+	border:1px #ccc solid;
+	border-radius: 5px;
+	padding: 5px;
+}
+.groupProdContent h2{
+	color:#333;
+	font-size: 20px;
+	font-weight: 500;
+}
+.groupProdContent i {
+	font-size: 24px;
+}
+.groupProdItem{
+	width: 90%;
+	border:1px #ccc solid;
+	border-radius: 5px;
+	min-height: 300px;
+	height: auto;
+	padding: 5px;
+	margin: auto;
+}
+.groupProdItem h3{
+	text-align: center;
+	font-size: 18px;
+	color:#333;
+	margin: 5px 0;
+}
+.groupProdItem p{
+	width: 100%;
+	text-align: center;
+	margin: 5px 0;
+	font-size: 16px;
+	color:#000;
+	
+}
+.groupProdItem img{
+	width: 100%;
+}
+.groupProdMoney{
+	display: flex;
+	flex-direction: column;
+	width:100%;
+	justify-content: center;
+	align-items: center;
+}
+.groupProdMoney h4{
+	color:#333;
+}
+.groupProdMoney span{
+	display: flex;
+	color:#999;
+	align-items: center;
+	margin: 10px 0;
+}
+.groupProdMoney span > p{
+	text-decoration:line-through;
+}
+.groupProdMoney span > b{
+	color:#f00;
+	font-size: 24px;
+}
+.groupProdMoney button{
+	width:150px;
+	height: 40px;
+	border:none;
+	outline: none;
+	background-color: #1484c4;
+	color:#fff;
+	cursor: pointer;
+}
+
+.rvp{
+	overflow: hidden;
+	position: relative;
+	
+}
+.rvp .rvpItem{
+	transform:translateX(0%);
+	transition: .5s;
+}
+.rvp .rvpLeft{
+	position: absolute;
+	font-size: 28px;
+	top: 48%;
+	left: 0px;
+	z-index: 999;
+	color:#E6801E;
+	opacity: .5;
+	cursor: pointer;
+}
+.rvp .rvpRight{
+	position: absolute;
+	font-size: 28px;
+	top: 48%;
+	right: 0px;
+	z-index: 999;
+	color:#E6801E;
+	opacity: .5;
+	cursor: pointer;
+}
+.rvp .rvpLeft:hover,.rvp .rvpRight:hover{
+	opacity: 1;
+	transition: .3s;
+}
 @media screen and (max-width: 1200px){
 	.productListPhoto{
 	width: 450px;
@@ -617,11 +793,11 @@ margin: 15px 0;
 }
 @media screen and (max-width: 1024px){
 .productListPhoto{
-	width: 400px;
+	width: 320px;
 	height: 450px;
 }
 .productListText{
-	width: 90%;
+	width: 100%;
 	padding: 0 20px;
 
 }
@@ -660,6 +836,9 @@ margin: 15px auto;
 	display: flex;
 	flex-direction: column;
 }
+.productLove .productLoveText{
+	flex-direction: row;
+}
 }
 
 
@@ -680,7 +859,10 @@ margin: 15px auto;
 }
 
 @media screen and (max-width:600px){
-	.promotionsBox .promotionsBoxContent{
+	.promotionsBox .promotionsBoxContent,
+	.sizeBox .sizeBoxContent,
+	.deliveryBox .deliveryBoxContent,
+	.addpayBox .addpayBoxContent{
 		width: 300px;
 		height: 400px;
 		left:calc(50% - 150px);
