@@ -14,32 +14,32 @@ var openAddpayBox = document.getElementsByClassName('openAddpayBox')[0];
 var addpayBoxBack = document.getElementsByClassName('addpayBoxBack')[0];
 var addpayBoxClose = document.getElementsByClassName('addpayBoxClose')[0];
 
-var rvpLeft = document.getElementsByClassName("rvpLeft")[0];
-var rvpRight = document.getElementsByClassName("rvpRight")[0];
-var rvpItme = document.getElementsByClassName('rvpItem');
-var rvpIdx = 0;
-console.log(rvpItme.length);
+// var rvpLeft = document.getElementsByClassName("rvpLeft")[0];
+// var rvpRight = document.getElementsByClassName("rvpRight")[0];
+// var rvpItme = document.getElementsByClassName('rvpItem');
+// var rvpIdx = 0;
+// console.log(rvpItme.length);
 
-rvpRight.addEventListener("click",function(){
-    rvpIdx++;
+// rvpRight.addEventListener("click",function(){
+//     rvpIdx++;
     
-    if(rvpIdx>rvpItme.length-4){
-        rvpIdx = 0;
-    }
-    for(let r=0;r<rvpItme.length;r++){
-        rvpItme[r].style.transform = 'translateX(-'+rvpIdx+'00%)';
-    }
-})
-rvpLeft.addEventListener("click",function(){
-    rvpIdx--;
+//     if(rvpIdx>rvpItme.length-4){
+//         rvpIdx = 0;
+//     }
+//     for(let r=0;r<rvpItme.length;r++){
+//         rvpItme[r].style.transform = 'translateX(-'+rvpIdx+'00%)';
+//     }
+// })
+// rvpLeft.addEventListener("click",function(){
+//     rvpIdx--;
     
-    if(rvpIdx<0){
-        rvpIdx =rvpItme.length-5;
-    }
-    for(let r=0;r<rvpItme.length;r++){
-        rvpItme[r].style.transform = 'translateX(+'+rvpIdx+'00%)';
-    }
-})
+//     if(rvpIdx<0){
+//         rvpIdx =rvpItme.length-5;
+//     }
+//     for(let r=0;r<rvpItme.length;r++){
+//         rvpItme[r].style.transform = 'translateX(+'+rvpIdx+'00%)';
+//     }
+// })
 
 for(var p=0;p<promotions.length;p++){
     promotions[p].addEventListener("click",()=>{

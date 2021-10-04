@@ -811,7 +811,9 @@ height: auto;
 margin: 15px auto;
 }
 }
-
+.detail-itme04-slick{
+	display: flex;
+}
 @media screen and (max-width: 768px){
 	.productIllustrateContent .classTeacher{
 	display: flex;
