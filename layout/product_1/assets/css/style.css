@@ -8,6 +8,9 @@ p{
 	margin-bottom: 0;
 	font-weight: 600;
 }
+.breadcrumb{
+	background: transparent;
+}
 .thousands::before{
     content:'$';
 }
@@ -605,10 +608,15 @@ p{
 	opacity: .5;
 
 }
+
+.groupProdBox{
+	width: 20%;
+}
 .groupProdContent{
 	border:1px #ccc solid;
 	border-radius: 5px;
 	padding: 5px;
+	width: 100%;
 }
 .groupProdContent h2{
 	color:#333;
@@ -617,9 +625,10 @@ p{
 }
 .groupProdContent i {
 	font-size: 24px;
+	margin: 0 10px;
 }
 .groupProdItem{
-	width: 90%;
+	width: 100%;
 	border:1px #ccc solid;
 	border-radius: 5px;
 	min-height: 300px;
@@ -646,38 +655,7 @@ p{
 	height: 200px;
 	object-fit: cover;
 }
-.groupProdMoney{
-	display: flex;
-	flex-direction: column;
-	width:100%;
-	justify-content: center;
-	align-items: center;
-}
-.groupProdMoney h4{
-	color:#333;
-}
-.groupProdMoney span{
-	display: flex;
-	color:#999;
-	align-items: center;
-	margin: 10px 0;
-}
-.groupProdMoney span > p{
-	text-decoration:line-through;
-}
-.groupProdMoney span > b{
-	color:#f00;
-	font-size: 24px;
-}
-.groupProdMoney button{
-	width:150px;
-	height: 40px;
-	border:none;
-	outline: none;
-	background-color: #1484c4;
-	color:#fff;
-	cursor: pointer;
-}
+
 .rvp{
 	overflow: hidden;
 	position: relative;
