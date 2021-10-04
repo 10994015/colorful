@@ -610,13 +610,16 @@ p{
 }
 
 .groupProdBox{
-	width: 20%;
+	width: 30%;
 }
 .groupProdContent{
 	border:1px #ccc solid;
 	border-radius: 5px;
 	padding: 5px;
 	width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
 }
 .groupProdContent h2{
 	color:#333;

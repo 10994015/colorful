@@ -10,6 +10,10 @@ const bigImg = document.getElementById("productListBigImg");
 const classImg = document.getElementsByClassName('productListSmallImg');
 let classIdx = 0;
 
+
+// console.log(groupProdBox[0].style.width);
+
+
 bigImg.src = classImg[0].src;
 classImg[0].style.opacity = "1";
 for(var i=0;i<classImg.length;i++){
