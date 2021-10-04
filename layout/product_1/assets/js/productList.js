@@ -11,7 +11,6 @@ const classImg = document.getElementsByClassName('productListSmallImg');
 let classIdx = 0;
 
 
-// console.log(groupProdBox[0].style.width);
 
 
 bigImg.src = classImg[0].src;
