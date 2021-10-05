@@ -515,7 +515,7 @@ p{
 	position: relative;
 	cursor: pointer;
 }
-#addpay1,#addpay2,#addpay3,#addpay4{
+.addpay{
 	position: absolute;
 	top: 0;
 	right: 0;
