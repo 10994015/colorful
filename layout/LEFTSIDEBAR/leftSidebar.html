@@ -1,65 +1,97 @@
 <section class="left-sidebar">
-    <i class="fas fa-times left-sidebar-close"></i>  
-      <h1>商品搜尋</h1>
-      <div class="left-search">
-        <input type="text" placeholder="搜尋...">
-        <button><i class="fas fa-search"></i></button>
+  <i class="fas fa-times left-sidebar-close"></i>  
+  
+    
+    <h1>商品分類</h1>
+    <div class="main-prod-class">
+      <div class="prod-class prod-class1" onclick="prodlist(1)">
+        <p>課程</p>
+        <small>(6)</small>
       </div>
-      <h1>商品分類</h1>
-      <div class="main-prod-class">
-        <div class="prod-class prod-class1" onclick="prodlist(1)">
-          <p>課程</p>
-          <small>(6)</small>
-        </div>
-          <ul class="prod-class-list prod-class-list1">
-              <a href="#"><li>-直播課程</li><small>(4)</small></a>
-              <a href="#"><li>-線上課程</li><small>(2)</small></a>
-            </ul>
-        <div class="prod-class prod-class2" onclick="prodlist(2)">
-          <p>教材</p>
-          <small>(8)</small>
-        </div>
-            <ul class="prod-class-list prod-class-list2">
-              <a href="#"><li>-英文課本</li><small>(4)</small></a>
-              <a href="#"><li>-程式設計課本</li><small>(4)</small></a>
-            </ul>
-        <div class="prod-class prod-class3" onclick="prodlist(3)">
-          <p>文具</p>
-          <small>(5)</small>
-        </div>
-            <ul class="prod-class-list prod-class-list3">
-              <a href="#"><li>-筆</li><small>(4)</small></a>
-              <a href="#"><li>-橡皮擦</li><small>(1)</small></a>
-            </ul>
+        <ul class="prod-class-list prod-class-list1">
+            <a href="##" >
+              <li class="prod-class-list-two two1">直播課程</li>
+              <ul class="prod-class-list-three close">
+                <li>-多益課程</li>
+                <li>-程式設計</li>
+              </ul>
+            </a>
+            <a href="##" >
+                <li class="prod-class-list-two two2">線上課程</li>
+                <ul class="prod-class-list-three close">
+                  <li>-美學藝術</li>
+                  <li>-攝影藝術</li>
+                </ul>
+              </a>
+          </ul>
+      <div class="prod-class prod-class2" onclick="prodlist(2)">
+        <p>教材</p>
+        <small>(8)</small>
       </div>
-      <h1>熱銷商品</h1>
-      <div class="prod-hot">
-        <img src="assets/images/a2.jpg" alt="" class="">
-        <div class="prod-hot-text">
-          <h2>多益課本</h2>
-          <span><p class="thousands">800</p><b class="thousands">500</b></span>
-        </div>
+          <ul class="prod-class-list prod-class-list2">
+            <a href="##" >
+              <li class="prod-class-list-two two3">英文</li>
+              <ul class="prod-class-list-three close">
+                <li>-多益課本</li>
+                <li>-英檢課本</li>
+              </ul>
+            </a>
+            <a href="##" >
+              <li class="prod-class-list-two two4">程式設計</li>
+              <ul class="prod-class-list-three close">
+                <li>-網頁設計</li>
+                <li>-Python程式設計</li>
+              </ul>
+            </a>
+          </ul>
+      <div class="prod-class prod-class3" onclick="prodlist(3)">
+        <p>文具</p>
+        <small>(5)</small>
       </div>
-      <div class="prod-hot">
-        <img src="assets/images/a6.jpg" alt="" class="">
-        <div class="prod-hot-text">
-          <h2>多益課本</h2>
-          <span><p class="thousands">800</p><b class="thousands">500</b></span>
-        </div>
+          <ul class="prod-class-list prod-class-list3">
+            <a href="##" >
+              <li class="prod-class-list-two two5">筆類</li>
+              <ul class="prod-class-list-three close">
+                <li>-鉛筆</li>
+                <li>-原子筆</li>
+              </ul>
+            </a>
+            <a href="##" >
+              <li class="prod-class-list-two two6">筆記本</li>
+              <ul class="prod-class-list-three close">
+                <li>-筆記本</li>
+              </ul>
+            </a>
+          </ul>
+    </div>
+    <h1>熱銷商品</h1>
+    <div class="prod-hot">
+      <img src="assets/images/a2.jpg" alt="" class="">
+      <div class="prod-hot-text">
+        <h2>多益課本</h2>
+        <span><b class="thousands">500</b></span>
       </div>
-      <div class="prod-hot">
-        <img src="assets/images/a4.jpg" alt="" class="">
-        <div class="prod-hot-text">
-          <h2>多益課本</h2>
-          <span><p class="thousands">800</p><b class="thousands">500</b></span>
-        </div>
+    </div>
+    <div class="prod-hot">
+      <img src="assets/images/a6.jpg" alt="" class="">
+      <div class="prod-hot-text">
+        <h2>多益課本</h2>
+        <span><b class="thousands">500</b></span>
       </div>
-      <div class="prod-hot">
-        <img src="assets/images/a5.jpg" alt="" class="">
-        <div class="prod-hot-text">
-          <h2>多益課本</h2>
-          <span><p class="thousands">800</p><b class="thousands">500</b></span>
-        </div>
+    </div>
+    <div class="prod-hot">
+      <img src="assets/images/a4.jpg" alt="" class="">
+      <div class="prod-hot-text">
+        <h2>多益課本</h2>
+        <span><b class="thousands">500</b></span>
       </div>
-      
-    </section>
+    </div>
+    <div class="prod-hot">
+      <img src="assets/images/a5.jpg" alt="" class="">
+      <div class="prod-hot-text">
+        <h2>多益課本</h2>
+        <span><b class="thousands">500</b></span>
+      </div>
+    </div>
+    
+  </section>

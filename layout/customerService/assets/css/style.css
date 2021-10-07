@@ -9,10 +9,10 @@ main{
 	content: 'Customer Service';
 	position: absolute;
 	top: 50%;
-	left: -50%;
+	left: -80%;
 	width: 320px;
 	text-align: center;
-	font-size: 36px;
+	font-size: 30px;
 	color:rgba(100, 100, 100, .2);
 }
 .CStitle::before{

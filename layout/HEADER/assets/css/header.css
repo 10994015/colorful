@@ -11,6 +11,22 @@
   font-family: '微軟正黑體',sans-serif;
   scroll-behavior: smooth;
 }
+ol, ul{
+	padding-left:0;
+}
+p{
+	margin-bottom: 0;
+}
+h1{
+	font-size: 24px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+	margin-bottom: 0;
+	font-weight: 600;
+}
+.breadcrumb{
+	background: transparent;
+}
 /* ---共用END---- */
 
 
@@ -451,8 +467,8 @@ header.sticky a:hover:before{
   pointer-events: auto;
 }
 /* -------------------scrollTopEND -------------------*/
-/*------------------------- 網格系統---------------------- */
-@media screen and (min-width: 415px) {
+/* ------------------------- 網格系統---------------------- */
+/* @media screen and (min-width: 415px) {
   .container {
     width: 415px;
     margin: auto;
@@ -683,5 +699,5 @@ header.sticky a:hover:before{
     width: 100%;
     padding: 15px;
   }
-}
+} */
 /* -------------------------網格系統END--------------------- */

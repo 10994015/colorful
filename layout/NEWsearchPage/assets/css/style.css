@@ -5,6 +5,9 @@
 .thousands::before{
     content:'$';
 }
+.col-sm-12{
+	flex:none;
+}
 main{
 	display: flex;
 	justify-content: center;
