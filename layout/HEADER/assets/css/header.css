@@ -377,7 +377,7 @@ header.sticky a:hover:before{
     right: 100px;
   }
   .menu-btn.active{
-    z-index: 999;
+    z-index: 10000;
     background:url('../images/close.png')no-repeat;
     background-size: 25px;
     background-position: center;
