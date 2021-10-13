@@ -3,6 +3,37 @@ var closeConvert = document.getElementsByClassName('closeConvert')[0];
 var enterCode = document.getElementsByClassName('enterCode')[0];
 var convert = document.getElementsByClassName('convert')[0];
 var delproduct = document.getElementsByClassName('delproduct');
+var addPurchaseModel = document.getElementsByClassName('addPurchaseModel')[0];
+var addPurchaseModelBack = document.getElementsByClassName('addPurchaseModelBack')[0];
+var addpurClose = document.getElementsByClassName('addpurClose')[0];
+var question1 = document.querySelector('.AddPurchase .fa-question-circle');
+
+var giveawayModel = document.getElementsByClassName('giveawayModel')[0];
+var giveawayModelBack = document.getElementsByClassName('giveawayModelBack')[0];
+var giveawayClose = document.getElementsByClassName('giveawayClose')[0];
+var question2 = document.querySelector('.giveawayArea .fa-question-circle');
+
+question1.addEventListener("click",()=>{
+  addPurchaseModel.style.display="block";
+})
+addpurClose.addEventListener("click",()=>{
+  addPurchaseModel.style.display="none";
+})
+addPurchaseModelBack.addEventListener("click",()=>{
+  addPurchaseModel.style.display="none";
+})
+
+
+question2.addEventListener("click",()=>{
+  giveawayModel.style.display="block";
+})
+giveawayClose.addEventListener("click",()=>{
+  giveawayModel.style.display="none";
+})
+giveawayModelBack.addEventListener("click",()=>{
+  giveawayModel.style.display="none";
+})
+
 
     for(var i=0;i<cardel.length;i++){
     
