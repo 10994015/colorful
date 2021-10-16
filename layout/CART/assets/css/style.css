@@ -427,6 +427,14 @@ main{
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	font-size: 16px;
+	float: left;
+}
+.giveawayArea > p{
+	display: flex;
+	align-items: center;
+	height: 40px;
+	padding-left: 15px;
+	color:#666;
 }
 .giveawayArea .giveawayAreaContent{
 	width: 100%;
@@ -501,6 +509,14 @@ main{
 	border-top-right-radius: 5px;
 	border-top-left-radius: 5px;
 	font-size: 16px;
+	float: left;
+}
+.AddPurchase > p{
+	height: 40px;
+	display: flex;
+	align-items: center;
+	padding-left: 15px;
+	color:#666;
 }
 .AddPurchase h1 >i,
 .giveawayArea h1 > i{
