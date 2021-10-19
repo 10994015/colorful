@@ -620,7 +620,8 @@ p{
 }
 
 .groupProdBox{
-	width: 30%;
+	margin: 0 10px;
+	
 }
 .groupProdContent{
 	border:1px #ccc solid;
@@ -648,6 +649,7 @@ p{
 	height: auto;
 	padding: 5px;
 	margin: auto;
+	
 }
 .groupProdItem h3{
 	text-align: center;
