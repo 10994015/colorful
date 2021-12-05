@@ -364,25 +364,9 @@
                                     </div>
                       
                       
-                                      <div class="col-sm-12">
-                                        <div class="cartItem cartIetmRight">
-                                          
-                                          <div class="cartSubtotal">
-                                          <h1>小計</h1>
-                                          <h2>紅利點數</h2>
-                                          <button class="enterCode">使用紅利點數折抵 <i class="fas fa-caret-right"></i></button>
-                                          <h4>已折抵-50</h4>
-                                          <div class="line"></div>
-                                          <h4>商品總金額:<b class="thousands">5700</b></h4>
-                                          <h4>紅利點數折抵:<b class="thousands">50</b></h4>
-                                          <h4>活動共折抵:<b>-</b><b class="thousands">350</b></h4>
-                                          <h4>配送方式:<b>線上課程</b></h4>
-                                          <h4>運費總計:<b class="thousands">0</b></h4>
-                                          <h3>總金額:<span class="thousands">5650</span></h3>
-                                          <input type="submit" value="前往結帳" id="gotoCheckout">
-                                          </div> 
-                                        </div>
-                                      </div>
+                                      
+
+                                      
                                   </div>
                                   </div>
                                 </div>
@@ -392,185 +376,7 @@
                           </section>
                       
                       
-                          <section class="checkoutPage">
-                            <div class="container">
-                              <div class="row">
-                                
-                                <div class="col-sm-12 col-md-6">
-                                  <div class="buyerInfo">
-                                    <h1>購買人資訊</h1>
-                                    <h2>姓名</h2>
-                                    <input type="text" placeholder="請輸入購買人姓名">
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      姓名欄位只能輸入中文和英文。
-                                    </p>
-                                    <h2>手機號碼</h2>
-                                    <input type="text" placeholder="請輸入10碼的手機號碼">
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      請輸入10碼的手機號碼以接收簡訊提醒。
-                                    </p>
-                                    <h2>地址</h2>
-                                    <div id="twzipcode">
-                                        <div data-role="zipcode" data-style="Style Name" data-value="信義區"></div>
-                                        <div data-role="county" data-style="Style Name" data-value="110"></div>
-                                        <div data-role="district" data-style="Style Name" data-value="臺北市"></div>
-                                        <input type="text" placeholder="地址">
-                                    </div>
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      請輸入正確地址
-                                    </p>
-                                    <h2>電子郵件</h2>
-                                    <input type="email" placeholder="請輸入您的電子郵件">
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      無法辨識此電子郵件。
-                                    </p>
-                      
-                                    <span>請確認資訊無誤以避免發票無法開立，此資料僅供開立發票使用。</span>
-                                  </div>
-                                </div>
-                                <div class="col-sm-12 col-md-6">
-                                  <!-- 收件人資訊 -->
-                                  <div class="buyerInfo">
-                                    <h1>收件人資訊</h1>
-                                    <h2>姓名</h2>
-                                    <input type="text" placeholder="請輸入購買人姓名">
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      姓名欄位只能輸入中文和英文。
-                                    </p>
-                                    <h2>手機號碼</h2>
-                                    <input type="text" placeholder="請輸入10碼的手機號碼">
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      請輸入10碼的手機號碼以接收簡訊提醒。
-                                    </p>
-                                    <h2>地址</h2>
-                                    <div id="twzipcode2">
-                                        <div data-role="zipcode" data-style="Style Name" data-value="信義區"></div>
-                                        <div data-role="county" data-style="Style Name" data-value="110"></div>
-                                        <div data-role="district" data-style="Style Name" data-value="臺北市"></div>
-                                        <input type="text" placeholder="地址">
-                                    </div>
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      請輸入正確地址
-                                    </p>
-                                    <h2>電子郵件</h2>
-                                    <input type="email" placeholder="請輸入您的電子郵件">
-                                    <p class="warningText">
-                                      <i class="fas fa-exclamation-circle"></i>
-                                      無法辨識此電子郵件。
-                                    </p>
-                                    <span><label for="same"><input type="checkbox" id="same">同購買人資訊</label></span>
-                                  </div>
-                                <!-- 收件人資訊END -->
-                                </div>
-                                <!-- 超商取貨 -->
-                                <div class="col-sm-12">
-                                    <h1>選擇取貨門市</h1>
-                                    <div class="checkoutSuperBusinessCol">
-                      
-                                    <div class="checkoutSuperBusiness">
-                                      <label for="business711">
-                                          <img src="assets/images/711.png" alt="">
-                                          <input type="radio" name="business" id="business711">
-                                      </label>
-                                      <label for="businessFamily">
-                                          <img src="assets/images/family.png" alt="">
-                                          <input type="radio" name="business" id="businessFamily">
-                                      </label>
-                                      <label for="businesshilife">
-                                          <img src="assets/images/hi-life.png" alt="">
-                                          <input type="radio" name="business" id="businesshilife">
-                                      </label>
-                                   </div>
-                                   <div>
-                                      <p>門市名稱</p>
-                                      <input type="text">
-                                      <button>選擇門市</button>
-                                    </div>
-                                    <div>
-                                      <p>門市地址</p>
-                                      <input type="text">
-                                    </div>
-                                  </div>
-                                </div>
-                      
-                                  <!-- 超商取貨END -->
-                                <div class="col-sm-12">
-                                  <div class="checkoutPayMethod">
-                                    <h1>付款方式</h1>
-                                    <select name="" id="paymentMethod">
-                                        <option value="creditCard">信用卡</option>
-                                        <option value="networkATM">網路ATM</option>
-                                        <option value="cashOnDelivery">貨到付款</option>
-                                      </select>
-                                      <p>付款將透過藍新金流平台完成。請放心，本網站將不會儲存您的任何付款資料。</p>         
-                                 </div>
-                                </div>
-                                 <div class="col-sm-12">
-                                   <div class="invoiceInfo">
-                                     <h1>發票資料</h1>
-                                     <select name="" id="invoiceInfoSelect">
-                                        <option value="" disabled>-請選擇發票資料-</option>
-                                        <option value="personalInvoice">個人電子發票</option>
-                                        <option value="compileInvoices">統編發票</option>
-                                        <option value="donationInvoice">捐贈發票</option>
-                                      </select>
-                                      <div class="personalInvoice">
-                                        <div><label for="pi1"><input type="radio" id="pi1" name="pi" checked>無載具</label></div>
-                                        <div>
-                                            <label for="pi2"><input type="radio" id="pi2" name="pi">手機條碼載具</label>
-                                            <input type="text" id="pi2Text" placeholder="請輸入手機條碼載具">
-                                        </div>
-                                        <div>
-                                            <label for="pi3"><input type="radio" id="pi3" name="pi">自然人憑證載具</label>
-                                            <input type="text" id="pi3Text" placeholder="請輸入自然人憑證載具">
-                                        </div>
-                                      </div>
-                      
-                                      <div class="compileInvoices">
-                                        <h2>公司抬頭</h2>
-                                        <input type="text">
-                                        <h2>公司統編</h2>
-                                        <input type="text">
-                                        <h2>發票地址</h2>
-                                        <div id="twzipcode3">
-                                          <div data-role="zipcode" data-style="Style Name" data-value="信義區"></div>
-                                          <div data-role="county" data-style="Style Name" data-value="110"></div>
-                                          <div data-role="district" data-style="Style Name" data-value="臺北市"></div>
-                                          <input type="text" placeholder="地址">
-                                      </div>
-                                      </div>
-                                      <div class="donationInvoice">
-                                        <label for=""><input type="radio" checked>慈善機構</label>
-                                        <h2>其他機構</h2>
-                                        <input type="text" placeholder="請輸入捐贈機構單位代號">
-                                      </div>
-                      
-                                   </div>
-                                 </div>
-                                 
-                                 
-                               
-                                 <div class="col-sm-12">
-                                   <h1></h1>
-                                   <div class="confirmCheckout">
-                                       <label for="confirmCheckoutInput">
-                                         <input type="checkbox" id="confirmCheckoutInput">
-                                         我已詳閱並同意貴網站之<a href="javascript:;" id="E-Terms">電子商務約定條款</a>
-                                       </label>
-                                       <input type="submit" value="確認結帳">
-                                   </div>
-                                 </div>
-                                
-                              </div>
-                            </div>
-                          </section>
+                          
 
 
                     </div>
@@ -581,6 +387,212 @@
                     超商取貨
                     </div>
                   </div>
+                  
+                  <section class="cartPage">
+                    <div class="col-sm-12">
+                      <div class="cartItem cartIetmRight">
+                        
+                        <div class="cartSubtotal">
+                        <h1>小計</h1>
+                        <!-- <h2>紅利點數</h2>
+                        <button class="enterCode">使用紅利點數折抵 <i class="fas fa-caret-right"></i></button>
+                        <h4>已折抵-50</h4> -->
+                        <div class="line"></div>
+                        <h4>商品總金額:<b class="thousands">5700</b></h4>
+                        <h4>紅利點數折抵:<b class="thousands">50</b></h4>
+                        <h4>活動共折抵:<b>-</b><b class="thousands">350</b></h4>
+                        <h4>配送方式:<b>線上課程</b></h4>
+                        <h4>運費總計:<b class="thousands">0</b></h4>
+                        <h3>總金額:<span class="thousands">5650</span></h3>
+                        <input type="submit" value="前往結帳" id="gotoCheckout">
+                        </div> 
+                      </div>
+                    </div>
+                  </section>
+                  <section class="checkoutPage">
+                    <div class="container">
+                      <div class="row">
+                        
+                        <div class="col-sm-12 col-md-6">
+                          <div class="buyerInfo">
+                            <h1>購買人資訊</h1>
+                            <h2>姓名</h2>
+                            <input type="text" placeholder="請輸入購買人姓名">
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              姓名欄位只能輸入中文和英文。
+                            </p>
+                            <h2>手機號碼</h2>
+                            <input type="text" placeholder="請輸入10碼的手機號碼">
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              請輸入10碼的手機號碼以接收簡訊提醒。
+                            </p>
+                            <h2>地址</h2>
+                            <div id="twzipcode">
+                                <div data-role="zipcode" data-style="Style Name" data-value="信義區"></div>
+                                <div data-role="county" data-style="Style Name" data-value="110"></div>
+                                <div data-role="district" data-style="Style Name" data-value="臺北市"></div>
+                                <input type="text" placeholder="地址">
+                            </div>
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              請輸入正確地址
+                            </p>
+                            <h2>電子郵件</h2>
+                            <input type="email" placeholder="請輸入您的電子郵件">
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              無法辨識此電子郵件。
+                            </p>
+              
+                            <span>請確認資訊無誤以避免發票無法開立，此資料僅供開立發票使用。</span>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 col-md-6">
+                          <!-- 收件人資訊 -->
+                          <div class="buyerInfo">
+                            <h1>收件人資訊</h1>
+                            <h2>姓名</h2>
+                            <input type="text" placeholder="請輸入購買人姓名">
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              姓名欄位只能輸入中文和英文。
+                            </p>
+                            <h2>手機號碼</h2>
+                            <input type="text" placeholder="請輸入10碼的手機號碼">
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              請輸入10碼的手機號碼以接收簡訊提醒。
+                            </p>
+                            <h2>地址</h2>
+                            <div id="twzipcode2">
+                                <div data-role="zipcode" data-style="Style Name" data-value="信義區"></div>
+                                <div data-role="county" data-style="Style Name" data-value="110"></div>
+                                <div data-role="district" data-style="Style Name" data-value="臺北市"></div>
+                                <input type="text" placeholder="地址">
+                            </div>
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              請輸入正確地址
+                            </p>
+                            <h2>電子郵件</h2>
+                            <input type="email" placeholder="請輸入您的電子郵件">
+                            <p class="warningText">
+                              <i class="fas fa-exclamation-circle"></i>
+                              無法辨識此電子郵件。
+                            </p>
+                            <span><label for="same"><input type="checkbox" id="same">同購買人資訊</label></span>
+                          </div>
+                        <!-- 收件人資訊END -->
+                        </div>
+                        <!-- 超商取貨 -->
+                        <div class="col-sm-12">
+                            <h1>選擇取貨門市</h1>
+                            <div class="checkoutSuperBusinessCol">
+              
+                            <div class="checkoutSuperBusiness">
+                              <label for="business711">
+                                  <img src="assets/images/711.png" alt="">
+                                  <input type="radio" name="business" id="business711">
+                              </label>
+                              <label for="businessFamily">
+                                  <img src="assets/images/family.png" alt="">
+                                  <input type="radio" name="business" id="businessFamily">
+                              </label>
+                              <label for="businesshilife">
+                                  <img src="assets/images/hi-life.png" alt="">
+                                  <input type="radio" name="business" id="businesshilife">
+                              </label>
+                           </div>
+                           <div>
+                              <p>門市名稱</p>
+                              <input type="text">
+                              <button>選擇門市</button>
+                            </div>
+                            <div>
+                              <p>門市地址</p>
+                              <input type="text">
+                            </div>
+                          </div>
+                        </div>
+              
+                          <!-- 超商取貨END -->
+                        <div class="col-sm-12">
+                          <div class="checkoutPayMethod">
+                            <h1>付款方式</h1>
+                            <select name="" id="paymentMethod">
+                                <option value="creditCard">信用卡</option>
+                                <option value="networkATM">網路ATM</option>
+                                <option value="cashOnDelivery">貨到付款</option>
+                              </select>
+                              <p>付款將透過藍新金流平台完成。請放心，本網站將不會儲存您的任何付款資料。</p>         
+                         </div>
+                        </div>
+                         <div class="col-sm-12">
+                           <div class="invoiceInfo">
+                             <h1>發票資料</h1>
+                             <select name="" id="invoiceInfoSelect">
+                                <option value="" disabled>-請選擇發票資料-</option>
+                                <option value="personalInvoice">個人電子發票</option>
+                                <option value="compileInvoices">統編發票</option>
+                                <option value="donationInvoice">捐贈發票</option>
+                              </select>
+                              <div class="personalInvoice">
+                                <div><label for="pi1"><input type="radio" id="pi1" name="pi" checked>無載具</label></div>
+                                <div>
+                                    <label for="pi2"><input type="radio" id="pi2" name="pi">手機條碼載具</label>
+                                    <input type="text" id="pi2Text" placeholder="請輸入手機條碼載具">
+                                </div>
+                                <div>
+                                    <label for="pi3"><input type="radio" id="pi3" name="pi">自然人憑證載具</label>
+                                    <input type="text" id="pi3Text" placeholder="請輸入自然人憑證載具">
+                                </div>
+                              </div>
+              
+                              <div class="compileInvoices">
+                                <h2>公司抬頭</h2>
+                                <input type="text">
+                                <h2>公司統編</h2>
+                                <input type="text">
+                                <h2>發票地址</h2>
+                                <div id="twzipcode3">
+                                  <div data-role="zipcode" data-style="Style Name" data-value="信義區"></div>
+                                  <div data-role="county" data-style="Style Name" data-value="110"></div>
+                                  <div data-role="district" data-style="Style Name" data-value="臺北市"></div>
+                                  <input type="text" placeholder="地址">
+                              </div>
+                              </div>
+                              <div class="donationInvoice">
+                                <label for=""><input type="radio" checked>慈善機構</label>
+                                <h2>其他機構</h2>
+                                <input type="text" placeholder="請輸入捐贈機構單位代號">
+                              </div>
+              
+                           </div>
+                         </div>
+                         <div class="col-sm-12">
+                          <h2>紅利點數</h2>
+                          <button class="enterCode">使用紅利點數折抵 <i class="fas fa-caret-right"></i></button>
+                          <h4 class="enterCodeNum">已折抵-50</h4>
+                         </div>
+                         
+                       
+                         <div class="col-sm-12">
+                           <h1></h1>
+                           <div class="confirmCheckout">
+                               <label for="confirmCheckoutInput">
+                                 <input type="checkbox" id="confirmCheckoutInput">
+                                 我已詳閱並同意貴網站之<a href="javascript:;" id="E-Terms">電子商務約定條款</a>
+                               </label>
+                               <input type="submit" value="確認結帳">
+                           </div>
+                         </div>
+                        
+                      </div>
+                    </div>
+                  </section>
+                  
                   </div>
           </div>
         </div>
