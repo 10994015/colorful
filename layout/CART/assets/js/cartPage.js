@@ -13,6 +13,18 @@ var giveawayModelBack = document.getElementsByClassName('giveawayModelBack')[0];
 var giveawayClose = document.getElementsByClassName('giveawayClose')[0];
 var question2 = document.querySelector('.giveawayArea .fa-question-circle');
 
+var confirmCheckoutInput = document.getElementById("confirmCheckoutInput");
+var checkBtn = document.getElementById("checkBtn");
+confirmCheckoutInput.addEventListener("change",()=>{
+  if(confirmCheckoutInput.checked){
+    checkBtn.disabled=false;
+    checkBtn.style.background="#1484c4";
+  }else{
+    checkBtn.disabled=true;
+    checkBtn.style.background="#ccc";
+  }
+})
+
 question1.addEventListener("click",()=>{
   addPurchaseModel.style.display="block";
 })

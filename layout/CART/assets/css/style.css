@@ -885,10 +885,10 @@ main{
 .confirmCheckout input[type="submit"]{
 	width: 250px;
 	height: 50px;
-	cursor: pointer;
+	/* cursor: pointer; */
 	outline: none;
 	border:none;
-	background-color: #1484c4;
+	background-color: #ccc;
 	color:#fff;
 	font-size: 18px;
 	font-weight: 600;
