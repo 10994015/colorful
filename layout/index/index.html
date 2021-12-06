@@ -99,14 +99,55 @@
 <main>
 
     
-  <div class="imgSlides">
+  <!-- <div class="imgSlides">
     <ul class="slides">
       <li><img src="assets/images/banner.png" alt=""></li>
       <li><img src="assets/images/banner2.png" alt=""></li><li><img src="assets/images/banner4.png" alt=""></li><li><img src="assets/images/banner5.png" alt=""></li>
   
   </ul>
   </div>
-      
+       -->
+
+       <div class="responsive">
+          <!-- 一個商品 -->
+         <div class="responsiveBox">
+            <img src="assets/images/banner.png" alt="">
+          
+         </div>
+          <!-- 一個商品END -->
+          <!-- 一個商品 -->
+         <div class="responsiveBox">
+            <img src="assets/images/banner2.png" alt="">
+            
+           </div>
+            <!-- 一個商品END -->
+            <!-- 一個商品 -->
+         <div class="responsiveBox">
+            <img src="assets/images/banner.png" alt="">
+            
+           </div>
+            <!-- 一個商品END -->
+            <!-- 一個商品 -->
+         <div class="responsiveBox">
+            <img src="assets/images/banner.png" alt="">
+           </div>
+            <!-- 一個商品END -->
+            <!-- 一個商品 -->
+         <div class="responsiveBox">
+            <img src="assets/images/banner.png" alt="">
+             
+           </div>
+            <!-- 一個商品END -->
+            <!-- 一個商品 -->
+         <div class="responsiveBox">
+            <img src="assets/images/banner.png" alt="">
+            
+           </div>
+            <!-- 一個商品END -->
+       
+       </div>
+
+     <!-- ========================== -->
 
        
 
@@ -419,13 +460,36 @@
   <script src="../HEADER/assets/js/shopcart.js"></script>
   <script src="../HEADER/assets/js/thousands.js"></script>
   <script>
-    $('.slides').slick({
-        dots: true,
-        infinite: true,
-        speed: 300,
-        slidesToShow: 1,
-        adaptiveHeight: false
-    });
+    // $('.slides').slick({
+    //     dots: true,
+    //     infinite: true,
+    //     speed: 300,
+    //     slidesToShow: 1,
+    //     adaptiveHeight: false
+    // });
     </script>
+
+<script type="text/javascript">
+  $('.responsive').slick({
+  dots: true, //原點
+  infinite: false, //無限循環滑動
+  speed: 800, //滑動/淡入動畫速度
+  slidesToShow: 1, //要顯示的幻燈片數量
+  adaptiveHeight: false, //響應高度
+  arrows: true,
+  pauseOnFocus: false,
+  prevArrow: '<div class="cus-prev"><i class="fas fa-chevron-circle-left"></i></div>',
+  nextArrow: '<div class="cus-next"><i class="fas fa-chevron-circle-right"></i></div>',
+  responsive: [
+      {
+          breakpoint: 800,
+          settings: {
+              slidesToShow: 1
+          }
+      }
+  ]
+  // fade:true,
+});
+</script>
 </body>
 </html>
