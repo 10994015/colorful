@@ -231,7 +231,8 @@ main{
 }
 .cartPage .cartContent .cartContentList li{
 	display: flex;
-	height: 150px;
+	min-height: 150px;
+	height: auto;
 	align-items: center;
 	padding: 10px;
 	color:#333;
