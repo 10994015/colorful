@@ -125,14 +125,14 @@
 	text-align: center;
 	line-height: 40px;
 	color: #fff;
-	background: #1484c4;
+	background: #444444;
 	font-weight: 600;
 	text-decoration: none;
 	display: block;
 	margin: 30px 0;
 }
 .orderInfoBill a:hover{
-	background: #1400C4;
+	background: #111;
 	transition: .5s;
 }
 .thousands::before{
