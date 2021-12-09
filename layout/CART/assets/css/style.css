@@ -213,6 +213,9 @@ main{
 	font-size: 18px;
 	cursor: pointer;
 }
+.cartContentList li img{
+	object-fit: cover;
+}
 .cartPage .cartContent .cartContentTitle{
 	list-style: none;
 	display: flex;
@@ -258,8 +261,10 @@ main{
 }
 .cartPage .cartContent .cartContentList img{
 	width:150px;
-	height: 80px;
+	min-height: 80px;
+	max-height: 150px;
 	margin-right: 0px ;
+	object-fit: cover;
 }
 .cartPage .cartContent .cartContentList p{
 	padding: 10px;
@@ -542,7 +547,8 @@ main{
 	box-shadow: 5px 5px 5px rgba( 1 1 1 / 10%);
 	border-radius: 5px;
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-start;
+	flex-wrap: wrap;
 }
 .AddPurchase .AddPurchaseContent .AddPurchaseItem{
 	width: 24%;
