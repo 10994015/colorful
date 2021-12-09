@@ -181,7 +181,7 @@ main{
 	
 }
 .cartPage .cartContent .cartContentList .td-3 .conformTo span{
-	width: 60px;
+	min-width: 60px;
 	height: 25px;
 	background: #1484c4;
 	color:#fff;
@@ -191,6 +191,8 @@ main{
 }
 .cartPage .cartContent .cartContentList .td-3 .conformTo p{
 	color:#f00;
+	max-width: 180px;
+	word-wrap: break-word
 }
 .cartPage .cartContent .cartContentList .td-3 .conformTo .notMeet{
 	background: #DD4F43;
@@ -1051,8 +1053,20 @@ main{
 		
 	}
 }
-
+@media screen and (max-width:1000px){
+	.cartPage .cartContent .cartContentList .td-3 .conformTo p{
+		color:#f00;
+		max-width: 100px;
+		word-wrap: break-word
+	}
+	
+}
 @media screen and (max-width:767px){
+	.cartPage .cartContent .cartContentList .td-3 .conformTo p{
+		color:#f00;
+		max-width: 200px;
+		word-wrap: break-word
+	}
 	.cartPage .cartContent .cartContentTitle{
 		display: none;
 	}
@@ -1114,6 +1128,11 @@ main{
 }
 
 @media screen and (max-width:500px){
+	.cartPage .cartContent .cartContentList .td-3 .conformTo p{
+		color:#f00;
+		max-width: 150px;
+		word-wrap: break-word
+	}
 	.giveawayArea .giveawayAreaContent .giveawayAreaItem{
 		width: 95%;
 		
@@ -1136,4 +1155,13 @@ main{
 	border-radius: 5px;
 	overflow: hidden;
 }
+}
+
+
+@media screen and (max-width:360px){
+	.cartPage .cartContent .cartContentList .td-3 .conformTo p{
+		color:#f00;
+		max-width: 120px;
+		word-wrap: break-word
+	}
 }
