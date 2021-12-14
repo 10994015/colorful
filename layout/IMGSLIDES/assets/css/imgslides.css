@@ -38,7 +38,7 @@
 	border:1px #ccc solid;
   
 }
-.responsive .responsiveBox >img{
+.responsive .responsiveBox img{
 	width: 100%;
 	height: 500px;
   object-fit: cover;
