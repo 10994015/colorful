@@ -229,6 +229,14 @@ main{
 	padding: 10px;
 	color:#fff;
 }
+ .cardel{
+	text-decoration: none;
+	transform: translateX(-25px);
+	color:#ddd;
+}
+.cardel:hover{
+	color:#fff;
+}
 .cartPage .cartContent .cartContentList{
 	list-style: none;
 	display: flex;
@@ -434,7 +442,8 @@ main{
 	margin-top: 30px;
 }
 .giveawayArea h1{
-	width: 180px;
+	min-width: 180px;
+	width: auto;
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
@@ -445,6 +454,7 @@ main{
 	border-top-left-radius: 5px;
 	font-size: 16px;
 	float: left;
+	padding: 0 10px;
 }
 .giveawayArea > p{
 	display: flex;
@@ -516,7 +526,8 @@ main{
 	margin-top: 30px;
 }
 .AddPurchase h1{
-	width: 180px;
+	min-width: 180px;
+	width: auto;
 	height: 40px;
 	text-align: center;
 	line-height: 40px;
@@ -527,6 +538,7 @@ main{
 	border-top-left-radius: 5px;
 	font-size: 16px;
 	float: left;
+	padding: 0 10px;
 }
 .AddPurchase > p{
 	height: 40px;
