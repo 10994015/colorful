@@ -14,21 +14,20 @@ h1{
 	margin-bottom: 0;
 	font-weight: 600;
 }
-.breadcrumb{
-	background: transparent;
-}
+
 .col-sm-12{
 	padding-left: 0;
 	padding-right: 0;
 }
-main{
 
-	height: auto;
-	padding:8em 30px 50px 30px ;
+.container{
+	padding:0 0 0px 0 ;
 
 }
-
-
+.cartpage{
+	width:80%;
+	margin: auto;
+}
 
 .cartPage .caetmessage{
 	border-bottom: 1px #ddd solid;
@@ -130,7 +129,7 @@ main{
 	font-weight: 600;
 	font-size: 20px;
 }
-.cartPage .cartSubtotal input[type="submit"]{
+.cartPage .cartSubtotal button{
 	width:100%;
 	height: 50px;
 	outline: none;
@@ -140,6 +139,10 @@ main{
 	font-weight: 600;
 	color:#fff;
 	cursor: pointer;
+}
+.cartPage .cartSubtotal button.disable{
+	background-color: #ccc;
+	cursor: default;
 }
 .cartPage .cartContent{
 	border-radius: 5px;
@@ -305,7 +308,7 @@ main{
 	position: relative;
 }
 .productIllustrate{
-	margin: 30px 5px;
+	margin: 30px 0px;
 	display: flex;
 	justify-content: center;
 }
@@ -328,6 +331,16 @@ main{
 	line-height: 1.8;
 	color:#333;
 }
+
+/* STI Add Start */
+.tab-content>.tab-pane {
+    display: none;
+}
+
+.tab-content>.active {
+    display: block;
+}
+/* STI Add End */
 
 .convert{
 	width: 100%;
@@ -390,6 +403,10 @@ main{
 	cursor: pointer;
 
 }
+.convertModel button.disable{
+	background-color: #ccc;
+	cursor: default;
+}
 .convertModel i{
 	position: absolute;
 	top: 15px;
@@ -403,22 +420,6 @@ main{
 }
 
 
-
-
-.slogan{
-	min-height: 100px;
-	margin: 30px 0;
-	height: auto;
-  }
-  .slogan .slogan-text{
-	text-align: center;
-	font-size: 18px;
-	height: 40px;
-  }
-  .slogan .slogan-text i{
-	margin: 0 5px;
-	color:#E6157D ;
-  }
 
 
 .thousands{
@@ -653,8 +654,10 @@ main{
 	margin-bottom: 10px;
 }
 .checkoutPage{
-	height: auto;	
-	display: none;
+	height: auto;
+	/* STI Removed Start */
+	/*display: none;*/
+	/* STI Removed End */
 }
 .checkoutPage h1{
 	width: 100%;
@@ -903,18 +906,19 @@ main{
 	font-size: 16px;
 	margin-left: 5px;
 }
-.confirmCheckout input[type="submit"]{
+.confirmCheckout button{
 	width: 250px;
 	height: 50px;
 	/* cursor: pointer; */
 	outline: none;
 	border:none;
-	background-color: #ccc;
+	/* STI Modify Start */
+	background-color: #1484c4;
+	/* STI Modify End */
 	color:#fff;
 	font-size: 18px;
 	font-weight: 600;
 }
-
 .termsModel{
 	width:100%;
 	height: 100%;
@@ -1142,7 +1146,13 @@ main{
 	.termsModel .termsModelBox{
 		width: 300px;
 	}
-	
+	.giveawayArea > p,.AddPurchase > p{
+		display: none;
+	}
+	.activityGift{
+		margin-top: 25px;
+		padding: 0;
+	}
 }
 
 @media screen and (max-width:500px){
@@ -1172,9 +1182,18 @@ main{
 	left:calc(50% - 175px);
 	border-radius: 5px;
 	overflow: hidden;
+	}
+	.confirmCheckout{
+		display: flex;
+		align-items: center;
+	}
 }
+@media screen and (max-width:420px){
+	.cartPage .cartContent .cartContentList p{
+		padding: 10px;
+		width:120px;
+	}
 }
-
 
 @media screen and (max-width:360px){
 	.cartPage .cartContent .cartContentList .td-3 .conformTo p{
@@ -1182,4 +1201,15 @@ main{
 		max-width: 120px;
 		word-wrap: break-word
 	}
+	.nav.nav-tabs{
+		display: flex;
+		flex-direction: column;
+	}
+	.cartPage .cartContent .cartContentList p{
+		padding: 10px;
+		width:100px;
+	}
 }
+
+
+

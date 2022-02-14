@@ -1,11 +1,19 @@
 .breadcrumbs{
-	padding-top: 8em;
+	margin:0;
+	padding: 0;
+	padding: 1.5em 0;
+	width:80%;
+	margin:auto;
+	
 }
 .breadcrumb{
+	
 	width: 100%;
 	margin: auto;
 	display: flex;
 	list-style: none;
+	background-color: transparent;
+	
 }
 .breadcrumb li{
 	padding: 0 8px;

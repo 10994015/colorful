@@ -7,16 +7,17 @@
 	<title>冰芬文教</title>
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="../HEADER/assets/css/header.css">
   <link rel="stylesheet" href="../NAVIGATION/assets/css/navigation.css">
+  <link rel="stylesheet" href="../BEEADCRUMB/assets/css/breadcrumb.css">
   <link rel="stylesheet" href="../FOOTER/assets/css/footer.css">
   <link rel="stylesheet" href="../IMGSLIDES/assets/css/imgslides.css">
-
-  <link rel="stylesheet" href="assets/css/jquery.nice-number.css">
+  <link rel="stylesheet" href="../SINGLE/single.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
+<div class="body-inner-div">
 <!-- -------一個區塊scrollToTop(assets/css/scrollToTop.css)------------ -->
 <div class="scrollToTop-btn">
       <i class="fas fa-angle-up"></i>
@@ -71,99 +72,154 @@
 
     </header>
 <!-- ---------------------header-END---------------------- -->
+<!-- ---------nav---------- -->
+<!-- <nav class="nav" id="nav">
+  <div class="navList">
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+   
+  </div>
+</nav> -->
+<!-- -----------navEND------------- -->
 
-
+<section class="breadcrumbs" id="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li><a href="">首頁</a></li>
+            <li><a href="">購物中心</a></li>
+            <li><a href="">商品</a></li>
+            <li><a href="">購物結帳</a></li>
+            <li><a href="">結帳完成</a></li>
+          </ol>
+      </div>
+    </div>
+  </div>
+</section>
 
 
 
 <!-- ----------content(assets/css/style.css)------- -->
-<main>
-  <div class="container">
-    <div class="finishPage">
-       <div class="row">
-         <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="orderDetails">
-                <h1>訂單詳細資料</h1>
-                <h2>冰芬文教:</h2>
-                <ul class="orderDetailsTitle">
-                  <li class="td-1">商品名稱</li>
-                  <li class="td-2">應付金額</li>
-                </ul>
-                <!-- 一個商品 -->
-                <ul class="orderDetailsItem">
-                  <li class="td-1">美學藝術直播錄影課程×1</li>
-                  <li class="td-2 thousands">2000</li>
-                </ul>
-                <!-- 一個商品END -->
-                <!-- 一個商品 -->
-                <ul class="orderDetailsItem">
-                  <li class="td-1">美學藝術直播錄影課程×1</li>
-                  <li class="td-2 thousands">2000</li>
-                </ul>
-                <!-- 一個商品END -->
-                <!-- 一個商品 -->
-                <ul class="orderDetailsItem">
-                  <li class="td-1">美學藝術直播錄影課程×1</li>
-                  <li class="td-2 thousands">2000</li>
-                </ul>
-                <!-- 一個商品END -->
 
-                <!-- 運費 -->
-                <ul class="orderDetailsAdd">
-                  <li class="td-1">運費</li>
-                  <li class="td-2 thousands">0</li>
-                </ul>
-                <!-- 運費END -->
-
-                <!-- 總計 -->
-                <ul class="orderDetailsTotal">
-                  <li class="td-1">總計</li>
-                  <li class="td-2 thousands">6000</li>
-                </ul>
-                <!-- 總計END -->
-                <!-- 地址 -->
-                <ul class="orderDetailsAdd">
-                  <li class="td-1">購買人地址</li>
-                  <li class="td-2">桃園市桃園區桃園路桃園號桃園樓</li>
-                </ul>
-                <ul class="orderDetailsAdd">
-                  <li class="td-1">收件地址</li>
-                  <li class="td-2">台北市台北區桃園路桃園號桃園樓</li>
-                </ul>
-                <!-- 地址END -->
-            </div>
-         </div>
-         
-
-         <div class="col-sm-12 col-md-12 col-lg-6">
-            <div class="orderInfo">
-              <h3><i class="far fa-check-circle"></i>
-               謝謝！我們已經收到您的訂單！
-             </h3>
-               <ul>
-                 <li>訂單編號:2600589311</li>
-                 <li>日期:22日 9月,2021</li>
-                 <li>付款日期:尚未付款</li>
-                 <li>姓名:李承諺</li>
-                 <li>電子郵件:ex@gmail.com</li>
-                 <li>聯絡電話:0912345678</li>
-                 <li>本次消費總計:<b class="thousands">6000</b></li>
-                 <li>付款方式:網路ATM(尚未付款)</li>
-                 <li>轉入帳號:0000000000</li>
-               </ul>
-             
-            </div>
-          </div>
-       </div>
+<div class="ec_content">
+  <div class="col-sm-12 col-md-12 ovx-scroll">
+    <div ccd-layout="content" class="finishPage">
+      <div class="finishPage">
+        <div class="orderDetails">
+          <h1>訂單詳細資料</h1>
+          <h2>冰芬文教:</h2>
+          <ul class="orderDetailsTitle">
+            <li class="td-1">商品名稱</li>
+            <li class="td-2">應付金額</li>
+          </ul>
+          <!-- 一個商品 -->
+          <ul class="orderDetailsItem">
+            <li class="td-1">美學藝術直播錄影課程×1</li>
+            <li class="td-2 thousands">2000</li>
+          </ul>
+          <!-- 一個商品END -->
+          <!-- 一個商品 -->
+          <ul class="orderDetailsItem">
+            <li class="td-1">美學藝術直播錄影課程×1</li>
+            <li class="td-2 thousands">2000</li>
+          </ul>
+          <!-- 一個商品END -->
+          <!-- 一個商品 -->
+          <ul class="orderDetailsItem">
+            <li class="td-1">美學藝術直播錄影課程×1</li>
+            <li class="td-2 thousands">2000</li>
+          </ul>
+          <!-- 一個商品END -->
+    
+          <!-- 運費 -->
+          <ul class="orderDetailsAdd">
+            <li class="td-1">運費</li>
+            <li class="td-2 thousands">0</li>
+          </ul>
+          <!-- 運費END -->
+    
+          <!-- 總計 -->
+          <ul class="orderDetailsTotal">
+            <li class="td-1">總計</li>
+            <li class="td-2 thousands">6000</li>
+          </ul>
+          <!-- 總計END -->
+          <!-- 地址 -->
+          <ul class="orderDetailsAdd">
+            <li class="td-1">購買人地址</li>
+            <li class="td-2">桃園市桃園區桃園路桃園號桃園樓</li>
+          </ul>
+          <ul class="orderDetailsAdd">
+            <li class="td-1">收件地址</li>
+            <li class="td-2">台北市台北區桃園路桃園號桃園樓</li>
+          </ul>
+          <!-- 地址END -->
       </div>
+      <div class="orderInfo">
+        <h3><i class="far fa-check-circle"></i>
+         謝謝！我們已經收到您的訂單！
+       </h3>
+         <ul>
+           <li>訂單編號:2600589311</li>
+           <li>日期:22日 9月,2021</li>
+           <li>付款日期:尚未付款</li>
+           <li>姓名:李承諺</li>
+           <li>電子郵件:ex@gmail.com</li>
+           <li>聯絡電話:0912345678</li>
+           <li>本次消費總計:<b class="thousands">6000</b></li>
+           <li>付款方式:網路ATM(尚未付款)</li>
+           <li>轉入帳號:0000000000</li>
+         </ul>
+       
+      </div>
+      </div>
+    </div>
   </div>
-</main>
+</div>
+
+
+
+
 <!-- ---------------------content--END--------------------- -->
 
 
 <!-- -------------Footer(assets/css/footer.css)--------------- -->
     
 <footer class="footer">
+<div ccd-widget="FOOTER_LINK" id="aozs" ccd-widget-id="aozs">
+	<div class="footer">
+    <div class="slogan">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
   <section class="sub-newsletter">
       <div class="newsletterback"></div>
      <div class="newsletter">
@@ -222,14 +278,13 @@
   <span class="footer-title">冰芬文教</span>
 <p>Copyright @2021 <a href="index.html" title="">冰芬</a>. All Rights Reserved.</p>
 </div>
-
+</div>
+</div>
 </footer>
   <!-- ---------------------Footer--END----------------- -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 	<script type="text/javascript" src="assets/js/script.js"></script>
-  <script src="assets/js/jquery.nice-number.js"></script>
-  <script src="assets/js/number.js"></script> 
   <script src="../IMGSLIDES/assets/js/imgslides.js"></script>
   <script src="../HEADER/assets/js/myAccount.js"></script>
   <script src="../HEADER/assets/js/script.js"></script>
@@ -237,5 +292,6 @@
   <script src="../HEADER/assets/js/shopcart.js"></script>
   <script src="../HEADER/assets/js/thousands.js"></script>
   <script src="../FOOTER/assets/js/subnewopen.js"></script>
+</div>
 </body>
 </html>

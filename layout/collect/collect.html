@@ -7,16 +7,18 @@
 	<title>冰芬文教</title>
   <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="../HEADER/assets/css/header.css">
   <link rel="stylesheet" href="../NAVIGATION/assets/css/navigation.css">
+  <link rel="stylesheet" href="../BEEADCRUMB/assets/css/breadcrumb.css">
   <link rel="stylesheet" href="../FOOTER/assets/css/footer.css">
   <link rel="stylesheet" href="../IMGSLIDES/assets/css/imgslides.css">
+  <link rel="stylesheet" href="../SINGLE/single.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
 </head>
 <body>
-  
+<div class="body-inner-div">
 <!-- -------一個區塊scrollToTop(assets/css/scrollToTop.css)------------ -->
 <div class="scrollToTop-btn">
     <i class="fas fa-angle-up"></i>
@@ -72,125 +74,184 @@
     </header>
 
 <!-- ---------------------header-END---------------------- -->
+<!-- ---------nav---------- -->
+<!-- <nav class="nav" id="nav">
+  <div class="navList">
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+    <a href=""><li>美學藝術</li></a>
+   
+  </div>
+</nav> -->
+<!-- -----------navEND------------- -->
 
-
+<!-- ----------麵包屑(assets/css/breadcrumb.css)------- -->
+<section class="breadcrumbs" id="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li><a href="">首頁</a></li>
+            <li><a href="">我的帳號</a></li>
+            <li><a href="">我的收藏</a></li>
+          </ol>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- --------------麵包屑END------------------ -->
+<div class="ec_content">
+  <div class="col-sm-12 col-md-12 ovx-scroll">
+    <div ccd-layout="content">
+      <div class="member">
+        <div class="member-title">
+          <h1>我的帳號</h1>
+          <p>我的收藏</p>
+        </div>
+      <div class="member-content">
+        <div class="member-nav">
+          <ul>
+            <a class="memberNavA"><img src="assets/images/avatar.svg" alt="">李承諺</a>
+            <a class="memberNavA" href="../myproduct/myproduct.html">我的課程</a>
+            <a class="memberNavA" href="../collect/collect.html">我的收藏</a>
+            <a class="memberNavA" href="../orderRecord/orderRecord.html">訂單紀錄</a>
+            <a class="memberNavA" href="../member/member.html" >帳戶設定</a>
+            <a class="memberNavA" href="javascript:;">會員登出</a>
+          </ul>
+        </div>
+  
+        <div class="formDiv"><!--STI MODIFY 因為裡面有按鈕type是submit，會自動送出，所以將form改為div，同步修正css -->
+          <div class="collectNull">
+            <p>收藏清單中目前沒有商品</p>
+            <a href="javascript:;">繼續購物</a>
+          </div>
+          <div class="collect">
+            <!-- 一個收藏商品 -->
+            <div class="collectItem">
+              <img src="assets/images/a4.jpg" alt="">
+              <div class="collectText">
+                <p>線上課程</p>
+                <h1>程式設計課程程式設計</h1>
+                <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+              </div>
+              <div class="collectBtn">
+                <input type="submit" value="加入購物車">
+                <input type="submit" value="刪除">
+              </div>
+            </div>
+            <!-- 一個收藏商品END -->
+            <!-- 一個收藏商品 -->
+            <div class="collectItem">
+              <img src="assets/images/a4.jpg" alt="">
+              <div class="collectText">
+                <p>線上課程</p>
+                <h1>程式設計課程程式設計</h1>
+                <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+              </div>
+              <div class="collectBtn">
+                <input type="submit" value="加入購物車">
+                <input type="submit" value="刪除">
+              </div>
+            </div>
+            <!-- 一個收藏商品END -->
+            <!-- 一個收藏商品 -->
+            <div class="collectItem">
+              <img src="assets/images/a4.jpg" alt="">
+              <div class="collectText">
+                <p>線上課程</p>
+                <h1>程式設計課程程式設計</h1>
+                <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+              </div>
+              <div class="collectBtn">
+                <input type="submit" value="加入購物車">
+                <input type="submit" value="刪除">
+              </div>
+            </div>
+            <!-- 一個收藏商品END -->
+            <!-- 一個收藏商品 -->
+            <div class="collectItem">
+              <img src="assets/images/a4.jpg" alt="">
+              <div class="collectText">
+                <p>線上課程</p>
+                <h1>程式設計課程程式設計</h1>
+                <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+              </div>
+              <div class="collectBtn">
+                <input type="submit" value="加入購物車">
+                <input type="submit" value="刪除">
+              </div>
+            </div>
+            <!-- 一個收藏商品END -->
+            <!-- 一個收藏商品 -->
+            <div class="collectItem">
+              <img src="assets/images/a4.jpg" alt="">
+              <div class="collectText">
+                <p>線上課程</p>
+                <h1>程式設計課程程式設計</h1>
+                <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
+              </div>
+              <div class="collectBtn">
+                <input type="submit" value="加入購物車">
+                <input type="submit" value="刪除">
+              </div>
+            </div>
+            <!-- 一個收藏商品END -->
+          </div>
+  
+          
+          <div class="pageBox">
+            <ul class="page">
+              <i class="fas fa-chevron-left" style="font-family: Font Awesome 5 Free"></i>
+              <li style="background-color: #1484c4;color:#fff">1</li>
+              <li>2</li>
+              <i class="fas fa-chevron-right" style="font-family: Font Awesome 5 Free"></i>
+            </ul>
+            <p>頁數 1/2</p>
+          </div>
+          </div>
+      </div>
+      </div>
+  
+      </div>
+  </div>
+</div>
 
 
 <!-- ---------------------content(assets/css/style.css)------- -->
-<main>
-  <div class="container">
-      <div class="member">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="member-title">
-              <h1>我的帳號</h1>
-              <p>我的收藏</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-sm-3">
-            <div class="member-nav">
-              <ul>
-                <a class="memberNavA"><img src="assets/images/avatar.svg" alt="">李承諺</a>
-                <a class="memberNavA" href="../myproduct/myproduct.html">我的課程</a>
-                <a class="memberNavA" href="../collect/collect.html">我的收藏</a>
-                <a class="memberNavA" href="../orderRecord/orderRecord.html">訂單紀錄</a>
-                <a class="memberNavA" href="../member/member.html" >帳戶設定</a>
-                <a class="memberNavA" href="javascript:;">會員登出</a>
-              </ul>
-            </div>
-          </div>
-          <div class="col-sm-9">
-          <form action="">
-            <div class="collectNull">
-              <p>收藏清單中目前沒有商品</p>
-              <a href="javascript:;">繼續購物</a>
-            </div>
-            <div class="collect">
-              <!-- 一個收藏商品 -->
-              <div class="collectItem">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="collectText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                </div>
-                <div class="collectBtn">
-                  <input type="submit" value="加入購物車">
-                  <input type="submit" value="刪除">
-                </div>
-              </div>
-              <!-- 一個收藏商品END -->
-              <!-- 一個收藏商品 -->
-              <div class="collectItem">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="collectText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                </div>
-                <div class="collectBtn">
-                  <input type="submit" value="加入購物車">
-                  <input type="submit" value="刪除">
-                </div>
-              </div>
-              <!-- 一個收藏商品END -->
-              <!-- 一個收藏商品 -->
-              <div class="collectItem">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="collectText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                </div>
-                <div class="collectBtn">
-                  <input type="submit" value="加入購物車">
-                  <input type="submit" value="刪除">
-                </div>
-              </div>
-              <!-- 一個收藏商品END -->
-              <!-- 一個收藏商品 -->
-              <div class="collectItem">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="collectText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                </div>
-                <div class="collectBtn">
-                  <input type="submit" value="加入購物車">
-                  <input type="submit" value="刪除">
-                </div>
-              </div>
-              <!-- 一個收藏商品END -->
-              <!-- 一個收藏商品 -->
-              <div class="collectItem">
-                <img src="assets/images/a4.jpg" alt="">
-                <div class="collectText">
-                  <p>線上課程</p>
-                  <h1>程式設計課程程式設計</h1>
-                  <h2><span class="thousands">2000</span><b class="thousands">1500</b></h2>
-                </div>
-                <div class="collectBtn">
-                  <input type="submit" value="加入購物車">
-                  <input type="submit" value="刪除">
-                </div>
-              </div>
-              <!-- 一個收藏商品END -->
-            </div>
 
-            </form>
-          </div>
-        </div>
-      </div>
-    </div>
-  <!-- ---------------------content--END--------------------- -->
-
-</main>
     
 <!-- -------------Footer(assets/css/footer.css)--------------- -->
 <footer class="footer">
+    <div class="slogan">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
   <section class="sub-newsletter">
       <div class="newsletterback"></div>
      <div class="newsletter">
@@ -264,5 +325,6 @@
   <script src="../HEADER/assets/js/shopcart.js"></script>
   <script src="../HEADER/assets/js/thousands.js"></script>
   <script src="../FOOTER/assets/js/subnewopen.js"></script>
+</div>
 </body>
 </html>

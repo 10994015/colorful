@@ -2,7 +2,7 @@ body{
     font-family: sans-serif;
 }
 .forgetPassword{
-	min-height: calc(100vh - 122px);
+	min-height: 50vh;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -42,7 +42,7 @@ body{
 	border:3px #BAD9FA solid;
 	transition: .1s;
 }
-.forgetPassword  .forgetContent input[type="submit"]{
+.forgetPassword  .forgetContent button{
 	width:200px;
 	height: 45px;
 	outline: none;
@@ -54,7 +54,7 @@ body{
 	font-weight: 600;
 	cursor: pointer;
 }
-.forgetPassword  .forgetContent input[type="submit"]:hover{
+.forgetPassword  .forgetContent button:hover{
 	background-color: #1460C4;
 	transition: .3s;
 }

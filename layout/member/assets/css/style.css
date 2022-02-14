@@ -1,12 +1,9 @@
-.container{
-	display: flex;
-	flex-direction: column;
-}
+
 .member{
-	min-height: 100vh;
-	height: auto;
-	padding-top: 8em;
+	width:80%;
+	margin:auto;
 }
+
 .member .member-title{
 	border-bottom: 1px #DDD solid;
 	height: 80px;
@@ -19,8 +16,15 @@
 .member .member-title p{
 	font-size: 14px;
 }
+.member .member-content{
+	display: flex;
+	justify-content: space-between;
+}
+.member form{
+	width:70%;
+}
 .member .member-nav{
-	width: 100%;
+	width: 30%;
 	height: 500px;
 	display: flex;
 	align-items: center;
@@ -62,17 +66,7 @@
 	width: 50px;
 	height: 50px;
 }
-@media screen and (max-width: 765px){
-	.member .member-nav{
-	width: 100%;
-	height: auto;
-	display: flex;
-	align-items: center;
-	flex-direction: column;
-	
-}
-	
-}
+
 
 
 
@@ -111,7 +105,7 @@
 	border: #BAD9FA 3px solid;
 	transition: .3s;
 }
-.member .settings .setting-columns .setting-column input[type="submit"]{
+.member .settings .setting-columns .setting-column button{
 	width: 50%;
 	margin: auto;
 	cursor: pointer;
@@ -119,12 +113,20 @@
 	color: #fff;
 	font-weight: 600;
 	font-size: 16px;
+	outline: none;
+	border: none;
+	border: 1px #ccc solid;
+	border-radius: 5px;
+	width: 100%;
+	height: 40px;
+	padding: 0 10px;
 }
 
-.member .settings .setting-columns .setting-column input[type="submit"]:hover{
+.member .settings .setting-columns .setting-column button:hover{
 	background: #1458C4;
 	transition: .5s;
 }
+
 .member .settings .setting-columns .setting-column select{
 	outline: none;
 	border: none;
@@ -150,4 +152,50 @@
 }
 .thousands::before{
     content:'$';
+}
+
+.warningText{
+	color:#f10;
+	font-size: 14px;
+}
+.member .settings .setting-columns .setting-column button.btn-disable{
+	background: #ccc;
+	cursor:default ;
+}
+/* STI Add Start*/
+h1 {
+    font-size: 24px;
+}
+/* STI Add End*/
+@media screen and (max-width:1024px){
+	.member{
+		width:95%;
+	}
+	.member .member-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-content: center;
+	}
+	.member .member-nav{
+		width:100%;
+		height: auto;
+	}
+	.member form{
+		width:100%;
+	}
+	.member .settings{
+		border-left:none;
+	}
+}
+@media screen and (max-width: 765px){
+	.member .member-nav{
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+}
+	
 }

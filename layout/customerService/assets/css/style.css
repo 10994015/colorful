@@ -1,6 +1,4 @@
-main{
-	padding-top: 8em;
-}
+
 .CStitle{
 	color:#1484c4;
 	position: relative;
@@ -28,13 +26,53 @@ main{
 	margin-top: 50px;
 }
 
+.CSLeftSidebar .CSLeftSidebarList{
+	display: flex;
+	flex-direction: column;
+	list-style: none;
+	width:100%;
+	border: 1px #1484c4 solid;
+	box-sizing: border-box;
+	margin-top: 50px;
+}
+.CSLeftSidebar .CSLeftSidebarList li{
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	background: #1484c4;
+	color:#fff;
+	padding-left: 15px;
+	font-size: 18px;
+	font-weight: 600;
 
+}
+.CSLeftSidebar .CSLeftSidebarList a{
+	width: 100%;
+	height: 35px;
+	display: block;
+	text-decoration: none;
+	color:#333;
+	border-bottom: 1px #ccc solid;
+	line-height: 35px;
+	padding-left: 15px;
 
+}
+.CSLeftSidebar .CSLeftSidebarList a:hover{
+	background-color: #ddd;
+}
+.CStitlebox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  
 
 .slogan{
-	min-height: 100px;
 	margin: 30px 0;
 	height: auto;
+	width:100%;
+	margin:80px auto;
   }
   .slogan .slogan-text{
 	text-align: center;
@@ -45,6 +83,5 @@ main{
 	margin: 0 5px;
 	color:#E6157D ;
   }
-  
   
   

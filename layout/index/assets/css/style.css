@@ -1,12 +1,6 @@
-
-
-
-
-
 .thousands::before{
     content:'$';
 }
-
 .intro{
   display: flex;
   flex-direction: column;
@@ -55,6 +49,13 @@
     height: 250px;
     
   }
+  .intro .intro-list{
+    display: flex;
+    flex-direction: column;
+  }
+  .intro{
+    height: auto;
+  }
   
 }
 @media screen and (max-width: 650px) {
@@ -63,13 +64,7 @@
     height: 300px;
     
   }
-  .intro .intro-list{
-    display: flex;
-    flex-direction: column;
-  }
-  .intro{
-    height: auto;
-  }
+  
   .intro p{
   width: 90%;
   text-align: center;
@@ -79,8 +74,8 @@
 
 
 .new-class{
-  margin-bottom: 100px;
-  padding: 10px;
+  margin-bottom: 30px;
+  padding:0 100px;
 }
 .new-class .container{
   flex-direction: column;
@@ -135,16 +130,32 @@
 .new-class .new-class-item h1{
   padding: 10px;
   color: #333;
-   overflow : hidden;
+  font-size: 20px;
+  width : 230px;
+/* -------------------sti add start -------------------*/
+  margin-bottom: 0;
+  font-weight: 600;
+/* -------------------sti add end -------------------*/
+  overflow : hidden;
   text-overflow : ellipsis;
   white-space : nowrap;
-  width : 280px;
+}
+.new-class .new-class-item small{
+  text-decoration: line-through;
+  color:#999;
+  padding: 10px 0 10px 10px;
+  margin-top: 5px;
+  font-size: 16px;
+  font-weight: 600;
 }
 .new-class .new-class-item p{
   display: flex;
   align-items: center;
   padding: 10px;
   margin-top: 5px;
+/* -------------------sti add start -------------------*/
+  margin-bottom: 0;
+/* -------------------sti add end -------------------*/
 }
 .new-class .new-class-item p img{
   width: 40px;
@@ -222,24 +233,18 @@
   }
   
 }
-
-
-
-.slogan{
-  min-height: 100px;
-  margin: 30px 0;
-  height: auto;
+@media screen and (max-width:768px){
+  .new-class{
+    margin-bottom: 30px;
+    padding:0 50px;
+  }
 }
-.slogan .slogan-text{
-  text-align: center;
-  font-size: 18px;
-  height: 40px;
+@media screen and (max-width:550px){
+  .new-class{
+    margin-bottom: 30px;
+    padding:0 20px;
+  }
 }
-.slogan .slogan-text i{
-  margin: 0 5px;
-  color:#E6157D ;
-}
-
 
 
 

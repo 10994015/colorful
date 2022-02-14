@@ -9,12 +9,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
   <link rel="stylesheet" type="text/css" href="./assets/slick-1.6.0/slick/slick.css"/>
   <link rel="stylesheet" type="text/css" href="./assets/slick-1.6.0/slick/slick-theme.css"/>
-  <link rel="stylesheet" href="assets/css/style.css">
   <link rel="stylesheet" href="../HEADER/assets/css/header.css">
   <link rel="stylesheet" href="../NAVIGATION/assets/css/navigation.css">
+  <link rel="stylesheet" href="../BEEADCRUMB/assets/css/breadcrumb.css">
   <link rel="stylesheet" href="../FOOTER/assets/css/footer.css">
   <link rel="stylesheet" href="../NAVIGATION/assets/css/navigation.css">
   <link rel="stylesheet" href="../IMGSLIDES/assets/css/imgslides.css">
+  <link rel="stylesheet" href="../SINGLE/single.css">
+  <link rel="stylesheet" href="assets/css/style.css">
 
 
 
@@ -25,7 +27,7 @@
 
 </head>
 <body>
-
+<div class="body-inner-div">
 <!-- --------一個區塊scrollToTop(assets/css/scrollToTop.css)-------- -->
 <div class="scrollToTop-btn">
       <i class="fas fa-angle-up"></i>
@@ -69,7 +71,7 @@
     
     </div>
     <div class="navigation-shop">
-    <a href="javascript:;" class="shop-cart"><i class="fas fa-shopping-cart"></i></p></a>
+    <a href="javascript:;" class="shop-cart"><i class="fas fa-shopping-cart"></i><span>(0)</span></a>
     <ul class="shopUl" onclick="shopUL()">
       <li class="shopUl-1"><a href="../CART/cartPage.html"><p>線上課程</p><p><i class="fas fa-arrow-right"></i></p></a></li>
       <li class="shopUl-2"><a href="../CART-2/cartPage.html"><p>實體教材(宅配)</p><p><i class="fas fa-arrow-right"></i></p></a></li>
@@ -94,297 +96,315 @@
   </div>
 </nav>
 <!-- ------------------------navigationEND--------------------------- -->
+<!-- ----------麵包屑(assets/css/breadcrumb.css)------- -->
+<!-- <section class="breadcrumbs" id="breadcrumbs">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <ol class="breadcrumb">
+            <li><a href="">首頁</a></li>
+          </ol>
+      </div>
+    </div>
+  </div>
+</section> -->
+<!-- --------------麵包屑END------------------ -->
 
 <!-- ---------content(assets/css/stylex.css)---------------- -->
-<main>
-
-    
-  <!-- <div class="imgSlides">
-    <ul class="slides">
-      <li><img src="assets/images/banner.png" alt=""></li>
-      <li><img src="assets/images/banner2.png" alt=""></li><li><img src="assets/images/banner4.png" alt=""></li><li><img src="assets/images/banner5.png" alt=""></li>
-  
-  </ul>
-  </div>
-       -->
-
-       <div class="responsive">
-          <!-- 一個商品 -->
-         <div class="responsiveBox">
+<div class="ec_content">
+      <div class="col-sm-12 col-md-12 ovx-scroll">
+        <div ccd-layout="content">
+          <div class="responsive">
+            <!-- 一個商品 -->
+           <div class="responsiveBox">
+              <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
+            
+           </div>
+            <!-- 一個商品END -->
+            <!-- 一個商品 -->
+           <div class="responsiveBox">
+            <a href="../product_1/product_1.html"><img src="assets/images/banner2.png" alt=""></a>
+              
+             </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品 -->
+           <div class="responsiveBox">
             <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
-          
+              
+             </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品 -->
+           <div class="responsiveBox">
+            <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
+             </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品 -->
+           <div class="responsiveBox">
+            <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
+               
+             </div>
+              <!-- 一個商品END -->
+              <!-- 一個商品 -->
+           <div class="responsiveBox">
+            <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
+              
+             </div>
+              <!-- 一個商品END -->
+         
          </div>
-          <!-- 一個商品END -->
-          <!-- 一個商品 -->
-         <div class="responsiveBox">
-          <a href="../product_1/product_1.html"><img src="assets/images/banner2.png" alt=""></a>
-            
-           </div>
-            <!-- 一個商品END -->
-            <!-- 一個商品 -->
-         <div class="responsiveBox">
-          <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
-            
-           </div>
-            <!-- 一個商品END -->
-            <!-- 一個商品 -->
-         <div class="responsiveBox">
-          <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
-           </div>
-            <!-- 一個商品END -->
-            <!-- 一個商品 -->
-         <div class="responsiveBox">
-          <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
-             
-           </div>
-            <!-- 一個商品END -->
-            <!-- 一個商品 -->
-         <div class="responsiveBox">
-          <a href="../product_1/product_1.html"><img src="assets/images/banner.png" alt=""></a>
-            
-           </div>
-            <!-- 一個商品END -->
-       
-       </div>
-
-     <!-- ========================== -->
-
-       
-
-       <section class="new-class">
-         <div class="container">
-          <div class="row">
-            <h2>最新課程</h2>
-          </div>
-           <div class="row">
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
-                 <h1>美學藝術 直播錄影課程</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/05.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000000</b>
-               </a>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
-                 <h1>美學藝術</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/05.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
-                 <h1>美學藝術</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/05.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
-                 <h1>美學藝術</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/05.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
+       <!-- ========================== -->
+         <section class="new-class">
+           <div class="container">
+            <div class="row">
+              <h2>最新課程</h2>
+            </div>
+             <div class="row">
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
+                   <h1>美學藝術 直播錄影課程</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/05.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000000</b>
+                 </a>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
+                   <h1>美學藝術</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/05.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
+                   <h1>美學藝術</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/05.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/da0.jpg" alt=""></div>
+                   <h1>美學藝術</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/05.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
              </div>
            </div>
-         </div>
-       </section>
-       <section class="new-class">
-         <div class="container">
-          <div class="row">
-            <h2>熱銷課程</h2>
-          </div>
-           <div class="row">
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
-                 <h1>生活美語</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/09.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
+         </section>
+         <section class="new-class">
+           <div class="container">
+            <div class="row">
+              <h2>熱銷課程</h2>
+            </div>
+             <div class="row">
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
+                   <h1>生活美語</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/09.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
+                   <h1>生活美語</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/09.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
+                   <h1>生活美語</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/09.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
+                   <h1>生活美語</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/09.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
+               <div class="col-sm-12 col-md-6 col-lg-3">
+                 <a href="javascript:;" class="new-class-item">
+                   <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
+                   <h1>生活美語</h1>
+                   <i class="far fa-clock"></i>四周
+                   <i class="far fa-thumbs-up"></i>600次觀看
+                   <p>
+                     <img src="assets/images/09.jpg" alt="">
+                     <span>Adrian</span>
+                   </p>
+                   <small class="thousands">2000</small>
+                   <b class="thousands">2000</b>
+                 </a>
+               </div>
+               
+              
              </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
-                 <h1>生活美語</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/09.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
-                 <h1>生活美語</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/09.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
-                 <h1>生活美語</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/09.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-               <a href="javascript:;" class="new-class-item">
-                 <div class="new-class-mainimg"><img src="assets/images/lift.jpg" alt=""></div>
-                 <h1>生活美語</h1>
-                 <i class="far fa-clock"></i>四周
-                 <i class="far fa-thumbs-up"></i>600次觀看
-                 <p>
-                   <img src="assets/images/09.jpg" alt="">
-                   <span>Adrian</span>
-                 </p>
-                 <b class="thousands">2000</b>
-               </a>
-             </div>
-             
-            
            </div>
-         </div>
-       </section>
-       <section class="intro">
-          <h1>冰芬文教</h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, itaque. Dolores ad ab reprehenderit, maxime molestias mollitia, repellat perspiciatis earum molestiae, commodi in saepeoluptatibus hic. Exercitationem.
-          </p>
-          <div class="intro-list" style="display: flex;">
-            <div class="intro-item" style="width: 250px;height: 300px;padding: 10px;margin: 30px 15px;background: #fff;border-radius: 3px;"><img src="assets/images/pic01.jpg" style="width: 100%;" alt=""><p style="width: 100%;padding: 10px;color: #333;">test</p></div>
-            <div class="intro-item" style="width: 250px;height: 300px;padding: 10px;margin: 30px 15px;background: #fff;border-radius: 3px;"><img src="assets/images/pic02.jpg" style="width: 100%;" alt=""><p style="  width: 100%;padding: 10px;color: #333;">test</p></div>
-            <div class="intro-item" style="width: 250px;height: 300px;padding: 10px;margin: 30px 15px;background: #fff; border-radius: 3px;"><img src="assets/images/pic4.jpg" style="width: 100%;" alt=""><p style="  cwidth: 100%;padding: 10px;color: #333;">test</p></div>
-          </div>
-        </section>
-       <section class="qa">
-         <div class="container">
-           <div class="row">
-             <div class="col-sm-12"><h1>常見問答</h1></div>
-             <div class="col-sm-12">
-                <div class="question-ans">
-                  <div class="question question1" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
-                  <div class="ans ans1"><p>
-                    超帥超帥超帥超帥超帥超帥超帥
-                    超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥
-                    超帥超帥超帥超帥超帥超帥超帥超帥
-                  </p>
+         </section>
+         <section class="intro">
+            <h1>冰芬文教</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, itaque. Dolores ad ab reprehenderit, maxime molestias mollitia, repellat perspiciatis earum molestiae, commodi in saepeoluptatibus hic. Exercitationem.
+            </p>
+            <div class="intro-list">
+              <div class="intro-item" style="width: 250px;height: 300px;padding: 10px;margin: 30px 15px;background: #fff;border-radius: 3px;"><img src="assets/images/pic01.jpg" style="width: 100%;" alt=""><p style="width: 100%;padding: 10px;color: #333;">test</p></div>
+              <div class="intro-item" style="width: 250px;height: 300px;padding: 10px;margin: 30px 15px;background: #fff;border-radius: 3px;"><img src="assets/images/pic02.jpg" style="width: 100%;" alt=""><p style="  width: 100%;padding: 10px;color: #333;">test</p></div>
+              <div class="intro-item" style="width: 250px;height: 300px;padding: 10px;margin: 30px 15px;background: #fff; border-radius: 3px;"><img src="assets/images/pic4.jpg" style="width: 100%;" alt=""><p style="  cwidth: 100%;padding: 10px;color: #333;">test</p></div>
+            </div>
+          </section>
+         <section class="qa">
+           <div class="container">
+             <div class="row">
+               <div class="col-sm-12"><h1>常見問答</h1></div>
+               <div class="col-sm-12">
+                  <div class="question-ans">
+                    <div class="question question1" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
+                    <div class="ans ans1"><p>
+                      超帥超帥超帥超帥超帥超帥超帥
+                      超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥
+                      超帥超帥超帥超帥超帥超帥超帥超帥
+                    </p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="question-ans">
-                  <div class="question question2" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
-                  <div class="ans ans2"><p>讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚</p>
+      
+                  <div class="question-ans">
+                    <div class="question question2" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
+                    <div class="ans ans2"><p>讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚讚</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="question-ans">
-                  <div class="question question3" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
-                  <div class="ans ans3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis non dolorum, repellendus voluptatum consequatur. Itaque aliquam rerum alias, necessitatibus voluptatum excepturi architecto reprehenderit suscipit, veritatis totam, vel laborum accusantium!
-                    Dolores, eligendi, fuga libero hic asperiores molestiae, ut tempore corporis accusantium doloremque dolorem vero quas incidunt nesciunt magnam tenetur obcaecati aliquid mollitia fugit numquam voluptates alias nobis at cumque sint!
-                    Quos animi debitis dolore ea atque delectus ipsum tenetur autem possimus voluptatibus, cupiditate, obcaecati voluptate nam necessitatibus cum adipisci excepturi porro ullam placeat neque perspiciatis, fugiat magnam suscipit! Voluptas, hic.</p>
+      
+                  <div class="question-ans">
+                    <div class="question question3" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
+                    <div class="ans ans3"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit veritatis non dolorum, repellendus voluptatum consequatur. Itaque aliquam rerum alias, necessitatibus voluptatum excepturi architecto reprehenderit suscipit, veritatis totam, vel laborum accusantium!
+                      Dolores, eligendi, fuga libero hic asperiores molestiae, ut tempore corporis accusantium doloremque dolorem vero quas incidunt nesciunt magnam tenetur obcaecati aliquid mollitia fugit numquam voluptates alias nobis at cumque sint!
+                      Quos animi debitis dolore ea atque delectus ipsum tenetur autem possimus voluptatibus, cupiditate, obcaecati voluptate nam necessitatibus cum adipisci excepturi porro ullam placeat neque perspiciatis, fugiat magnam suscipit! Voluptas, hic.</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="question-ans">
-                  <div class="question question4" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
-                  <div class="ans ans4"><p>超帥超帥超帥超帥超帥超帥超帥
-                    超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥
-                    超帥超帥超帥超帥超帥超帥超帥超帥</p>
+      
+                  <div class="question-ans">
+                    <div class="question question4" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
+                    <div class="ans ans4"><p>超帥超帥超帥超帥超帥超帥超帥
+                      超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥
+                      超帥超帥超帥超帥超帥超帥超帥超帥</p>
+                    </div>
                   </div>
-                </div>
-
-                <div class="question-ans">
-                  <div class="question question5" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
-                  <div class="ans ans5"><p>超帥超帥超帥超帥超帥超帥超帥
-                    超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥
-                    超帥超帥超帥超帥超帥超帥超帥超帥</p>
+      
+                  <div class="question-ans">
+                    <div class="question question5" ><p>我帥嗎?</p><i class="fas fa-angle-down"></i></div>
+                    <div class="ans ans5"><p>超帥超帥超帥超帥超帥超帥超帥
+                      超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥超帥
+                      超帥超帥超帥超帥超帥超帥超帥超帥</p>
+                    </div>
                   </div>
-                </div>
-
-
+      
+      
+               </div>
              </div>
            </div>
-         </div>
-       </section>
+         </section>
+        </div>
+      </div>
+</div>
+
+<!-- <div class="ovx-scroll">
+  <div ccd-layout="content">
+  
 
 
+   
+   
 
-       
-       <section class="slogan">
-         <div class="container">
-           <div class="row">
-             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="slogan-text">
-                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
-                </div>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="slogan-text">
-                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
-                </div>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="slogan-text">
-                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
-                </div>
-             </div>
-             <div class="col-sm-12 col-md-6 col-lg-3">
-                <div class="slogan-text">
-                  <i class="far fa-gem"></i>冰芬賣的，商品好讚
-                </div>
-             </div>
-           </div>
-         </div>
-       </section>
+   
+  </div>
+</div> -->
 
-       
-
-       
-</main>
 <!-- ------------Footer(assets/css/footer.css)------------- -->
 <footer class="footer">
+<div ccd-widget="FOOTER_LINK" id="aozs" ccd-widget-id="aozs">
+	<div class="footer">
+    <div class="slogan">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+               <div class="slogan-text">
+                 <i class="far fa-gem"></i>冰芬賣的，商品好讚
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
   <section class="sub-newsletter">
       <div class="newsletterback"></div>
      <div class="newsletter">
@@ -443,7 +463,8 @@
   <span class="footer-title">冰芬文教</span>
 <p>Copyright @2021 <a href="index.html" title="">冰芬</a>. All Rights Reserved.</p>
 </div>
-
+</div>
+</div>
 </footer>
   <!-- ---------------------Footer--END----------------- -->
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
@@ -491,5 +512,6 @@
   // fade:true,
 });
 </script>
+</div>
 </body>
 </html>

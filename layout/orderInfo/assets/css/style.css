@@ -3,9 +3,13 @@
 	flex-direction: column;
 }
 .member{
-	min-height: 100vh;
-	height: auto;
-	padding-top: 8em;
+	
+	width:80%;
+	margin:auto;
+}
+.member .member-content{
+	display: flex;
+	justify-content: space-between;
 }
 .member .member-title{
 	border-bottom: 1px #DDD solid;
@@ -20,7 +24,7 @@
 	font-size: 14px;
 }
 .member .member-nav{
-	width: 100%;
+	width: 30%;
 	height: 500px;
 	display: flex;
 	align-items: center;
@@ -103,10 +107,11 @@
 }
 .orderInfo{
 	display: flex;
+	align-items: center;
 	flex-direction: column;
 	padding-left: 15px;
 	padding-top: 15px;
-
+	width:70%;
 }
 
 .orderInfo h2{
@@ -138,3 +143,31 @@
 .thousands::before{
     content:'$';
 }
+
+@media screen and (max-width:1024px){
+	.member{
+		width:95%;
+	}
+	.member .member-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-content: center;
+	}
+	.member .member-nav{
+		width:100%;
+		height: auto;
+	}
+	.member .orderInfo{
+		width:100%;
+	}
+}
+
+/* STI Add Start */
+h1 {
+    font-size: 24px;
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+}
+/* STI Add End */

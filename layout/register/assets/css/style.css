@@ -6,21 +6,21 @@ body{
 
 }
 .register{
-	padding-top: 8em;
+	
 	padding-bottom: 50px;
+	margin: auto;
+	width:100%;
 }
 
 
-.register .container{
+.register .registerContainer{
     width: 100%;
     min-height: 100vh;
     height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap :7rem;
+
     padding: 0 2rem;
 }
-.register .container .title{
+.register .registerContainer .title{
 	font-size: 36px;
 	margin-bottom: 15px;
 }
@@ -35,6 +35,7 @@ body{
 	justify-content: flex-start;
 	align-items: center;
 	text-align: center;
+	margin: auto;
 }
 
 .register .img img{
@@ -43,6 +44,7 @@ body{
 
 .register form{
 	width: 360px;
+	margin: auto;
 }
 
 .register .register-content img{
@@ -168,9 +170,14 @@ body{
 	margin: 1rem 0;
 	cursor: pointer;
 	transition: .5s;
+	font-weight: 600;
 }
 .register .btn:hover{
 	background-position: right;
+}
+.register .btn.disable{
+	background-image: linear-gradient(to right, #ccc, #ccc, #ccc);
+	cursor: default;
 }
 .membershipModel{
 	position: fixed;
@@ -232,8 +239,11 @@ body{
 	width: 100%;
 	padding: 10px 0 0 30px;
 }
+.membershipCheck{
+	text-align: left;
+}
 @media screen and (max-width: 1050px){
-	.register .container{
+	.register .registerContainer{
 		grid-gap: 5rem;
 	}
 }
@@ -254,7 +264,7 @@ body{
 }
 
 @media screen and (max-width: 900px){
-	.register .container{
+	.register .registerContainer{
 		grid-template-columns: 1fr;
 	}
 

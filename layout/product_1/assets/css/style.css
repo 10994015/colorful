@@ -8,11 +8,13 @@ p{
 	margin-bottom: 0;
 	font-weight: 600;
 }
-.breadcrumb{
-	background: transparent;
-}
+
 .thousands::before{
     content:'$';
+}
+.productpage{
+	width:80%;
+	margin:auto;
 }
 .openBox{
 	font-size: 14px;
@@ -277,6 +279,7 @@ p{
 .addpayBox .addpayBoxBack{
 	position: fixed;
 	top: 0;
+	left:0;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0,0,0,.5);
@@ -291,6 +294,7 @@ p{
 	height: 400px;
 	z-index: 99999;
 	background: #fff;
+	top:calc(50% - 200px);
 	left:calc(50% - 300px);
 	border-radius: 3px;
 }
@@ -381,7 +385,22 @@ p{
 	border-radius: 5px;
 	min-height: 300px;
 	height: auto;
+	overflow-x: scroll;
+	padding: 0 10px;
 
+}
+.productIllustrate::-webkit-scrollbar{
+	width: 5px;
+}
+.productIllustrate::-webkit-scrollbar-thumb{
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+	background: rgb(219,219,219);
+}
+.productIllustrate::-webkit-scrollbar-track{
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	margin:40px 0 5px 0;
 }
 .productIllustrateBtn > .nav-link{
 	color:#aaa;
@@ -674,11 +693,13 @@ p{
 .responsive{
 	width: 100%;
 	position: relative;
+	margin-top: 30px;
 }
 .responsive .responsiveBox{
 	
 	border:1px #ccc solid;
 	margin: 0 5px;
+	height: 400px;
 }
 .responsive .responsiveBox >img{
 	width: 100%;
@@ -717,12 +738,16 @@ p{
 }
 .responsive .responsiveBox h1{
 	width: 100%;
-	height: 38px;
 	text-align: center;
 	font-size: 20px;
+	height: 50px;
 	color:#333;
 	padding: 0  10px;
 	font-weight: 500;
+	display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
 }
 .responsive .responsiveBox h2{
 	font-weight: 500;
@@ -795,21 +820,6 @@ margin: 15px auto;
 }
 }
 
-
-.slogan{
-	min-height: 100px;
-	margin: 30px 0;
-	height: auto;
-}
-.slogan .slogan-text{
-	text-align: center;
-	font-size: 18px;
-	height: 40px;
-}
-.slogan .slogan-text i{
-	margin: 0 5px;
-	color:#E6157D ;
-}
 @media screen and (max-width:600px){
 	.promotionsBox .promotionsBoxContent,
 	.sizeBox .sizeBoxContent,
@@ -819,4 +829,43 @@ margin: 15px auto;
 		height: 400px;
 		left:calc(50% - 150px);
 	}
+	.productpage{
+		width:95%;
+		margin:auto;
+	}
 }
+@media screen and (max-width:455px){
+	.nav-tabs {
+		display: flex;
+		flex-direction: column;
+	}
+	.productIllustrateBtn > .nav-link.active{
+		border:1px #ccc solid;
+		border-top:3px #1484c4 solid;
+	}
+}
+@media screen and (max-width:415px){
+	.payMethod b{
+		width:70px;
+		font-size: 14px;
+		overflow: hidden;
+	}
+	.payMethod p{
+		font-size: 12px;
+		width:180px;
+		overflow: hidden;
+	}
+	.productDelivery{
+		margin-bottom: 20px;
+	}
+	
+}
+@media screen and (max-width:315px){
+	
+	.productDelivery{
+		margin-bottom: 40px;
+	}
+}
+
+
+

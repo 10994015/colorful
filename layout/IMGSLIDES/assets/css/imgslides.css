@@ -28,7 +28,7 @@
 }
 
 .responsive{
-	width: 100%;
+  width: 100%;
   position: relative;
   padding:0;
   margin: 0;
@@ -67,4 +67,12 @@
 .cus-prev:hover,.cus-next:hover{
 	opacity: 1;
 	transition: .3s;
+}
+@media screen and (max-width:1024px){
+	.responsive .responsiveBox img{
+		width: 100%;
+		height: auto;
+		object-fit: contain;
+		cursor: grab;
+	}
 }

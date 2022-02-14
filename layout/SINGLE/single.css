@@ -1,0 +1,110 @@
+.body-inner-div{
+  padding-top: 75.2px;
+}
+header{
+    z-index: 999;
+    position: fixed;
+    background:var(--main-color);
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 120px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .5s ease;
+    margin-bottom: 75.2px;
+  }
+ 
+.ovx-scroll{
+  width:100%;
+  padding: 0;
+    margin: auto;
+    min-height: 70vh;
+	height: auto;
+}
+
+nav.nav{
+    /* margin-top: 75.2px; */
+    background-color: #6166C9;
+    
+}
+.footer{
+    width: 100%;
+    text-align: center;
+    
+  }
+/* -------------------scrollTop -------------------*/
+.scrollToTop-btn{
+    z-index: 999;
+    position: fixed;
+    background: var(--main-color);
+    color: #fff;
+    width: 50px;
+    height: 50px;
+    right: 0;
+    bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    pointer-events: none;
+    opacity: 0;
+    transition: all 0.3s ease;
+  }
+  .scrollToTop-btn:hover{
+    background:#BD1E2C;
+  }
+  .scrollToTop-btn.active{
+    right: 20px;
+    opacity: 1;
+    pointer-events: auto;
+  }
+  /* -------------------scrollTopEND -------------------*/
+  
+@media screen and (max-width: 560px) {
+    header{
+      width: 100%;
+      max-width: 560px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    header{
+      width: 100%;
+      max-width: 768px;
+    }
+  }
+  
+  @media screen and (max-width: 1024px) {
+    header{
+      width: 100%;
+      max-width: 1024px;
+      padding: 12px 20px;
+    }
+  }
+  
+/* -------------------sti add start -------------------*/
+@media (min-width: 1200px) {
+	.container {
+	    max-width: 100%;
+	}
+}
+@media (min-width: 992px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 768px) {
+    .container {
+        max-width: 100%;
+    }
+}
+@media (min-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+}
+/* -------------------sti add end -------------------*/
+  

@@ -3,9 +3,12 @@
 	flex-direction: column;
 }
 .member{
-	min-height: 100vh;
-	height: auto;
-	padding-top: 8em;
+	width:80%;
+	margin:auto;
+}
+.member .member-content{
+	display: flex;
+	justify-content: space-between;
 }
 .member .member-title{
 	border-bottom: 1px #DDD solid;
@@ -20,7 +23,7 @@
 	font-size: 14px;
 }
 .member .member-nav{
-	width: 100%;
+	width: 30%;
 	height: 500px;
 	display: flex;
 	align-items: center;
@@ -76,7 +79,13 @@
 	
 }
 
-
+.orderRecord{
+	width:70%;
+	
+}
+.orderRecord table{
+	margin:auto;
+}
 .orderRecord table tr td:nth-child(1){
 	width: 100px;
 	height: 50px;
@@ -86,7 +95,7 @@
 	height: 50px;
 }
 .orderRecord table tr td:nth-child(3){
-	width: 100px;
+	min-width: 55px;
 	height: 50px;
 }
 .orderRecord table tr td:nth-child(4){
@@ -110,9 +119,7 @@
 	bottom: 0;
 
 }
-.orderRecord table tr td{
 
-}
 .orderRecord table tr td a{
 	width: 70px;
 	height: 35px;
@@ -124,6 +131,58 @@
 	line-height: 35px;
 	font-size: 14px;
 	font-weight: 600;
+}
+
+.orderRecord .pageBox{
+	width:100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 10px;
+}
+.orderRecord .page{
+	display: flex;
+	list-style: none;
+	align-items: center;
+	margin: 15px 0;
+}
+.orderRecord .page i{
+	margin: 0 15px;
+	cursor: pointer;
+	color:#999;
+}
+.orderRecord .page i:hover{
+	color:#000;
+	transition: .3s;
+}
+.orderRecord .page li{
+	width:40px;
+	height: 40px;
+	text-align: center;
+	line-height: 40px;
+	cursor: pointer;
+}
+.orderRecord .page li:hover{
+	background-color: #ddd;
+}
+
+@media screen and (max-width:1024px){
+	.member{
+		width:95%;
+	}
+	.member .member-content{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-content: center;
+	}
+	.member .member-nav{
+		width:100%;
+		height: auto;
+	}
+	.member .orderRecord{
+		width:100%;
+	}
 }
 @media screen and (max-width: 415px){
 	.orderRecord table tr:before{
@@ -137,3 +196,9 @@
 .thousands::before{
     content:'$';
 }
+
+/* STI Add Start */
+h1 {
+    font-size: 24px;
+}
+/* STI Add End */
