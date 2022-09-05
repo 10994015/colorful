@@ -6,7 +6,6 @@ body{
 
 }
 .register{
-	
 	padding-bottom: 50px;
 	margin: auto;
 	width:100%;
@@ -187,6 +186,7 @@ body{
 	height: 100%;
 	background: rgba(0, 0, 0, .5);
 	display: none;
+	z-index: 999999;
 }
 .membership {
 	width: 600px;
